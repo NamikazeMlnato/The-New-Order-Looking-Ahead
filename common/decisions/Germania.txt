@@ -1,0 +1,188 @@
+form_greater_german_reich_category = {
+
+	form_greater_german_reich = {
+
+		icon = GFX_decision_GER_germania
+
+		allowed = {
+			original_tag = GER
+			has_dlc = "Waking the Tiger"
+		}
+
+		available = {
+			is_subject = no
+			OR = {
+			GER = {
+			has_full_control_of_state = 195
+			has_full_control_of_state = 217
+			}
+			RKM = {
+				has_full_control_of_state = 195
+				has_full_control_of_state = 217
+				}
+			}
+		}
+
+		visible = {
+			TAG = GER
+			AND = {
+				original_tag = GER
+				has_government = fascism
+				has_country_leader = { ruling_only = yes character = GER_adolf_hitler }
+			}
+			NOT = { has_global_flag = form_greater_german_reich_flag }
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = GER_greater_german_reich111112
+			hidden_effect = {
+				set_cosmetic_tag = GER_greater_german_reich1
+			}
+			hidden_effect = {
+				set_global_flag = form_greater_german_reich_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	Germania_state = {
+		
+		icon = GFX_decision_GER_germania
+
+		available = {
+			is_subject = no
+			has_full_control_of_state = 188
+			has_full_control_of_state = 763
+			has_full_control_of_state = 5
+			has_full_control_of_state = 98
+			has_full_control_of_state = 97
+			has_full_control_of_state = 85
+			has_full_control_of_state = 807
+			has_full_control_of_state = 87
+			has_full_control_of_state = 86
+			has_full_control_of_state = 67
+			has_full_control_of_state = 762
+			has_full_control_of_state = 72
+			has_full_control_of_state = 848
+			has_full_control_of_state = 102
+			has_full_control_of_state = 853
+			has_full_control_of_state = 53
+			has_full_control_of_state = 52
+			has_full_control_of_state = 50
+			has_full_control_of_state = 42
+			has_full_control_of_state = 51
+			has_full_control_of_state = 55
+			has_full_control_of_state = 74
+			has_full_control_of_state = 75
+			has_full_control_of_state = 69
+			has_full_control_of_state = 9
+			has_full_control_of_state = 4
+			has_full_control_of_state = 152
+			has_full_control_of_state = 153
+			has_full_control_of_state = 54
+			has_full_control_of_state = 64
+			has_full_control_of_state = 65
+			has_full_control_of_state = 60
+			has_full_control_of_state = 66
+			has_full_control_of_state = 68
+			has_full_control_of_state = 63
+			has_full_control_of_state = 62
+			has_full_control_of_state = 61
+			has_full_control_of_state = 59
+			has_full_control_of_state = 57
+			has_full_control_of_state = 56
+			has_full_control_of_state = 58
+			has_full_control_of_state = 909
+			has_full_control_of_state = 912
+			has_full_control_of_state = 8
+			has_full_control_of_state = 28
+			has_full_control_of_state = 976
+			has_full_control_of_state = 975
+			has_full_control_of_state = 972
+			has_full_control_of_state = 978
+			has_cosmetic_tag = GER_greater_german_reich1
+		}
+
+		visible = {
+			TAG = GER
+			has_cosmetic_tag = GER_greater_german_reich1
+		}
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 188
+				state = 763
+				state = 5
+				state = 98
+				state = 97
+				state = 85
+				state = 807
+				state = 87
+				state = 86
+				state = 67
+				state = 762
+				state = 72
+				state = 848
+				state = 102
+				state = 853
+				state = 53
+				state = 52
+				state = 50
+				state = 42
+				state = 51
+				state = 55
+				state = 74
+				state = 75
+				state = 69
+				state = 9
+				state = 4
+				state = 152
+				state = 153
+				state = 54
+				state = 64
+				state = 65
+				state = 60
+				state = 66
+				state = 68
+				state = 63
+				state = 62
+				state = 61
+				state = 59
+				state = 57
+				state = 56
+				state = 58
+				state = 909
+				state = 912
+				state = 8
+				state = 28
+				state = 976
+				state = 975
+				state = 978
+				state = 972
+			}
+		}
+		
+		complete_effect = {
+		GER = {
+		custom_effect_tooltip = GER_greater_german_reich11111
+			hidden_effect = {
+				set_cosmetic_tag = GER_greater_german_reich
+			}
+		}
+	}
+	}
+		
+}

@@ -1,0 +1,13 @@
+﻿focus_tree = {
+	id = ABC
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ABC
+		}	 
+	}
+	default = no
+}

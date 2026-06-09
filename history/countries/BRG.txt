@@ -1,0 +1,36 @@
+﻿capital = 875
+
+set_technology = {
+	infantry_weapons = 0
+	infantry_weapons1 = 0
+	gw_artillery = 0			
+	interwar_antiair = 0
+	tech_support = 0		
+	tech_recon = 0
+	tech_engineers = 0
+}
+
+
+set_popularities = {
+	Burgundian = 100
+	communism = 0
+	neutrality = 0
+	democratic = 0
+}
+
+set_politics = {
+	ruling_party = Burgundian
+	last_election = "1936.1.1"
+	election_frequency = 1
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "希姆莱"
+	desc = "I'm want boom world"
+	picture = "gfx/leaders/BRG/Portrait_Burgundy_Heinrich_Himmler.dds"
+	expire = "1965.1.1"
+	ideology = Burgundian_type
+	traits = { 
+	 }
+}

@@ -1,0 +1,46 @@
+
+music_station = "dingdingradio"
+
+music = {
+	song = "神圣的战争"
+}
+
+music = {
+	song = "神圣的战争-大审判"
+}
+
+music = {
+	song = "义勇军进行曲1m"
+}
+
+music = {
+	song = "恭喜恭喜"
+}
+
+music = {
+	song = "黑暗森林"
+}
+
+music = {
+	song = "美国兵是废物"
+}
+
+music = {
+	song = "日升之屋"
+}
+
+music = {
+	song = "请校准时钟"
+}s
+
+music = {
+	song = "你看到的我"
+}
+
+music = {
+	song = "错位时空TNO X OTL"
+}
+
+music = {
+	song = "草东没有派对 但"
+}

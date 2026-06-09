@@ -1,0 +1,75 @@
+YanFaYuanZiDan = {
+	JianZaoNongSuoYouLiXinJi = {
+		complete_effect = {
+			set_technology = {
+				nuclear_reactor_heavy_water = 1
+			}
+		}
+	}
+
+	KaiFaYouKuang = {
+		
+	}
+
+	NongSuoYouYongLiang = {
+		
+	}
+
+	YanFaHeFanYinDui = {
+		
+	}
+
+	JianZaoHeFanYinDui = {
+		
+	}
+
+	SheJiLieBianZaDan = {
+		
+	}
+
+	ZuZhuangZaDan = {
+		
+	}
+
+	TouFang = {
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		complete_effect = {
+			hidden_effect = { goto_province = 4180 }
+			custom_effect_tooltip = BAGEDAN!BOOMMMMMM
+				create_entity = {
+					entity = nuke_entity
+					id = 0401447
+					province = 4180
+					scale = .4
+					min_zoom = -1
+				}
+				set_entity_animation = {
+					id = 0401447
+					animation = "attack"
+				}
+				clr_global_flag = boomzhenzhugang
+			USA = {
+			
+			hidden_effect = {
+			news_event = USABOOM_news.1
+			add_war_support = -0.15
+			every_owned_state = {
+				limit = {
+					state = 629
+				}
+				add_dynamic_modifier = {
+					modifier = fallout_atomic
+					days = 360
+				}
+			}
+								
+		}
+		}
+		}
+	}
+
+}

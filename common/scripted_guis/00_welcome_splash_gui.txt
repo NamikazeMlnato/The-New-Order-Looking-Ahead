@@ -1,0 +1,31 @@
+scripted_gui = {
+	mod_welcome_splash = {
+		context_type = player_come_wenjian
+		window_name = "come_wenjian"
+		dirty = KR_welcome_splash_variable
+
+		ai_enabled = {
+			always = no
+		}
+ 
+		visible = {
+			has_country_flag = show_welcome_splash
+		}
+
+		effects = {
+			options_button_click = {
+				clr_country_flag = show_welcome_splash
+			}
+			sans_button_click = {
+				news_event = {id = gezi_gugu.3}
+			}
+			options_ddwelcom_gui_button_click = {
+				clr_country_flag = show_welcome_splash
+				set_country_flag = GameOpenDingDingmod
+				set_country_flag = Country_tittle_button
+				#country_event = kr.political.1       #触发一个事件
+			}
+		}
+	}
+}
+

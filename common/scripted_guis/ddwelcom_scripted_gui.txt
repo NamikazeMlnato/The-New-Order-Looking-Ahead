@@ -1,0 +1,129 @@
+scripted_gui = {
+
+    ddwelcom_gui = {
+
+        context_type = player_context
+
+        window_name = "ddwelcom_guis"
+
+        ai_enabled = {
+			always = no
+		}
+                
+        visible = {
+            
+            has_country_flag = GameOpenDingDingmod #flag出现时跟着出现
+
+        }
+        
+        effects = {
+
+        GameOpenDingDingmod_button_click = { 
+           clr_country_flag = GameOpenDingDingmod #点击按钮后移除flag，使得超事件消失
+        }
+
+        GER_button_click = { 
+            set_country_flag = GER_tittle_button
+            clr_country_flag = JAP_tittle_button
+            clr_country_flag = USA_tittle_button
+            clr_country_flag = SOV_tittle_button
+            clr_country_flag = CHI_tittle_button
+            clr_country_flag = PRC_tittle_button
+            clr_country_flag = OMS_tittle_button
+         }
+
+         JAP_button_click = { 
+            clr_country_flag = GER_tittle_button
+            set_country_flag = JAP_tittle_button
+            clr_country_flag = USA_tittle_button
+            clr_country_flag = SOV_tittle_button
+            clr_country_flag = CHI_tittle_button
+            clr_country_flag = PRC_tittle_button
+            clr_country_flag = OMS_tittle_button
+         }
+
+         USA_button_click = { 
+            clr_country_flag = GER_tittle_button
+            clr_country_flag = JAP_tittle_button
+            set_country_flag = USA_tittle_button
+            clr_country_flag = SOV_tittle_button
+            clr_country_flag = CHI_tittle_button
+            clr_country_flag = PRC_tittle_button
+            clr_country_flag = OMS_tittle_button
+         }
+
+         SOV_button_click = { 
+            clr_country_flag = GER_tittle_button
+            clr_country_flag = JAP_tittle_button
+            clr_country_flag = USA_tittle_button
+            set_country_flag = SOV_tittle_button
+            clr_country_flag = CHI_tittle_button
+            clr_country_flag = PRC_tittle_button
+            clr_country_flag = OMS_tittle_button
+         }
+
+         CHI_button_click = { 
+            clr_country_flag = GER_tittle_button
+            clr_country_flag = JAP_tittle_button
+            clr_country_flag = USA_tittle_button
+            clr_country_flag = SOV_tittle_button
+            set_country_flag = CHI_tittle_button
+            clr_country_flag = PRC_tittle_button
+            clr_country_flag = OMS_tittle_button
+         }
+
+         PRC_button_click = { 
+            clr_country_flag = GER_tittle_button
+            clr_country_flag = JAP_tittle_button
+            clr_country_flag = USA_tittle_button
+            clr_country_flag = SOV_tittle_button
+            clr_country_flag = CHI_tittle_button
+            set_country_flag = PRC_tittle_button
+            clr_country_flag = OMS_tittle_button
+         }
+
+         OMS_button_click = { 
+            clr_country_flag = GER_tittle_button
+            clr_country_flag = JAP_tittle_button
+            clr_country_flag = USA_tittle_button
+            clr_country_flag = SOV_tittle_button
+            clr_country_flag = CHI_tittle_button
+            clr_country_flag = PRC_tittle_button
+            set_country_flag = OMS_tittle_button
+         }
+
+         Comback_button_click = { 
+            set_country_flag = Country_tittle_button
+            clr_country_flag = GER_tittle_button
+            clr_country_flag = JAP_tittle_button
+            clr_country_flag = USA_tittle_button
+            clr_country_flag = SOV_tittle_button
+            clr_country_flag = CHI_tittle_button
+            clr_country_flag = PRC_tittle_button
+            clr_country_flag = OMS_tittle_button
+         }
+
+         GFX_frontend_game_logos_click = {}
+
+        }
+
+	}
+
+   ddwelcom_gui2 = {
+
+        context_type = player_context
+
+        window_name = "ddwelcom_guis2"
+
+        ai_enabled = {
+			always = no
+		}
+                
+        visible = {
+            
+            has_country_flag = GameOpenDingDingmod #flag出现时跟着出现
+
+        }
+      }
+      
+}  

@@ -1,0 +1,25 @@
+add_namespace = ZhongLi
+
+country_event = { #与苏和解
+	id = ZhongLi.1 #事件
+	title = ZhongLi.1 #名字
+	desc = ZhongLi.1_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+		tag = CHI
+		has_game_rule = {
+			rule = use_Dingdings_mod_GENSHIN
+			option = YESYESYESYESYESYESYESYESYES
+		}
+    } #弹出条件
+
+	fire_only_once = nope #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	
+	option = {
+		name = OMGGGGG
+	}
+}

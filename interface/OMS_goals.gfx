@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_OMS_focus_dashenpan"
+		texturefile = "gfx/interface/goals/OMS_focus_dashenpan.dds"
+	}
+}

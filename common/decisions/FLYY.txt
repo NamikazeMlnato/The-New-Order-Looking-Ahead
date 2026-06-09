@@ -1,0 +1,66 @@
+FengLingYueYingkejing = {
+	
+	KEJING1 = {
+		
+		icon = GFX_idea_FengLingYueYing
+
+		cost = 200
+		visible = {
+			has_idea = FengLingYueYing
+		}	
+		complete_effect = {
+		swap_ideas = {
+			remove_idea = FengLingYueYing
+			add_idea = FengLingYueYing2		
+		}
+	}
+}
+
+	KEJING2 = {
+		
+		cost = 400
+		visible = {
+			has_idea = FengLingYueYing2
+		}	
+		icon = GFX_idea_FengLingYueYing
+	
+		complete_effect = {
+		swap_ideas = {
+			remove_idea = FengLingYueYing2
+			add_idea = FengLingYueYing3	
+		}
+	}
+}
+
+	KEJING3 = {
+
+		cost = 800
+		visible = {
+			has_idea = FengLingYueYing3
+		}	
+		icon = GFX_idea_FengLingYueYing
+		
+		complete_effect = {
+		swap_ideas = {
+			remove_idea = FengLingYueYing3
+			add_idea = FengLingYueYing4		
+		}
+	}
+}
+
+	KEJING4 = {
+		visible = {
+			has_idea = FengLingYueYing4
+		}	
+		cost = 1600
+
+		icon = GFX_idea_FengLingYueYing
+	
+		complete_effect = {
+		swap_ideas = {
+		remove_idea = FengLingYueYing4
+		add_idea = FengLingYueYing5		
+		}
+	}	
+}
+}

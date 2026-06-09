@@ -1,0 +1,28 @@
+ideas = {
+
+	hidden_ideas = {
+		RUSJF = {
+			
+			picture = nope
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				ai_get_ally_desire_factor = -10000
+	 		}
+			
+			rule = {
+				
+			}
+		}
+	}
+
+}

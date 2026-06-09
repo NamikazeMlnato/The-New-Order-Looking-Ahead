@@ -1,0 +1,30 @@
+ideas = {
+
+	country = {
+		WeiGuoZhanZhengCanBai = {
+			
+			picture = nope
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.15
+				stability_factor = -0.2
+				war_support_factor = -0.2
+	 		}
+			
+			rule = {
+				
+			}
+		}
+	}
+
+}

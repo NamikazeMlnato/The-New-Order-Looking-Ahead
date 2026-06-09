@@ -1,0 +1,1203 @@
+add_namespace = WR_SOV
+
+country_event = { #与苏和解
+	id =  WR_SOV.1 #事件
+	title = WR_SOV.1 #名字
+	desc = WR_SOV.1_desc #简介
+	picture = GFX_AA #封面
+	
+	
+	trigger = { 
+		AND = {
+			TAG = GER
+			has_war_with = SOV
+			SOV = {
+					
+						AND = {
+							NOT = {
+							controls_state = 195
+							}
+							NOT = {
+							controls_state = 219
+							}
+							NOT = {
+							controls_state = 217
+							}
+							NOT = {
+							has_full_control_of_state = 236
+							}
+							OR = {
+								NOT = {
+								has_full_control_of_state = 214
+								}
+								NOT = {
+								has_full_control_of_state = 880
+								}
+							}
+						}
+					
+			} 
+    	} #弹出条件
+	}
+	fire_only_once = no #是不是只有一次
+
+	is_triggered_only = no #这个事件是否会自己弹
+	
+	option = {
+		name =  WR_SOV.1.a #与苏联和平
+		custom_effect_tooltip = TNOshishi
+		white_peace = SOV
+		add_ideas = VictoryOfGermania
+		SOV = { country_event = { id = WR_SOV.5 } }
+		hidden_effect = {
+			if = {
+				FIN = {
+					white_peace = SOV
+					transfer_state = 213
+					transfer_state = 215
+					transfer_state = 216
+					transfer_state = 146
+					transfer_state = 147
+					transfer_state = 145
+					transfer_state = 722
+				}
+				limit = {
+					country_exists = FIN
+					#NOT = { is_subject = yes } #真他妈史代码，yes改成no就可以了我还加个NOT = {}
+					FIN = {
+						is_subject = no
+						has_war_with = SOV
+					}
+				}
+			}
+
+			if = {
+				KAR = {
+					set_cosmetic_tag = GER_KAR
+					transfer_state = 146
+					transfer_state = 216
+					transfer_state = 215
+					transfer_state = 147
+					transfer_state = 213
+					transfer_state = 722
+				}
+				GER = {
+				set_autonomy = {
+					target = KAR
+					autonomy_state = autonomy_integrated_puppet
+				}
+			}
+				limit = {
+					country_exists = FIN
+					#NOT = { is_subject = yes } #真他妈史代码，yes改成no就可以了我还加个NOT = {}
+					FIN = {
+						is_subject = no
+						NOT = { has_war_with = SOV }
+					}
+				}
+			}
+
+			if = {
+				FIN = {
+					transfer_state = 145
+					transfer_state = 148
+					transfer_state = 929
+					transfer_state = 150
+					transfer_state = 149
+					transfer_state = 926
+					transfer_state = 927
+					transfer_state = 111
+					transfer_state = 928
+					transfer_state = 930
+					transfer_state = 213
+					transfer_state = 215
+					transfer_state = 216
+					transfer_state = 146
+					transfer_state = 147
+					transfer_state = 722
+				}
+				limit = {
+					NOT = { country_exists = FIN }
+					SOV = {
+						has_full_control_of_state = 145
+						has_full_control_of_state = 148
+						has_full_control_of_state = 929
+						has_full_control_of_state = 150
+						has_full_control_of_state = 149
+						has_full_control_of_state = 926
+						has_full_control_of_state = 927
+						has_full_control_of_state = 111
+						has_full_control_of_state = 928
+						has_full_control_of_state = 930
+						has_full_control_of_state = 146
+						has_full_control_of_state = 147
+						has_full_control_of_state = 722
+					}
+				}
+			}
+
+			if = {
+				set_autonomy = {
+					target = FIN
+					autonomy_state = autonomy_free
+				}
+
+				remove_from_faction = SOV
+
+				FIN = {
+					transfer_state = 145
+					transfer_state = 148
+					transfer_state = 929
+					transfer_state = 150
+					transfer_state = 149
+					transfer_state = 926
+					transfer_state = 927
+					transfer_state = 111
+					transfer_state = 928
+					transfer_state = 930
+					transfer_state = 213
+					transfer_state = 215
+					transfer_state = 216
+					transfer_state = 146
+					transfer_state = 147
+					transfer_state = 722
+				}
+
+				limit = {
+					FIN = {
+
+					is_subject_of = SOV
+
+					OR = {
+						has_full_control_of_state = 145
+						has_full_control_of_state = 148
+						has_full_control_of_state = 929
+						has_full_control_of_state = 150
+						has_full_control_of_state = 149
+						has_full_control_of_state = 926
+						has_full_control_of_state = 927
+						has_full_control_of_state = 111
+						has_full_control_of_state = 928
+						has_full_control_of_state = 930
+						has_full_control_of_state = 146
+						has_full_control_of_state = 147
+						has_full_control_of_state = 722
+					}
+					}
+				}
+			}
+
+			if = {
+				KAR = {
+					transfer_state = 146
+					transfer_state = 216
+					transfer_state = 215
+					transfer_state = 147
+					transfer_state = 213
+					transfer_state = 722
+				}
+				GER = {
+				set_autonomy = {
+					target = KAR
+					autonomy_state = autonomy_integrated_puppet
+				}
+			}
+				limit = {
+					FIN = {
+					is_subject = yes
+					NOT = { is_subject_of = SOV }
+					NOT = { has_full_control_of_state = 722
+							has_full_control_of_state = 147
+							has_full_control_of_state = 146
+				}
+					}
+					
+				}
+			}
+
+			if = {
+				KAR = {
+					transfer_state = 216
+					transfer_state = 215
+					transfer_state = 213
+				}
+				GER = {
+				set_autonomy = {
+					target = KAR
+					autonomy_state = autonomy_integrated_puppet
+				}
+			}
+				limit = {
+					FIN = {
+					is_subject = yes
+					NOT = { is_subject_of = SOV }
+					has_full_control_of_state = 722
+					has_full_control_of_state = 147
+					has_full_control_of_state = 146
+					}
+					
+				}
+			}
+
+			if = {
+
+				RKO = {
+					transfer_state = 94
+					transfer_state = 95
+					transfer_state = 96
+					transfer_state = 206
+					transfer_state = 207
+					transfer_state = 204
+					transfer_state = 194
+					transfer_state = 241
+					transfer_state = 814
+					transfer_state = 784
+					transfer_state = 11
+					transfer_state = 815
+					transfer_state = 189
+					transfer_state = 810
+					transfer_state = 809
+					transfer_state = 190
+					transfer_state = 808
+					transfer_state = 12
+					transfer_state = 13
+					transfer_state = 191
+					transfer_state = 812
+					transfer_state = 813
+					transfer_state = 811
+				}
+
+				limit = {
+					country_exists = RKO
+					RKO = {
+					is_subject_of = GER
+					}
+				}
+			}
+
+			if = {
+
+				GER = {
+					transfer_state = 94
+					transfer_state = 95
+					transfer_state = 96
+					transfer_state = 206
+					transfer_state = 207
+					transfer_state = 204
+					transfer_state = 194
+					transfer_state = 241
+					transfer_state = 814
+					transfer_state = 784
+					transfer_state = 11
+					transfer_state = 815
+					transfer_state = 189
+					transfer_state = 810
+					transfer_state = 809
+					transfer_state = 190
+					transfer_state = 808
+					transfer_state = 12
+					transfer_state = 13
+					transfer_state = 191
+					transfer_state = 812
+					transfer_state = 813
+					transfer_state = 811
+				}
+
+				limit = {
+					NOT = { country_exists = RKO }
+					RKO = {
+					NOT = { is_subject_of = GER }
+				}
+				}
+				}
+
+			if = {
+
+				RKU = {
+					transfer_state = 93
+					transfer_state = 199
+					transfer_state = 201
+					transfer_state = 198
+					transfer_state = 202
+					transfer_state = 203
+					transfer_state = 834
+					transfer_state = 192
+					transfer_state = 197
+					transfer_state = 196
+					transfer_state = 226
+					transfer_state = 200
+					transfer_state = 227
+					transfer_state = 228
+					transfer_state = 221
+					transfer_state = 259
+					transfer_state = 225
+					transfer_state = 193
+				}
+
+				limit = {
+					country_exists = RKU
+					RKU = {
+					is_subject_of = GER
+					}
+				}
+			}
+
+			if = {
+
+				GER = {
+					transfer_state = 93
+					transfer_state = 199
+					transfer_state = 201
+					transfer_state = 198
+					transfer_state = 202
+					transfer_state = 203
+					transfer_state = 834
+					transfer_state = 192
+					transfer_state = 197
+					transfer_state = 196
+					transfer_state = 226
+					transfer_state = 200
+					transfer_state = 227
+					transfer_state = 228
+					transfer_state = 221
+					transfer_state = 259
+					transfer_state = 225
+					transfer_state = 193
+				}
+
+				limit = {
+						NOT = { country_exists = RKU }
+						RKU = {
+						NOT = { is_subject_of = GER }
+						}
+				}
+			}
+
+			if = {
+				ROM = {
+					transfer_state = 80
+					transfer_state = 78
+					transfer_state = 766
+				}
+				limit = {
+					NOT = { ROM = {
+							has_full_control_of_state = 80
+							has_full_control_of_state = 78
+							has_full_control_of_state = 766
+						}
+					}
+				}
+			}
+
+			if = {
+				GEN = {
+					transfer_state = 10
+					transfer_state = 92
+					transfer_state = 90
+					transfer_state = 88
+					transfer_state = 91
+					transfer_state = 89
+				}
+				limit = {
+					country_exists = GEN
+					GEN = {
+					is_subject_of = GER
+					}
+				}
+			}
+
+			if = {
+				GER = {
+					transfer_state = 10
+					transfer_state = 92
+					transfer_state = 90
+					transfer_state = 88
+					transfer_state = 91
+					transfer_state = 89
+				}
+				limit = {
+						NOT = { country_exists = GEN }
+						GEN = {
+						NOT = { is_subject_of = GER }
+						}
+				}
+			}
+
+			if = {
+				RKK = {
+				transfer_state = 232
+				transfer_state = 234
+				transfer_state = 235
+				transfer_state = 233
+				transfer_state = 827
+				transfer_state = 828
+				transfer_state = 236
+				transfer_state = 237
+				transfer_state = 238
+				transfer_state = 821
+				transfer_state = 229
+				transfer_state = 231
+				transfer_state = 230
+				transfer_state = 826
+				}
+				limit = {
+					country_exists = RKK
+					RKK = {
+					is_subject_of = GER
+					}
+				}
+			}
+
+			if = {
+				GER = {
+				transfer_state = 232
+				transfer_state = 234
+				transfer_state = 235
+				transfer_state = 233
+				transfer_state = 827
+				transfer_state = 828
+				transfer_state = 821
+				transfer_state = 229
+				transfer_state = 231
+				transfer_state = 230
+				transfer_state = 826
+				}
+				limit = {
+						NOT = { country_exists = RKK }
+						RKK = {
+						NOT = { is_subject_of = GER }
+						}
+				}
+			}
+
+
+		if = {
+			RKM = {
+			transfer_state = 351
+			transfer_state = 252
+			transfer_state = 250
+			transfer_state = 264
+			transfer_state = 247
+			transfer_state = 248
+			transfer_state = 253
+			transfer_state = 254
+			transfer_state = 255
+			transfer_state = 239
+			transfer_state = 829
+			transfer_state = 217
+			transfer_state = 218
+			transfer_state = 245
+			transfer_state = 265
+			transfer_state = 260
+			transfer_state = 240
+			transfer_state = 220
+			transfer_state = 222
+			transfer_state = 224
+			transfer_state = 223
+			transfer_state = 205
+			transfer_state = 243
+			transfer_state = 242
+			transfer_state = 246
+			transfer_state = 219
+			transfer_state = 210
+			transfer_state = 209
+			transfer_state = 208
+			transfer_state = 263
+			transfer_state = 257
+			transfer_state = 258
+			transfer_state = 244
+			transfer_state = 879
+			transfer_state = 880
+			transfer_state = 214
+			transfer_state = 195
+			}
+			limit = {
+				country_exists = RKM
+				RKM = {
+					is_subject_of = GER
+					}
+			}
+		}
+
+		if = {
+			GER = {
+			transfer_state = 351
+			transfer_state = 252
+			transfer_state = 250
+			transfer_state = 264
+			transfer_state = 247
+			transfer_state = 248
+			transfer_state = 253
+			transfer_state = 254
+			transfer_state = 255
+			transfer_state = 239
+			transfer_state = 829
+			transfer_state = 217
+			transfer_state = 236
+			transfer_state = 237
+			transfer_state = 238
+			transfer_state = 218
+			transfer_state = 245
+			transfer_state = 265
+			transfer_state = 260
+			transfer_state = 240
+			transfer_state = 220
+			transfer_state = 222
+			transfer_state = 224
+			transfer_state = 223
+			transfer_state = 205
+			transfer_state = 243
+			transfer_state = 242
+			transfer_state = 246
+			transfer_state = 219
+			transfer_state = 210
+			transfer_state = 209
+			transfer_state = 208
+			transfer_state = 263
+			transfer_state = 257
+			transfer_state = 258
+			transfer_state = 244
+			transfer_state = 879
+			transfer_state = 880
+			transfer_state = 214
+			transfer_state = 195
+			}
+			limit = {
+					NOT = { country_exists = RKM }
+					RKM = {
+					NOT = { is_subject_of = GER }
+				}
+			}
+		}
+
+
+
+			GER = {
+			transfer_state = 137
+			transfer_state = 97
+			}
+		}
+	}
+	option = {
+		name = nohejiewithsov #接着打
+		add_timed_idea = { idea = NoHasBuJi days = 240 }
+	}
+}
+
+country_event = { #苏维埃联盟的崩溃
+	id = WR_SOV.1991 #事件
+	title = WR_SOV.1991 #名字
+	desc = WR_SOV.1991_desc #简介
+	picture = NOPE #封面
+	
+	
+	trigger = { 
+		TAG = SOV
+		has_idea = SOVBOOM
+	}
+	#弹出条件
+
+	fire_only_once = yes #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	
+	option = {
+		name = BOOM #完蛋了
+		custom_effect_tooltip = SOV_BOOM_RUN
+		hidden_effect = {
+		SOV = {
+		set_cosmetic_tag = WRG
+		}
+
+		remove_from_faction = MON
+		remove_from_faction = SOB
+		remove_from_faction = TAN
+		remove_from_faction = KYR
+		remove_from_faction = TAJ
+		remove_from_faction = UZB
+		remove_from_faction = KAZ
+		remove_from_faction = TMS
+		remove_from_faction = SOV
+		remove_from_faction = KYR
+		remove_from_faction = TAJ
+
+		SOV = { add_ideas = WRCDQ }
+		KOM = { add_ideas = WRCDQ }
+		WLL = { add_ideas = WRCDQ }
+		YLA = { add_ideas = WRCDQ }
+		IUR = { add_ideas = WRCDQ }
+		ONG = { add_ideas = WRCDQ }
+		VOR = { add_ideas = WXBLYCDQ }
+		GAY = { add_ideas = WXBLYCDQ }
+		WLR = { add_ideas = WXBLYCDQ }
+		TYM = { add_ideas = WXBLYCDQ }
+		OMS = { add_ideas = WXBLYCDQ }
+		YGR = { add_ideas = MXBLYCDQ }
+		TOM = { add_ideas = MXBLYCDQ }
+		NXB = { add_ideas = MXBLYCDQ }
+		SBA = { add_ideas = MXBLYCDQ }
+		TAN = { add_ideas = MXBLYCDQ }
+		YKT = { add_ideas = YDCDQ }
+		BRY = { add_ideas = YDCDQ }
+		WBJ = { add_ideas = YDCDQ }
+		MGD = { add_ideas = YDCDQ }
+		KMC = { add_ideas = YDCDQ }
+		FER = { add_ideas = YDCDQ }
+		ABC = { add_ideas = YDCDQ }
+		
+		SOV = { add_ideas = RUSJF }
+		KOM = { add_ideas = RUSJF }
+		WLL = { add_ideas = RUSJF }
+		YLA = { add_ideas = RUSJF }
+		IUR = { add_ideas = RUSJF }
+		ONG = { add_ideas = RUSJF }
+		VOR = { add_ideas = RUSJF }
+		GAY = { add_ideas = RUSJF }
+		WLR = { add_ideas = RUSJF }
+		TYM = { add_ideas = RUSJF }
+		OMS = { add_ideas = RUSJF }
+		YGR = { add_ideas = RUSJF }
+		TOM = { add_ideas = RUSJF }
+		NXB = { add_ideas = RUSJF }
+		SBA = { add_ideas = RUSJF }
+		TAN = { add_ideas = RUSJF }
+		YKT = { add_ideas = RUSJF }
+		BRY = { add_ideas = RUSJF }
+		WBJ = { add_ideas = RUSJF }
+		MGD = { add_ideas = RUSJF }
+		KMC = { add_ideas = RUSJF }
+		FER = { add_ideas = RUSJF }
+		ABC = { add_ideas = RUSJF }
+
+				ABC = {
+					transfer_state = 822
+					transfer_state = 644
+					transfer_state = 877
+					transfer_state = 876
+					transfer_state = 878
+					transfer_state = 516
+					transfer_state = 875
+					transfer_state = 1020
+				}
+				
+	     	if = {
+			     TAN = {
+					transfer_state = 329
+			    	set_cosmetic_tag = PeopleMing
+		    	}
+		        limit = {
+					NOT = { country_exists = TAN }
+				}	
+			}
+
+			if = {
+				TAN = {
+				   set_cosmetic_tag = PeopleMing
+	  		 }
+		   limit = {
+				   country_exists = TAN
+			}
+			}
+
+			if = {
+			VOR = {
+				transfer_state = 579
+				579 = { add_core_of = VOR }
+        	}
+			limit = {
+				NOT = { country_exists = VOR }
+			}
+	}
+
+			if = {
+			ONG = {
+				transfer_state = 879
+				879 = { add_core_of = ONG }
+        	 }
+			 limit = {
+				NOT = { country_exists = ONG }
+			 }
+	}
+
+			if = {
+			WLL = {
+				transfer_state = 833
+				transfer_state = 249
+				transfer_state = 256
+				transfer_state = 250
+				833 = { add_core_of = WLL }
+				249 = { add_core_of = WLL }
+				256 = { add_core_of = WLL }
+				250 = { add_core_of = WLL }
+         	}
+			limit = {
+				NOT = { country_exists = WLL }
+			}
+	}
+
+			if = {
+			YLA = {
+				transfer_state = 651
+				transfer_state = 582
+				582 = { add_core_of = YLA }
+				651 = { add_core_of = YLA }
+         	}
+			limit = {
+				NOT = { country_exists = YLA }
+			}
+	}
+
+				if = {
+		 		IUR = {
+					transfer_state = 652
+					transfer_state = 251
+					transfer_state = 401
+				}
+				limit = {
+					NOT = { country_exists = iur }
+				}
+	}
+
+			if = {
+			TOM = {
+				transfer_state = 576
+				transfer_state = 577
+				transfer_state = 578
+				578 = { add_core_of = TOM }
+				577 = { add_core_of = TOM }
+				576 = { add_core_of = TOM }
+         	}
+			limit = {
+				NOT = { country_exists = tom }
+			}
+		}
+
+			if = {
+			YGR = {
+				transfer_state = 824
+				824 = { add_core_of = YGR }
+         }
+		 limit = {
+			NOT = { country_exists = ygr }
+		 }
+		}
+
+			if = {
+			KMC = {
+				transfer_state = 637
+				637 = { add_core_of = KMC }
+         }
+		 limit = {
+			NOT = { country_exists = kmc  }
+		 }
+		}
+
+			if = {
+			TYM = {
+				transfer_state = 403
+				transfer_state = 572
+				403 = { add_core_of = TYM }
+				572 = { add_core_of = TYM }
+         }
+		 limit = {
+			NOT = { country_exists = tym }
+		 }
+		}
+
+			if = {
+			SBA = {
+				transfer_state = 568
+				transfer_state = 567
+				568 = { add_core_of = SBA }
+				567 = { add_core_of = SBA }
+         }
+		 limit = {
+			NOT = { country_exists = sba }
+		 }
+		}
+
+			if = {
+			BRY = {
+				transfer_state = 566
+				transfer_state = 564
+				566 = { add_core_of = BRY }
+				564 = { add_core_of = BRY }
+         }
+		 limit = {
+			NOT = { country_exists = bry }
+		 }
+		}
+
+			if = {
+			YKT = {
+				transfer_state = 575
+				transfer_state = 565
+				transfer_state = 574
+				575 = { add_core_of = YKT }
+				565 = { add_core_of = YKT }
+				574 = { add_core_of = YKT }
+         }
+		 limit = {
+			NOT = { country_exists = ykt }
+		 }
+		}
+
+			if = {
+			WBJ = {
+				transfer_state = 563
+				563 = { add_core_of = WBJ }
+         }
+		 limit = {
+			NOT = { country_exists = wbj }
+		 }
+		}
+			
+			if = {
+			MGD = {
+				transfer_state = 562
+				transfer_state = 874
+				562 = { add_core_of = MGD }
+				874 = { add_core_of = MGD }
+         }
+		 limit = {
+			NOT = { country_exists = mgd }
+		 }
+		}
+
+			if = {
+			NXB = {
+				transfer_state = 570
+				transfer_state = 40
+				transfer_state = 569
+				transfer_state = 654
+				570 = { add_core_of = NXB }
+				40 = { add_core_of = NXB }
+				569 = { add_core_of = NXB }
+				654 = { add_core_of = NXB }
+         }
+		 limit = {
+			NOT = { country_exists = nxb }
+		 }
+		}
+
+			if = {
+			GAY = {
+				transfer_state = 580
+				580 = { add_core_of = GAY }
+         }
+		 limit = {
+			NOT = { country_exists = gay }
+		 }
+		}
+
+			if = {
+			WLR = {
+				transfer_state = 653
+				transfer_state = 573
+				653 = { add_core_of = WLR }
+				573 = { add_core_of = WLR }
+         }
+		 limit = {
+			NOT = { country_exists = wlr }
+		 }
+		}
+
+			if = {
+		 	OMS = {
+				transfer_state = 571
+				571 = { add_core_of = OMS }
+         }
+		 limit = {
+			NOT = { country_exists = oms }
+		 }
+		}
+
+		if = {
+		release_on_controlled = KYR
+		set_autonomy = {
+				target = KYR
+				autonomy_state = autonomy_dominion
+	}
+		set_autonomy = {
+				target = KYR
+				autonomy_state = autonomy_free
+			}
+			limit = {
+				NOT = { country_exists = kyr }
+			}
+		}
+
+		if = {
+		release_on_controlled = TAJ
+		set_autonomy = {
+				target = TAJ
+				autonomy_state = autonomy_dominion
+	}
+		set_autonomy = {
+				target = TAJ
+				autonomy_state = autonomy_free
+			}
+			limit = {
+				NOT = { country_exists = taj }
+			}
+		}
+
+		if = {
+		KOM = {
+				transfer_state = 400
+				transfer_state = 399
+				transfer_state = 398
+				262 = { remove_core_of = KOM }
+				581 = { remove_core_of = KOM }
+				397 = { remove_core_of = KOM }
+				400 = { add_core_of = KOM }
+				399 = { add_core_of = KOM }
+				398 = { add_core_of = KOM }
+         }
+		 limit = {
+			NOT = { country_exists = kom }
+		 }
+		}
+
+		if = {
+		release_on_controlled = UZB
+		UZB = {
+		add_popularity = { ideology = communism popularity = 0.5 }
+		set_politics = { ruling_party = communism }
+		}
+			limit = {
+				NOT = { country_exists = uzb }
+			}
+		}
+
+		if = {
+		release_on_controlled = TMS
+		TMS = {
+		add_popularity = { ideology = communism popularity = 0.5 }
+		set_politics = { ruling_party = communism }
+		}
+			limit = {
+				NOT = { country_exists = tms }
+			}
+		}
+
+		if = {
+  		release_on_controlled = KAZ
+		KAZ = {
+		add_popularity = { ideology = communism popularity = 0.5 }
+		set_politics = { ruling_party = communism }
+		}
+			limit = {
+				NOT = { country_exists = kaz }
+			}
+		}
+
+		if = {
+			FER = {
+			transfer_state = 561
+			transfer_state = 560
+			transfer_state = 657
+			transfer_state = 409
+			transfer_state = 408
+			transfer_state = 655
+			}
+			limit = {
+				NOT = { country_exists = fer }
+			}
+		}
+
+
+			set_rule = { 	can_create_factions = no
+							can_send_volunteers = no 
+						}
+	}
+  }
+}
+
+country_event = { #与苏和解
+	id = WR_SOV.114514 #事件
+	title = WR_SOV.114514#名字
+	desc = WR_SOV.114514_desc #简介
+	picture = GFX_ADGAY #封面
+	
+	
+	trigger = { 
+		TAG = ABC
+		has_idea = ABCAnarchy
+		has_cosmetic_tag = AnarchyRUSguo
+			}
+     #弹出条件
+
+	fire_only_once = yes #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	
+	option = {
+		name = WhatTheFuck
+		custom_effect_tooltip = NOITHING
+		remove_ideas = ABCAnarchy
+	}
+}
+
+country_event = { #与苏和解
+	id = WR_SOV.2 #事件
+	title = WR_SOV.2 #名字
+	desc = WR_SOV.2_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+		TAG = SOV
+		
+    } #弹出条件
+
+	fire_only_once = yes #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	
+	option = {
+		name = ohno #与苏联和平
+		add_stability = -0.15
+		ABC = {
+		transfer_state = 583 
+		transfer_state = 882 
+		transfer_state = 588 
+		transfer_state = 407 
+		transfer_state = 406 
+		transfer_state = 587 
+		transfer_state = 402 
+		transfer_state = 404 
+		transfer_state = 586 
+		transfer_state = 589 
+		transfer_state = 881 
+		transfer_state = 590
+		transfer_state = 732
+		transfer_state = 742
+		transfer_state = 405
+		transfer_state = 830
+		transfer_state = 585
+		transfer_state = 823
+		transfer_state = 831
+		transfer_state = 584
+		transfer_state = 832
+		}
+	}
+}
+
+country_event = { #与苏和解
+	id = WR_SOV.3 #事件
+	title = WR_SOV.3 #名字
+	desc = WR_SOV.3_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+		TAG = SOV
+    } #弹出条件
+
+	fire_only_once = yes #是不是只有一次
+
+	is_triggered_only = yes #仅供调出
+	
+	option = {
+		name = ohno #与苏联和平
+		add_stability = -0.15
+		ABC = {
+		transfer_state = 876
+		transfer_state = 877
+		transfer_state = 644
+		transfer_state = 822
+		transfer_state = 875
+		transfer_state = 874
+		transfer_state = 637
+		transfer_state = 562
+		transfer_state = 575
+		transfer_state = 574
+		transfer_state = 565
+		transfer_state = 563
+		transfer_state = 564 
+		transfer_state = 566 
+		transfer_state = 408
+		transfer_state = 409
+		transfer_state = 560
+		transfer_state = 657
+		transfer_state = 561
+		transfer_state = 655
+		}
+	}
+}
+
+country_event = { #与苏和解
+	id = WR_SOV.4 #事件
+	title = WR_SOV.4 #名字
+	desc = WR_SOV.4_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+		TAG = SOV
+    } #弹出条件
+
+	fire_only_once = yes #是不是只有一次
+
+	is_triggered_only = yes #仅供调出
+	
+	option = {
+		name = ohno #与苏联和平
+		add_stability = -0.15
+		ABC = {
+		transfer_state = 570
+		transfer_state = 40
+		transfer_state = 569
+		transfer_state = 654
+		transfer_state = 568
+		transfer_state = 567
+		transfer_state = 576
+		transfer_state = 577
+		transfer_state = 578
+		transfer_state = 824
+		transfer_state = 516
+		transfer_state = 878
+		transfer_state = 329
+		}
+	}
+}
+
+
+country_event = { #与苏和解
+	id = WR_SOV.5 #事件
+	title = WR_SOV.5 #名字
+	desc = WR_SOV.5_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+		TAG = SOV
+    } #弹出条件
+
+	fire_only_once = yes #是不是只有一次
+
+	is_triggered_only = yes #仅供调出
+	
+	option = {
+		name = ohshit
+		load_focus_tree = WRGCS
+		hidden_effect = {
+		remove_ideas = SOV_soviet_japanese_reckoning
+		remove_ideas = SOV_face_western_fascism_ns
+		remove_ideas = SOV_socialist_emulation_2_ns
+		remove_ideas = SOV_collectivist_propaganda_ns
+		remove_ideas = SOV_mine_warfare_ns
+		remove_ideas = home_of_revolution
+		}
+		complete_national_focus = SOV_WeiGuoZhanZhengCanBai
+		add_ideas = WeiGuoZhanZhengCanBai
+		set_power_balance = {
+			id = SOV_example_balance
+		}
+		add_power_balance_value = {
+		id = SOV_example_balance
+			value = 0.7
+		}
+	}
+}

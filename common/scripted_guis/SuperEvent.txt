@@ -1,0 +1,31 @@
+scripted_gui = {
+
+    SuperEvent_gui = {
+
+        context_type = player_context
+
+        window_name = "SuperEvent_guis"
+
+        ai_enabled = {
+			always = no
+		}
+                
+        visible = {
+            
+            has_country_flag = SuperEventDingDingmod #flag出现时跟着出现
+
+        }
+        
+        effects = {
+
+        SuperEventDingDingmod_button_click = { 
+           clr_country_flag = SuperEventDingDingmod #点击按钮后移除flag，使得超事件消失
+        }
+
+        off_button_click = { 
+            clr_country_flag = SuperEventDingDingmod
+         }
+
+		}
+	}
+}  

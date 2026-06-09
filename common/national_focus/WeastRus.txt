@@ -1,0 +1,727 @@
+﻿focus_tree = {
+	id = WRGCS
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	default = no
+	focus = {
+		id = SOV_WeiGuoZhanZhengCanBai #卫国战争的惨败
+		icon = GFX_WeiGuoZhanZhengCanBai
+		cost = 0.00
+		x = 20
+		y = 1
+		completion_reward = {	
+			custom_effect_tooltip = TNOshishi
+		}
+	}
+	focus = {
+		id = SOV_Emergency_measures #紧急措施
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_WeiGuoZhanZhengCanBai
+		}
+		mutually_exclusive = {
+			focus = SOV_Solidify_Your_Foundation
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+
+			add_war_support = 0.05
+			
+		}
+	}
+	focus = {
+		id = SOV_Dealing_with_Blitzkrieg #应对闪电战
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Emergency_measures #紧急措施
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Wartime_capital #战时首都
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Emergency_measures
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = SOV_War_Communism #战时共产主义
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Emergency_measures
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Open_up_a_battle_situation #开辟战局
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Dealing_with_Blitzkrieg
+		}
+		prerequisite = {
+			focus = SOV_Wartime_capital
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Solidify_Your_Foundation #巩固基础
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_WeiGuoZhanZhengCanBai
+		}
+		mutually_exclusive = {
+			focus = SOV_Emergency_measures
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = SOV_Reorganize_the_administrative_center #重组行政中心
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Solidify_Your_Foundation
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Contact_the_guerrilla_forces #联系游击队
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Reorganize_the_administrative_center
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = SOV_battlefield_behind_enemy_lines #敌后战场
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Open_up_a_battle_situation
+			focus = SOV_Contact_the_guerrilla_forces
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = SOV_Intelligence_warfare #情报战争
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Reorganize_the_administrative_center
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Underground_battlefield #地下战场
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Open_up_a_battle_situation
+			focus = SOV_Intelligence_warfare
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = SOV_Expand_the_Ministry_of_Internal_Affairs #扩大内务部
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_battlefield_behind_enemy_lines
+			focus = SOV_Underground_battlefield
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = SOV_Airdrop_agents #空投特工
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Expand_the_Ministry_of_Internal_Affairs
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = SOV_Maintain_the_Central_Committee_of_the_Party #维护党中央
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Solidify_Your_Foundation
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Convene_the_overseas_Russian_population #召集海外俄裔人口
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Reorganize_the_administrative_center
+		}
+		prerequisite = {
+			focus = SOV_Maintain_the_Central_Committee_of_the_Party
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Food_imports #进口粮食
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Maintain_the_Central_Committee_of_the_Party
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Domestic_battlefield #国内战场
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Convene_the_overseas_Russian_population
+			focus = SOV_Open_up_a_battle_situation
+			focus = SOV_Food_imports
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = SOV_The_enemy_is_cunning_dont_talk_too_much #敌人狡诈，不要多嘴
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Underground_battlefield
+			focus = SOV_Domestic_battlefield
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = SOV_The_legacy_of_industrial_planning #工业计划的遗产
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Domestic_battlefield
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = SOV_Consolidate_the_border_areas #巩固边疆
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Domestic_battlefield
+		}
+		mutually_exclusive = {
+			focus = SOV_Bow_down_to_ethnic_minorities
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = SOV_Bow_down_to_ethnic_minorities #向少数民族低头
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Domestic_battlefield
+		}
+		mutually_exclusive = {
+			focus = SOV_Consolidate_the_border_areas
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = SOV_unite_as_one #团结一致
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Consolidate_the_border_areas
+			focus = SOV_Bow_down_to_ethnic_minorities
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = SOV_Reform_the_Red_Army #改革红军
+		icon = GFX_SOV_strengthen_the_mobilization_plan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_WeiGuoZhanZhengCanBai
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = SOV_Expand_the_scope_of_service #扩大服役范围
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Reform_the_Red_Army
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = SOV_fight_in_coordination #协同作战
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Expand_the_scope_of_service
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Street_Smarts #实战经验
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Reform_the_Red_Army
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Fight_against_the_cold_winter #对抗寒冬
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Street_Smarts
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Optimize_supply_transportation #优化补给运输
+		icon = GFX_focus_SOV_the_road_of_life
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Fight_against_the_cold_winter
+		}
+		prerequisite = {
+			focus = SOV_fight_in_coordination
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = SOV_Dealing_with_the_terrifying_bombing #应对骇人轰炸
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Reform_the_Red_Army
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Enemy_Of_The_Enemy #敌人的敌人？
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_WeiGuoZhanZhengCanBai
+		}
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = SOV_Crossing_the_strait #跨越海峡
+		icon = GFX_focus_generic_befriend_usa
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Enemy_Of_The_Enemy
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Obtain_the_Lend_Lease_Act #获取租借法案
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Crossing_the_strait
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Soviet_American_Military_Cooperation #苏美军事合作
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Crossing_the_strait
+			focus = SOV_Street_Smarts
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = SOV_Open_the_route #打开航线
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Soviet_American_Military_Cooperation
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = SOV_First_hand_intelligence #一手情报
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Soviet_American_Military_Cooperation
+		}
+		x = 29
+		y = 6
+
+	}
+	focus = {
+		id = SOV_Let_go_of_past_grievances #摈弃前嫌
+		icon = GFX_SOV_japanese_overtures_ccp_2d_sov_compatibility_shine
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Enemy_Of_The_Enemy
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Expand_Far_Eastern_seaports #扩大远东海港
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Crossing_the_strait
+			focus = SOV_Let_go_of_past_grievances
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = {
+		id = SOV_Expand_the_Non_Aggression_Pact #扩大互不侵犯条约
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Let_go_of_past_grievances
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = SOV_Treat_each_other_sincerely #真心相待
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Expand_the_Non_Aggression_Pact
+		}
+		mutually_exclusive = {
+			focus = SOV_have_a_backup_plan
+		}
+		x = 35
+		y = 6
+
+	}
+	focus = {
+		id = SOV_Soviet_Japanese_Alliance #苏日同盟
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Treat_each_other_sincerely
+		}
+		x = 35
+		y = 7
+
+	}
+	focus = {
+		id = SOV_Carve_up_China #瓜分中国
+		icon = GFX_focus_usa_focus_on_asia
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Soviet_Japanese_Alliance
+		}
+		x = 35
+		y = 8
+
+	}
+	focus = {
+		id = SOV_Divide_trade_zones #划分贸易区
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Expand_Far_Eastern_seaports
+		}
+		x = 32
+		y = 5
+
+	}
+	focus = {
+		id = SOV_Ice_breaking_operation #破冰行动
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Open_the_route
+		}
+		x = 27
+		y = 7
+
+	}
+	focus = {
+		id = SOV_have_a_backup_plan #两手准备
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Expand_the_Non_Aggression_Pact
+		}
+		mutually_exclusive = {
+			focus = SOV_Treat_each_other_sincerely
+		}
+		x = 33
+		y = 6
+
+	}
+	focus = {
+		id = SOV_Join_the_war_against_Japan #加入对日作战
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_have_a_backup_plan
+		}
+		prerequisite = {
+			focus = SOV_First_hand_intelligence
+		}
+		x = 33
+		y = 7
+
+	}
+	focus = {
+		id = SOV_get_support #获得支持
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Treat_each_other_sincerely
+			focus = SOV_have_a_backup_plan
+			focus = SOV_First_hand_intelligence
+		}
+		x = 31
+		y = 8
+
+	}
+	focus = {
+		id = SOV_Shadow_Command_Center #影子指挥部
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_battlefield_behind_enemy_lines 
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = SOV_using_the_rural_areas_to_encircle_the_cities #农村包围城市
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Shadow_Command_Center
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = SOV_Establishment_of_KGB #成立克格勃
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Expand_the_Ministry_of_Internal_Affairs 
+		}
+		prerequisite = {
+			focus = SOV_The_enemy_is_cunning_dont_talk_too_much
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = SOV_Tank_City #坦克城
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_The_legacy_of_industrial_planning 
+		}
+		x = 16
+		y = 7
+
+	}
+	focus = {
+		id = SOV_The_Roar_of_Siberia #西伯利亚的咆哮
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_The_legacy_of_industrial_planning 
+		}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = SOV_call_for_united_efforts_to_save_the_nation #共赴国难
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Airdrop_agents
+		}
+		prerequisite = {
+			focus = SOV_using_the_rural_areas_to_encircle_the_cities
+		}
+		prerequisite = {
+			focus = SOV_unite_as_one 
+		}
+		x = 15
+		y = 8
+
+	}
+	focus = {
+		id = SOV_Give_it_a_shot #放手一搏
+		icon = GFX_focus_generic_spur_communist_revolutions
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_call_for_united_efforts_to_save_the_nation 
+			focus = SOV_at_one_fling 
+		}
+		x = 15
+		y = 9
+
+	}
+	focus = {
+		id = SOV_Announcement_of_Alliance_Reconstruction #宣布联盟重建
+		icon = GFX_SOV_left_opposition_coup_ccp_2d_sov_compatibility_shine
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Flash_attack 
+			focus = SOV_The_lifeline_of_the_Red_Army 
+			focus = SOV_Summon_guerrilla_forces 
+		}
+		x = 15
+		y = 11
+
+	}
+	focus = {
+		id = SOV_Summon_guerrilla_forces #召集游击队
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Give_it_a_shot
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = SOV_Flash_attack #闪击攻势
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Give_it_a_shot
+		}
+		x = 15
+		y = 10
+
+	}
+	focus = {
+		id = SOV_The_lifeline_of_the_Red_Army #红军生命线
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Give_it_a_shot
+		}
+		x = 17
+		y = 10
+
+	}
+	focus = {
+		id = SOV_northern_sea_route #北方航线
+		icon = GFX_focus_SOV_transpolar_flights
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_Ice_breaking_operation 
+		}
+		x = 27
+		y = 8
+
+	}
+	focus = {
+		id = SOV_at_one_fling #一鼓作气
+		icon = GFX_OMS_focus_dashenpan
+		cost = 0.00
+		prerequisite = {
+			focus = SOV_northern_sea_route
+		}
+		x = 27
+		y = 9
+
+	}
+}

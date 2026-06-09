@@ -1,0 +1,114 @@
+SOV_example_balance = {
+		initial_value = 1
+		left_side = FIN_good_side
+		right_side = FIN_bad_side
+		decision_category = SOV_example_balance
+		range = {
+			id = mid_range
+			min = -0.1
+			max = 0.1
+			modifier = {
+				 
+			}
+		}
+
+		range = {
+			id = left_range
+			min = -1
+			max = -0.9
+			modifier = {
+				
+			}
+		}
+
+		range = {
+			id = right_min_range
+			min = 0.1
+			max = 0.5
+			modifier = {
+				
+			}
+		}
+
+		range = {
+			id = right_min_min_range
+			min = 0.5
+			max = 0.9
+			modifier = {
+				
+			}
+		}
+
+		range = {
+			id = left_min_range
+			min = -0.5
+			max = -0.1
+			modifier = {
+				
+			}
+		}
+
+		range = {
+			id = left_min_min_range
+			min = -0.9
+			max = -0.5
+			modifier = {
+				
+			}
+		}
+
+		range = {
+			id = right_range
+			min = 0.9
+			max = 1
+			modifier = {
+			}
+			on_activate = { 
+				add_ideas = SOVBOOM
+				country_event = { id = WR_SOV.1991 }
+			 }
+		}
+
+	side = {
+		id = GFX_idea_VictoryOfGermania
+		icon = GFX_idea_generic_agrarian_society
+		range = {
+			id = left_range
+			min = -1
+			max = -0.9
+			modifier = {
+			war_support_weekly = 0.1
+			}
+			on_activate = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = { is_core_of = PREV }
+					}
+					add_core_of = PREV
+					set_state_flag = cored_by_bop
+				}
+			}
+			on_deactivate = {
+			random_owned_controlled_state = {
+					limit = {
+						has_state_flag = cored_by_bop
+					}
+					remove_core_of = PREV
+					clr_state_flag = cored_by_bop
+				}
+			}
+		}
+	}
+		side = {
+			id = SOV_right_side
+			icon = GFX_idea_VictoryOfGermania
+			range = {
+			id = right_range
+			min = 0.9
+			max = 1
+			modifier = {
+			war_support_weekly = 0.9
+			}
+		}
+	}
+}

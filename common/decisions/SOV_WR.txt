@@ -1,0 +1,95 @@
+SOV_WR1 = {
+		WRZZDJS = {
+			icon = no
+			is_good = no
+			days_mission_timeout = 400
+			activation = {
+				TAG = SOV
+				has_war_with = GER
+				has_global_flag = GER_win_the_WW2
+			}
+
+			available = {
+				TAG = SOV
+				has_full_control_of_state = 195
+				has_full_control_of_state = 219
+				has_full_control_of_state = 217
+			}
+			
+			timeout_effect = {
+				add_ideas = SOVBOOM
+				white_peace = GER
+				hidden_effect = {
+				annex_country = {
+					target = ABC
+				}
+				ABC = { transfer_state = 985 }
+			}
+				country_event = {  id = WR_SOV.1991 }
+			}
+
+		}
+	}	
+
+	SOV_example_balance = {
+		DangNeiFenLie = {
+			priority = 100
+			icon = no
+			is_good = no
+			days_mission_timeout = 7
+			fire_only_once = no
+			available = {
+				always = no
+			}
+			timeout_effect = {
+				add_power_balance_value = {
+					id = SOV_example_balance
+					value = 0.01
+				}
+		}
+	}
+
+		XiangZuo = {
+			priority = 98
+			icon = no
+			fire_only_once = no
+			visible = {
+				is_debug = yes
+			}
+			available = {
+				custom_trigger_tooltip = {
+				tooltip = is_debug_mode
+				is_debug = yes
+				}
+			}
+			complete_effect = {
+				add_power_balance_value = {
+				id = SOV_example_balance
+					value = 0.1
+				}
+		}
+	}
+
+		XiangYou = {
+			priority = 98
+			visible = {
+				is_debug = yes
+			}
+			available = {
+				custom_trigger_tooltip = {
+				tooltip = is_debug_mode
+				is_debug = yes
+				}
+			}
+			icon = no
+			fire_only_once = no
+			complete_effect = {
+				add_power_balance_value = {
+				id = SOV_example_balance
+					value = -0.1
+				}
+		}
+	}	
+
+}
+

@@ -1,0 +1,139 @@
+ideas = {
+
+	country = {
+
+		World_Capital_Germania = {
+			
+			picture = nope
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.05 #每周稳定度
+				war_support_weekly = 0.02 #周战争支持度
+				command_power_gain = 0.008 #每日指挥点数
+	 		}
+			
+		}
+
+		Financial_Burden1 = {
+			
+			picture = nope
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.15 #生活消费品
+				industrial_capacity_factory = -0.05 #工厂产出
+				army_infantry_attack_factor = -0.25 #步兵攻击
+	 		}
+			
+		}
+
+		Financial_Burden2 = {
+			
+			picture = nope
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.30 #生活消费品
+				industrial_capacity_factory = -0.1 #工厂产出
+				army_infantry_attack_factor = -0.25 #步兵攻击
+	 		}
+			
+		}
+
+		Financial_Burden3 = {
+			
+			picture = nope
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.45 #生活消费品
+				industrial_capacity_factory = -0.15 #工厂产出
+				army_infantry_attack_factor = -0.25 #步兵攻击
+	 		}
+			
+		}
+
+		Financial_Burden4 = {
+			
+			picture = nope
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.60 #生活消费品
+				industrial_capacity_factory = -0.25 #工厂产出
+				army_infantry_attack_factor = -0.25 #步兵攻击
+	 		}
+			
+		}
+
+		Financial_Burden = {
+			
+			picture = nope
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.75 #生活消费品
+				industrial_capacity_factory = -0.3 #工厂产出
+				army_infantry_attack_factor = -0.25 #步兵攻击
+	 		}
+			
+		}
+
+	}
+
+}

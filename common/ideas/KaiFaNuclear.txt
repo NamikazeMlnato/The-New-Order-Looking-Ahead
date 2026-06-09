@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+		KaiFaNuclear = {
+			
+			picture = nope
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			consumer_goods_factor = 0.2
+	 		}
+
+		}
+	}
+
+}

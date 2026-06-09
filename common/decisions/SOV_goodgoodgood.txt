@@ -1,0 +1,717 @@
+ WR_debug = {
+	
+	 sov = { 
+		 cost = 0
+		
+		 days_remove = 0
+		
+		 fire_only_once = no
+
+		 icon = generic_industry
+		 allowed = { 
+		 }
+		 available = {
+			SOV = { has_idea = WeiGuoZhanZhengCanBai } 
+		}#前提
+		 complete_effect = {  
+			SOV = {
+			transfer_state = 214
+			transfer_state = 880
+			transfer_state = 879
+			transfer_state = 256
+			transfer_state = 251
+			transfer_state = 250
+			add_ideas = SOVBOOM
+			country_event = {  id = WR_SOV.1991 }
+		  }
+		  }
+  }
+
+	GERNOFENDOU = { 
+		cost = 0
+   
+		days_remove = 0
+   
+		fire_only_once = no
+
+		icon = generic_industry
+		allowed = { 
+		}
+		available = {
+
+		}#前提
+		complete_effect = {  
+			GER = {	85 = { set_demilitarized_zone = no }
+					51 = { set_demilitarized_zone = no }
+					42 = { set_demilitarized_zone = no }
+					978 = { set_demilitarized_zone = no }
+					848 = { add_core_of = GER }
+					153 = { add_core_of = GER }
+					152 = { add_core_of = GER }
+					4 = { add_core_of = GER }
+					102 = { add_core_of = GER }
+					853 = { add_core_of = GER }
+					69 = { add_core_of = GER }
+					9 = { add_core_of = GER }
+					74 = { add_core_of = GER }
+					75 = { add_core_of = GER }
+					72 = { add_core_of = GER }
+					912 = { add_core_of = GER }
+					8 = { add_core_of = GER }
+					28 = { add_core_of = GER }
+					85 = { add_core_of = GER }
+					807 = { add_core_of = GER }
+					86 = { add_core_of = GER }
+					87 = { add_core_of = GER }
+					98 = { add_core_of = GER }
+					97 = { add_core_of = GER }
+					762 = { add_core_of = GER }
+					188 = { add_core_of = GER }
+					972 = { add_core_of = GER }
+					976 = { add_core_of = GER }
+					975 = { add_core_of = GER }
+					transfer_state = 85
+					transfer_state = 51
+					transfer_state = 42
+					transfer_state = 848
+					transfer_state = 153
+					transfer_state = 152
+					transfer_state = 4
+					transfer_state = 102
+					transfer_state = 853
+					transfer_state = 69
+					transfer_state = 9
+					transfer_state = 74
+					transfer_state = 75
+					transfer_state = 72
+					transfer_state = 912
+					transfer_state = 8
+					transfer_state = 28
+					transfer_state = 85
+					transfer_state = 807
+					transfer_state = 86
+					transfer_state = 87
+					transfer_state = 98
+					transfer_state = 97
+					transfer_state = 762
+					transfer_state = 188
+					transfer_state = 972
+					transfer_state = 976
+					transfer_state = 975
+					transfer_state = 1018
+		 }
+	 }
+	}
+
+
+	GER_WIN_WW2 = {
+
+		icon = generic_industry
+
+		complete_effect = { 
+			set_global_flag = GER_win_the_WW2
+			custom_effect_tooltip = OpenHeTanEvent
+			set_global_flag = FRA_TOU_XIANG
+			set_global_flag = ENG_TOU_XIANG
+				FRA = {
+					set_cosmetic_tag = FRA_FREE
+					custom_effect_tooltip = FRARUNAFR
+				}
+
+				ENG = {
+					set_cosmetic_tag = CAN_UK
+					custom_effect_tooltip = ENGRUNCAN
+					hidden_effect = {
+					annex_country = { target = CAN transfer_troops = yes }
+					set_autonomy = {
+						target = CAN
+						autonomy_state = autonomy_free
+					}
+					864 = { add_core_of = eng }
+					472 = { add_core_of = eng }
+					683 = { add_core_of = eng }
+					471 = { add_core_of = eng }
+					470 = { add_core_of = eng }
+					865 = { add_core_of = eng }
+					867 = { add_core_of = eng }
+					866 = { add_core_of = eng }
+					682 = { add_core_of = eng }
+					467 = { add_core_of = eng }
+					469 = { add_core_of = eng }
+					473 = { add_core_of = eng }
+					740 = { add_core_of = eng }
+					739 = { add_core_of = eng }
+					276 = { add_core_of = eng }
+					862 = { add_core_of = eng }
+					466 = { add_core_of = eng }
+					468 = { add_core_of = eng }
+					863 = { add_core_of = eng }
+					861 = { add_core_of = eng }
+					332 = { add_core_of = eng }
+					860 = { add_core_of = eng }
+					465 = { add_core_of = eng }
+					464 = { add_core_of = eng }
+					331 = { add_core_of = eng }
+					119 = { remove_core_of = eng }
+					933 = { remove_core_of = eng }
+					120 = { remove_core_of = eng }
+					136 = { remove_core_of = eng }
+					121 = { remove_core_of = eng }
+					133 = { remove_core_of = eng }
+					931 = { remove_core_of = eng }
+					131 = { remove_core_of = eng }
+					130 = { remove_core_of = eng }
+					132 = { remove_core_of = eng }
+					122 = { remove_core_of = eng }
+					128 = { remove_core_of = eng }
+					129 = { remove_core_of = eng }
+					125 = { remove_core_of = eng }
+					126 = { remove_core_of = eng }
+					338 = { remove_core_of = eng }
+					127 = { remove_core_of = eng }
+					123 = { remove_core_of = eng }
+					}
+				}
+				
+			}
+	}
+
+	JAPNOFENDOU = {
+		icon = generic_industry
+		complete_effect = { 
+			JAP = {
+			set_autonomy = {
+			target = TAI
+			autonomy_state = autonomy_puppet
+			}
+			transfer_state = 655
+			655  = { add_core_of = JAP }
+		}
+			TAI = {
+				transfer_state = 608
+				transfer_state = 600
+				transfer_state = 595
+				transfer_state = 614
+				transfer_state = 597
+				transfer_state = 743
+				transfer_state = 607
+				transfer_state = 598
+				transfer_state = 606
+				transfer_state = 613
+				transfer_state = 596
+				transfer_state = 749
+				transfer_state = 620
+				transfer_state = 750
+				transfer_state = 602
+				608 = { add_core_of = TAI }
+				600 = { add_core_of = TAI }
+				595 = { add_core_of = TAI }
+				614 = { add_core_of = TAI }
+				597 = { add_core_of = TAI }
+				743 = { add_core_of = TAI }
+				607 = { add_core_of = TAI }
+				598 = { add_core_of = TAI }
+				606 = { add_core_of = TAI }
+				613 = { add_core_of = TAI }
+				596 = { add_core_of = TAI }
+				749 = { add_core_of = TAI }
+				620 = { add_core_of = TAI }
+				750 = { add_core_of = TAI }
+				602 = { add_core_of = TAI }
+				524 = { remove_core_of = TAI }
+				add_popularity = { ideology = fascism popularity = 1 }
+				set_politics = { ruling_party = fascism }
+				create_country_leader = {
+				name = "汪精卫"
+				picture = "gfx/leaders/CHI/portrait_chi_wang_jingwei.dds"
+				expire = "1945.1.1"
+				ideology = fascism_ideology
+				}
+			}
+
+			TIB = {
+				transfer_state = 604
+				604 = { add_core_of = TIB }
+			}
+
+			CHI = {
+				set_cosmetic_tag = CHI_ChongQing_KMT
+			}
+
+			PRC = {
+				set_cosmetic_tag = CPC
+				transfer_state = 744
+				transfer_state = 746
+				transfer_state = 616
+				transfer_state = 283
+				transfer_state = 754
+				transfer_state = 755
+				transfer_state = 756
+			}
+
+			MAN = {
+				transfer_state = 561
+				transfer_state = 657
+				transfer_state = 560
+				transfer_state = 409
+				transfer_state = 408
+				408 = { set_state_name = haishenwai }
+				409 = { set_state_name = boli }
+				561 = { set_state_name = waixingan }
+				560 = { set_state_name = miaojie }
+				657 = { set_state_name = hailanpao }
+				set_province_name = { id = 957 name = "haishenwai"}
+				set_province_name = { id = 12189 name = "boli"}
+				set_province_name = { id = 4725 name = "hailanpao"}
+				set_province_name = { id = 6989 name = "shuangchengzi"}
+				set_province_name = { id = 12559 name = "miaojie"}
+				408 = {add_core_of = MAN}
+				409 = {add_core_of = MAN}
+				561 = {add_core_of = MAN}
+				560 = {add_core_of = MAN}
+				657 = {add_core_of = MAN}
+				set_cosmetic_tag = bigger_man
+				}
+
+				MEN = {
+					621 = {add_core_of = MAN}
+					transfer_state = 621
+				}
+
+				YUN = {
+					set_cosmetic_tag = YUNSheng
+				}
+
+				YUE = {
+					add_popularity = { ideology = fascism popularity = 1 }
+					set_politics = { ruling_party = fascism }
+					729 = {add_core_of = YUE }
+					326 = {add_core_of = YUE }
+					transfer_state = 593
+					transfer_state = 592
+					transfer_state = 326
+					transfer_state = 729
+					transfer_state = 1021
+					transfer_state = 728
+					transfer_state = 591
+					set_cosmetic_tag = KANTONG
+				}
+
+				GXC = {
+					add_popularity = { ideology = fascism popularity = 1 }
+					set_politics = { ruling_party = fascism }
+					set_cosmetic_tag = GXCSheng
+				}
+
+				JAN = {
+					621 = {add_core_of = JAN }
+					621 = {add_core_of = JAN }
+					transfer_state = 748
+					transfer_state = 603
+					set_cosmetic_tag = GUISheng
+				}
+
+		}
+	}
+
+	ITANOFENDOU = {
+		icon = generic_industry
+		complete_effect = { 
+			ITA = {
+				set_autonomy = {
+				target = CRO
+				autonomy_state = autonomy_puppet
+				}
+				set_autonomy = {
+				target = SER
+				autonomy_state = autonomy_puppet
+				}
+				set_autonomy = {
+				target = MNT
+				autonomy_state = autonomy_puppet
+				}
+				transfer_state = 735
+				transfer_state = 934
+				transfer_state = 44
+				transfer_state = 805
+				735 = { add_core_of = ITA }
+				934 = { add_core_of = ITA }
+				44 = { add_core_of = ITA }
+				805 = { add_core_of = ITA }
+			}
+			CRO = {
+				transfer_state = 109
+				transfer_state = 104
+				transfer_state = 804
+				transfer_state = 103
+				transfer_state = 163
+				804 = { add_core_of = CRO }
+				104 = { add_core_of = CRO }
+			}
+
+			SER ={
+				transfer_state = 764
+				transfer_state = 107
+				transfer_state = 108
+				transfer_state = 802
+			}
+
+			MNT ={
+				transfer_state = 105
+			}
+
+		}
+	}
+
+	ALLTYCDQ = { 
+		cost = 0
+   
+		days_remove = 0
+   
+		fire_only_once = no
+
+		icon = generic_industry
+		available = { 
+			OR = {
+				tag = SOV
+				tag = KOM
+				tag = WLL
+				tag = YLA
+				tag = IUR
+				tag = ONG
+				tag = VOR
+				tag = GAY
+				tag = WLR
+				tag = TYM
+				tag = OMS
+				tag = YGR
+				tag = TOM
+				tag = NXB
+				tag = SBA
+				tag = TAN
+				tag = YKT
+				tag = BRY
+				tag = WBJ
+				tag = MGD
+				tag = KMC
+				tag = FER
+				tag = ABC
+			}
+		}
+		available = {
+
+		}#前提
+		complete_effect = {  
+			add_ideas = WRCDQ
+			add_ideas = WXBLYCDQ
+			add_ideas = TYCDQJD1
+			add_ideas = MXBLYCDQ
+			add_ideas = YDCDQ
+			add_ideas = TYCDQJD2
+			add_ideas = TYRUS
+		 }
+	}
+
+	TYWRDEBUG = { 
+		cost = 0
+   
+		days_remove = 0
+   
+		fire_only_once = no
+
+		icon = generic_industry
+		available = { 
+			OR = {
+				tag = SOV
+				tag = KOM
+				tag = WLL
+				tag = YLA
+				tag = IUR
+				tag = ONG
+				tag = VOR
+				tag = GAY
+				tag = WLR
+				tag = TYM
+				tag = OMS
+				tag = YGR
+				tag = TOM
+				tag = NXB
+				tag = SBA
+				tag = TAN
+				tag = YKT
+				tag = BRY
+				tag = WBJ
+				tag = MGD
+				tag = KMC
+				tag = FER
+				tag = ABC
+			}
+		}
+		available = {
+
+		}#前提
+		complete_effect = { 
+			annex_country = { target = SOV transfer_troops = yes }
+			annex_country = { target = ONG transfer_troops = yes }
+			annex_country = { target = KOM transfer_troops = yes }
+			annex_country = { target = WLL transfer_troops = yes }
+			annex_country = { target = YLA transfer_troops = yes }
+			annex_country = { target = IUR transfer_troops = yes }
+		}
+	}
+
+	TYWXBLDEBUG = { 
+		cost = 0
+   
+		days_remove = 0
+   
+		fire_only_once = no
+
+		icon = generic_industry
+		available = { 
+			OR = {
+				tag = SOV
+				tag = KOM
+				tag = WLL
+				tag = YLA
+				tag = IUR
+				tag = ONG
+				tag = VOR
+				tag = GAY
+				tag = WLR
+				tag = TYM
+				tag = OMS
+				tag = YGR
+				tag = TOM
+				tag = NXB
+				tag = SBA
+				tag = TAN
+				tag = YKT
+				tag = BRY
+				tag = WBJ
+				tag = MGD
+				tag = KMC
+				tag = FER
+				tag = ABC
+			}
+		}
+		available = {
+
+		}#前提
+		complete_effect = { 
+			annex_country = { target = VOR transfer_troops = yes }
+			annex_country = { target = GAY transfer_troops = yes }
+			annex_country = { target = WLR transfer_troops = yes }
+			annex_country = { target = TYM transfer_troops = yes }
+			annex_country = { target = OMS transfer_troops = yes }
+		}
+	}
+
+	TYMXBLDEBUG = { 
+		cost = 0
+   
+		days_remove = 0
+   
+		fire_only_once = no
+
+		icon = generic_industry
+		available = { 
+			OR = {
+				tag = SOV
+				tag = KOM
+				tag = WLL
+				tag = YLA
+				tag = IUR
+				tag = ONG
+				tag = VOR
+				tag = GAY
+				tag = WLR
+				tag = TYM
+				tag = OMS
+				tag = YGR
+				tag = TOM
+				tag = NXB
+				tag = SBA
+				tag = TAN
+				tag = YKT
+				tag = BRY
+				tag = WBJ
+				tag = MGD
+				tag = KMC
+				tag = FER
+				tag = ABC
+			}
+		}
+		available = {
+
+		}#前提
+		complete_effect = { 
+			annex_country = { target = YGR transfer_troops = yes }
+			annex_country = { target = TOM transfer_troops = yes }
+			annex_country = { target = SBA transfer_troops = yes }
+			annex_country = { target = NXB transfer_troops = yes }
+			annex_country = { target = TAN transfer_troops = yes }
+		}
+	}
+
+	TYYDDEBUG = { 
+		cost = 0
+   
+		days_remove = 0
+   
+		fire_only_once = no
+
+		icon = generic_industry
+		available = { 
+			OR = {
+				tag = SOV
+				tag = KOM
+				tag = WLL
+				tag = YLA
+				tag = IUR
+				tag = ONG
+				tag = VOR
+				tag = GAY
+				tag = WLR
+				tag = TYM
+				tag = OMS
+				tag = YGR
+				tag = TOM
+				tag = NXB
+				tag = SBA
+				tag = TAN
+				tag = YKT
+				tag = BRY
+				tag = WBJ
+				tag = MGD
+				tag = KMC
+				tag = FER
+				tag = ABC
+			}
+		}
+		available = {
+
+		}#前提
+		complete_effect = { 
+			annex_country = { target = YKT transfer_troops = yes }
+			annex_country = { target = BRY transfer_troops = yes }
+			annex_country = { target = WBJ transfer_troops = yes }
+			annex_country = { target = MGD transfer_troops = yes }
+			annex_country = { target = KMC transfer_troops = yes }
+			annex_country = { target = YKT transfer_troops = yes }
+			annex_country = { target = FER transfer_troops = yes }
+		}
+	}
+
+	OPENFLYY = { 
+		cost = 0
+   
+		days_remove = 0
+   
+		fire_only_once = no
+
+		icon = generic_industry
+		allowed = { 
+		}
+		available = {
+			NOT = { has_idea = FengLingYueYing }
+			NOT = { has_idea = FengLingYueYing2 }
+			NOT = { has_idea = FengLingYueYing3 }
+			NOT = { has_idea = FengLingYueYing4 }
+			NOT = { has_idea = FengLingYueYing5 }
+		}#前提
+		complete_effect = { 
+			play_song = "你看到的我"
+			add_ideas = FengLingYueYing
+			add_offsite_building = { type = arms_factory level = 1000 }
+			add_offsite_building = { type = industrial_complex level = 1000 }
+		}
+	}
+
+	OFFFLYY = { 
+		cost = 0
+   
+		days_remove = 0
+   
+		fire_only_once = no
+
+		icon = generic_industry
+		allowed = { 
+		}
+		available = {
+			OR = {
+			has_idea = FengLingYueYing
+			has_idea = FengLingYueYing2
+			has_idea = FengLingYueYing3
+			has_idea = FengLingYueYing4
+			has_idea = FengLingYueYing5
+			}
+		}#前提
+		complete_effect = { 
+			remove_ideas = FengLingYueYing
+			remove_ideas = FengLingYueYing2
+			remove_ideas = FengLingYueYing3
+			remove_ideas = FengLingYueYing4
+			remove_ideas = FengLingYueYing5
+			add_offsite_building = { type = arms_factory level = -1000 }
+			add_offsite_building = { type = industrial_complex level = -1000 }
+		}
+	}
+
+	YUN_LongYunJiangLing = {
+
+		icon = generic_industry
+
+
+		complete_effect = {
+		YUN = {
+		set_cosmetic_tag = YUN_Help_China
+		load_focus_tree = YUN_huguo
+		add_popularity = { ideology = National_Revengeism popularity = 1 }
+		set_politics = { ruling_party = National_Revengeism }
+		create_country_leader = {
+		name = "龙云 "
+		desc = "天无二日，天佑中华"
+		picture = "gfx/leaders/YUN/Portrait_Yunnan_Long_Yun.dds"
+		expire = "1965.1.1"
+		ideology = Ultramilitarism
+		
+		}
+		remove_ideas = PRC_government_corruption
+		remove_ideas = CHI_ineffective_bureaucracy_warlord
+		load_focus_tree = YUN_huguo
+		}
+	 }
+	}
+
+	BRGComeHere = {
+
+		icon = generic_industry
+
+		complete_effect = {
+
+			BRG = {
+				transfer_state = 6
+				transfer_state = 34
+				transfer_state = 29
+				transfer_state = 785
+				transfer_state = 18
+				transfer_state = 17
+				transfer_state = 977
+				transfer_state = 980
+				set_party_name = { ideology = Burgundian long_name = dangweijun name = 德意志民族社会主义工人党 }
+			}
+
+			6 = { add_core_of = BRG}
+			34 = { add_core_of = BRG}
+			29 = { add_core_of = BRG}
+			785 = { add_core_of = BRG}
+			18 = { add_core_of = BRG}
+			17 = { add_core_of = BRG}
+			980 = { add_core_of = BRG}
+			977 = { add_core_of = BRG}
+
+		}
+	}
+
+}

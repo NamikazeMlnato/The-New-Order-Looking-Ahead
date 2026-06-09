@@ -1,0 +1,37 @@
+﻿focus_tree = {
+	id = OMS
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = OMS
+		}	 
+	}
+	default = no
+
+  focus = {
+	id = OMS_dashenpan #国策ID 
+	icon = GFX_OMS_focus_dashenpan #图标文件
+	available = { #满足什么条件后才能进行这个国策d
+		has_global_flag = RUSZTY
+	}
+	
+	bypass = { #满足什么条件后跳过这个国策d
+	
+	}
+	
+	
+	x = 10 #国策X轴
+	y = 4 #国策Y轴
+	
+	cost = 10 #国策时间，每1点等于7天
+
+	completion_reward = {
+	declare_war_on = { target = GER type = take_state } 
+	add_ideas = DaShenPan
+	play_song = "神圣的战争-大审判"
+	}
+ }
+} 

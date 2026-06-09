@@ -1,0 +1,60 @@
+GER_hejie = {
+	icon = nope
+}
+
+WR_debug = {
+	icon = nope
+	picture = GFX_ADGAY
+	priority = 100
+	visible = { #可见
+		 is_debug = yes
+		 }
+}
+
+SOV_WR1 = {
+	icon = nope
+	picture = GFX_ADGAY
+	priority = 99
+	visible = { #可见
+		Tag = SOV
+		 }
+}
+
+GenShinOVO = {
+	icon = nope
+}
+
+ZZDD = {
+	priority = 98
+	icon = nope
+}
+
+FengLingYueYingkejing = {
+	priority = 98
+
+	picture = GFX_ADGAY
+	
+	visible = {
+		OR = {
+			has_idea = FengLingYueYing
+			has_idea = FengLingYueYing2
+			has_idea = FengLingYueYing3
+			has_idea = FengLingYueYing4
+		}
+	}
+
+	icon = GFX_idea_FengLingYueYing
+}
+
+ABCABCABCABCABCABC = {
+	priority = 9811
+	allowed = {
+		Tag = ABC
+	}
+}
+
+SOV_example_balance = {
+	allowed = {
+		Tag = SOV
+	}
+}

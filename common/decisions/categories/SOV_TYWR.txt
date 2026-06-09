@@ -1,0 +1,33 @@
+TYCDQ = {
+	picture = GFX_decision_cat_picture_TYWR
+	icon = nope
+	allowed = {
+		OR = {
+		tag = SOV
+		tag = KOM
+		tag = WLL
+		tag = YLA
+		tag = IUR
+		tag = ONG
+		tag = VOR
+		tag = GAY
+		tag = WLR
+		tag = TYM
+		tag = OMS
+		tag = YGR
+		tag = TOM
+		tag = NXB
+		tag = SBA
+		tag = TAN
+		tag = YKT
+		tag = BRY
+		tag = WBJ
+		tag = MGD
+		tag = KMC
+		tag = FER
+		tag = ABC
+		}
+	}
+	priority = 100
+	visible_when_empty = no
+}

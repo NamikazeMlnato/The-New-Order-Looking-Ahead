@@ -1,0 +1,114 @@
+guiTypes = {
+	containerWindowType = {
+	name = "ddwelcom_guis" #窗口名称（注意与脚本化gui文件的window_name一致）
+	position = { x = -500 y = -335 } #窗口位置
+	size = { width = 1024 height = 6620 } #窗口的大小
+	orientation= center #窗口定位
+	moveable = yes #能否被鼠标拖动
+	fade_time = 800 #消失时的延迟
+	clipping = yes
+	fade_type = linear #窗口消失时的消失方式（类似做ppt时的动画效果）
+	click_to_front = no #点击后可跳到最前面（类似于图层，哈哈）
+
+		instantTextBoxType = {
+		name = "event_descddd" #窗口名称（最好独一无二）
+		position = { x = 15 y = 110 } #窗口位置
+		font = "hoi_18mbs" #文本窗口内部用什么字体
+		borderSize = {x = 0 y = 0} #文本框的边界框
+		text = "Country_tittle" #文本内容，用此处来进行本地化
+		maxWidth = 650 #文本最大宽度，大于后文字会提行
+		maxHeight = 540 #文本最大高度，大于后字就被挤出去了
+		format = left #对齐方式（这里是左对齐）
+		fixedsize = no
+		scrollbartype = "standardtext_slider"
+	    }
+
+		background = {
+		name = "Background"
+		quadTextureSprite ="GFX_ddmodgamejiem"
+		}
+	
+	#按钮
+	buttonType = {
+		name = GameOpenDingDingmod_button #按钮框名称（注意与effects里面的xstlond_pregnant_OMG_button保持一致）
+		position = { x=970 y =112 } #位置
+		quadTextureSprite ="GFX_crt_closebutton" #按钮元素
+		buttonText = " " #按钮文字
+		buttonFont = "hoi_18mbs" #文字字体
+		pdx_tooltip = "GameOpenDingDingmod_button_pdx"
+	}
+
+	buttonType = {
+		name = Comback_button #按钮框名称（注意与effects里面的xstlond_pregnant_OMG_button保持一致）
+		position = { x=920 y =112} #位置
+		quadTextureSprite ="GFX_production_line_arrow_left1" #按钮元素
+		buttonText = " " #按钮文字
+		buttonFont = "hoi_18mbs" #文字字体
+		pdx_tooltip = "Comback_button_pdx"
+	}
+
+	buttonType = {
+		name = GER_button #按钮框名称（注意与effects里面的xstlond_pregnant_OMG_button保持一致）
+		position = { x=0 y =48} #位置
+		quadTextureSprite ="GFX_GER_button" #按钮元素
+		buttonText = " " #按钮文字
+		buttonFont = "hoi_18mbs" #文字字体
+		pdx_tooltip = "GER_button_pdx"
+	}
+
+	buttonType = {
+		name = JAP_button #按钮框名称（注意与effects里面的xstlond_pregnant_OMG_button保持一致）
+		position = { x=82 y =48} #位置
+		quadTextureSprite ="GFX_JAP_button" #按钮元素
+		buttonText = " " #按钮文字
+		buttonFont = "hoi_18mbs" #文字字体
+		pdx_tooltip = "JAP_button_pdx"
+	}
+
+	buttonType = {
+		name = USA_button #按钮框名称（注意与effects里面的xstlond_pregnant_OMG_button保持一致）
+		position = { x=164 y =48} #位置
+		quadTextureSprite ="GFX_USA_button" #按钮元素
+		buttonText = " " #按钮文字
+		buttonFont = "hoi_18mbs" #文字字体
+		pdx_tooltip = "USA_button_pdx"
+	}
+
+	buttonType = {
+		name = SOV_button #按钮框名称（注意与effects里面的xstlond_pregnant_OMG_button保持一致）
+		position = { x=246  y =48} #位置
+		quadTextureSprite ="GFX_SOV_button" #按钮元素
+		buttonText = " " #按钮文字
+		buttonFont = "hoi_18mbs" #文字字体
+		pdx_tooltip = "SOV_button_pdx"
+	}
+
+	buttonType = {
+		name = CHI_button #按钮框名称（注意与effects里面的xstlond_pregnant_OMG_button保持一致）
+		position = { x=328 y =48} #位置
+		quadTextureSprite ="GFX_CHI_button" #按钮元素
+		buttonText = " " #按钮文字
+		buttonFont = "hoi_18mbs" #文字字体
+		pdx_tooltip = "CHI_button_pdx"
+	}
+
+	buttonType = {
+		name = PRC_button #按钮框名称（注意与effects里面的xstlond_pregnant_OMG_button保持一致）
+		position = { x=410 y =48} #位置
+		quadTextureSprite ="GFX_PRC_button" #按钮元素
+		buttonText = " " #按钮文字
+		buttonFont = "hoi_18mbs" #文字字体
+		pdx_tooltip = "PRC_button_pdx"
+	}
+
+	buttonType = {
+		name = OMS_button #按钮框名称（注意与effects里面的xstlond_pregnant_OMG_button保持一致）
+		position = { x=492 y =48} #位置
+		quadTextureSprite ="GFX_OMS_button" #按钮元素
+		buttonText = " " #按钮文字
+		buttonFont = "hoi_18mbs" #文字字体
+		pdx_tooltip = "OMS_button_pdx"
+	}
+ }
+
+}

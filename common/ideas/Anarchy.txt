@@ -1,0 +1,62 @@
+ideas = {
+
+	country = {
+		ABCAnarchy = {
+			
+			picture = nope
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			ai_focus_aggressive_factor = -100
+			ai_focus_defense_factor = -100
+			ai_call_ally_desire_factor = -1000
+			ai_join_ally_desire_factor = -1000
+			ai_get_ally_desire_factor = -1000
+			ai_focus_naval_factor = -100
+			ai_focus_naval_air_factor = -100
+			ai_focus_aviation_factor = -100
+			justify_war_goal_time = 1000
+			consumer_goods_factor = 1000
+			min_export = -1000
+			mobilization_laws_cost_factor = 1000
+			trade_laws_cost_factor  = 1000
+			economy_cost_factor = 1000
+			political_advisor_cost_factor = 1000
+			tank_manufacturer_cost_factor = 1000
+			naval_manufacturer_cost_factor = 1000
+			aircraft_manufacturer_cost_factor = 1000
+			materiel_manufacturer_cost_factor = 1000
+			industrial_concern_cost_factor = 1000
+			theorist_cost_factor = 1000
+			army_chief_cost_factor = 1000
+			navy_chief_cost_factor = 1000
+			air_chief_cost_factor = 1000
+			high_command_cost_factor = 1000
+			research_speed_factor = -10000
+			local_resources_factor = -1000
+			production_speed_buildings_factor = -1000
+			political_power_cost = 1000
+			training_time_army_factor = 1000
+			resistance_growth = -1000
+			compliance_growth = -1000
+			industrial_capacity_factory = -1000
+			industrial_capacity_dockyard = -1000
+			production_factory_efficiency_gain_factor = -1000
+	 		}
+			
+			rule = {
+				
+			}
+		}
+	}
+
+}

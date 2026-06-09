@@ -1,0 +1,96 @@
+guiTypes = {
+
+	#p社gui元件堆叠方式与图层相同，从下往上堆积，写在下方的元件会叠在写在上方的元件，窗口的背景永远位于最下方
+	containerWindowType = {
+		name = "come_wenjian" 
+		position = {x = -120 y = -40}
+		size = {width = 800 height = 800} 
+		fade_time = 400
+		orientation =  CENTER #窗口相对于屏幕的方位，默认情况以屏幕左上角为原点，x以右为正方向，y以下为正方向。center则将相对方位的原点改为屏幕中心为原点（相较于原来的位置，在1920x1080分辨率下，position为：x = 960 y = 540)
+		origo = center #窗口的基准点，position的x，y值即为基准点的位置，默认为整个窗口的右上角，center则将窗口基准点定为整个窗口的中心点
+		moveable = yes #窗口可以拖动
+		clipping = no #是否会裁剪超框的图像/文本框
+		
+		buttonType = {  
+			name = "options_button"
+			position = { x = 350 y = 20 }  
+			orientation = center_down  
+   
+			quadTextureSprite = "GFX_main_lobby_button"
+			buttonText = "options_button_text"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+
+			shortcut = "ESCAPE"  
+			shortcut = "RETURN" 
+			shortcut = "SPACE" 
+		}
+
+		buttonType = {  
+			name = "options_ddwelcom_gui_button"
+			quadTextureSprite = "GFX_HOI4_icon" #按钮元素
+			buttonText = " " #按钮文字
+			buttonFont = "hoi_18mbs" #文字字体
+			position = { x = -310 y = 15 }  
+			orientation = center_down  
+			pdx_tooltip = "options_ddwelcom_gui_button_pdx"
+		}
+		
+		instantTextBoxType = {
+			name = "mod_welcome" 
+			position = {x = 200 y = 120} 
+			orientation = UPPER_LEFT
+			text = "mod_welcome_text"
+			font = "hoi_36header" #字体
+			borderSize = {x = -300 y =0} #文字框边界
+			maxWidth = 700  #文字框最多长宽
+			maxHhight = 80 
+			format = center #文字居中
+		} 
+		instantTextBoxType = {
+			name = "mod_welcome1" 
+			position = {x = 400 y = 200} 
+			orientation = UPPER_LEFT 
+			text = "welcome_text"
+			font = "hoi_24header" #字体
+			borderSize = {x = -300 y =0} #文字框边界
+			maxWidth = 700  #文字框最多长宽
+			maxHhight = 80
+			format = left #左侧对齐
+		}
+		background = { 
+			name = "gamejiem"
+			spriteType = "GFX_gamejiem"
+			position = { x = 0 y = 0}
+		}
+
+		#		⠀⠀⠀⢀⠴⣲⣯⣉⣽⣿⡛⠻⣶⠖⢒⢶⣦⣄⠀⠀⠀⠀⠀
+		#⠀⠀⢀⡴⢁⡜⠉⠋⠉⠹⠉⠱⡄⠙⢦⣼⣾⣿⣿⣧⠀⠀⠀⠀
+		#⠀⢀⡞⢀⡞⢀⡄⠀⠀⢀⢸⠀⠹⡀⠈⣟⠿⣿⣿⣟⣉⡇⠀⠀
+		#⣴⣫⠀⢸⢠⣾⡇⢠⠀⢸⢰⢆⠀⡇⠀⢹⣿⣿⣿⣿⣌⡇⠀⠀
+		#⠀⠀⢀⡼⢻⠛⢿⡾⠦⣿⣿⣿⣷⡇⠀⢸⠁⣯⣿⠛⡹⠛⣦⠀
+		#⠀⢰⢨⠀⠈⢓⢺⢁⣀⠀⢿⢀⣼⠃⠀⣸⣠⠃⣇⡴⠁⠀⢸⡇
+		#⠀⠘⣎⢓⢤⣄⣀⣉⡉⣁⣀⣠⣿⡆⢠⠟⠁⠀⠘⠁⠀⠀⢸⡇  doro在看着你们，不要给我出错
+		#⠀⠀⠈⢺⡿⠇⡀⠉⠉⠉⠉⢉⣼⡡⠋⠀⠀⢀⣴⠀⠀⣠⠟⠀
+		#⠀⠀⠀⠀⢷⡀⢻⡶⣤⣤⠀⠀⠀⠀⣀⣤⡴⠛⡇⠀⠀⡏⠀⠀
+		#⠀⠀⠀⠀⠈⠳⠼⠃⠀⠈⢧⡀⠀⠀⡇⠀⠀⠀⠻⣄⣀⡟⠀⠀
+		#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠶⠾⠁⠀⠀⠀⠀⠈⠉⠀
+		buttonType = {  
+			name = "sans_button"
+			position = { x = 530 y = -85 }  
+			orientation = center_down  
+   
+			quadTextureSprite = "GFX_idea_sans_haowan"
+			pdx_tooltip = "sanstackme"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+	}
+	
+			
+}
+	
+	

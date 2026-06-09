@@ -1,0 +1,33 @@
+ideas = {
+
+	country = {
+		DaShenPan = {
+			
+			picture = OMS_focus_dashenpan
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 1
+				industrial_capacity_factory = 0.2
+				consumer_goods_factor = 0.2
+			}
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+
+		}
+	}
+
+}

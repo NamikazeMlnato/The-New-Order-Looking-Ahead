@@ -1,0 +1,2144 @@
+TYCDQ = {
+	WR = { 
+		cost = 0
+
+		days_remove = 0
+	   
+		fire_only_once = no
+
+		visible = { #可见
+		has_idea = WRCDQ
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 400
+				state = 880
+				state = 214
+				state = 825
+				state = 851
+				state = 262
+				state = 397
+				state = 398
+				state = 399
+				state = 833
+				state = 256
+				state = 250
+				state = 249
+				state = 251
+				state = 652
+				state = 651
+				state = 582
+				state = 581
+				state = 879
+				state = 401
+				#该大类中的所有决议会出现在哪些state的上方，鼠标悬停/点击该决议后，哪些地块会出现高亮边框
+			}
+		}
+	
+		icon = generic_political_actions
+
+		available = {
+			has_full_control_of_state = 214
+			has_full_control_of_state = 581
+			has_full_control_of_state = 880
+			has_full_control_of_state = 825
+			has_full_control_of_state = 262
+			has_full_control_of_state = 397
+			has_full_control_of_state = 400
+			has_full_control_of_state = 398
+			has_full_control_of_state = 399
+			has_full_control_of_state = 833
+			has_full_control_of_state = 256
+			has_full_control_of_state = 250
+			has_full_control_of_state = 249
+			has_full_control_of_state = 251
+			has_full_control_of_state = 652
+			has_full_control_of_state = 651
+			has_full_control_of_state = 582
+			has_full_control_of_state = 879
+			has_full_control_of_state = 401
+		}#前提
+		 complete_effect = { 
+			add_ideas = TYCDQJD1
+			remove_ideas = WRCDQ
+			if = {
+				set_cosmetic_tag = TYWRG
+				limit = {
+					tag = sov
+				}
+			}
+			else = {
+				set_cosmetic_tag = TYWR
+			}
+
+			if = {
+				set_cosmetic_tag = TYWELSDG
+				limit = {
+					tag = kom
+					has_government = fascism
+				}
+			}
+			set_global_flag = ATYWRA
+			581 = { add_core_of = ROOT }
+			214 = { add_core_of = ROOT }
+			880 = { add_core_of = ROOT }
+			825 = { add_core_of = ROOT }
+			262 = { add_core_of = ROOT }
+			397 = { add_core_of = ROOT }
+			400 = { add_core_of = ROOT }
+			398 = { add_core_of = ROOT }
+			399 = { add_core_of = ROOT }
+			833 = { add_core_of = ROOT }
+			256 = { add_core_of = ROOT }
+			250 = { add_core_of = ROOT }
+			249 = { add_core_of = ROOT }
+			251 = { add_core_of = ROOT }
+			652 = { add_core_of = ROOT }
+			651 = { add_core_of = ROOT }
+			582 = { add_core_of = ROOT }
+			879 = { add_core_of = ROOT }
+			401 = { add_core_of = ROOT }
+		 }
+ 	}
+
+ 	FUCKSOV = {
+
+		visible = { #可见
+		has_idea = WRCDQ
+		NOT = { TAG = SOV }
+		country_exists = SOV
+		NOT = { has_war_with = SOV }
+		}
+
+		available = {
+		fighting_army_strength_ratio = {
+				tag = SOV
+				ratio > 0.10
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			declare_war_on = { target = SOV type = annex_everything } 
+		}
+	}
+
+ 	FUCKKOM = {
+
+		visible = { #可见
+		has_idea = WRCDQ
+		NOT = { TAG = KOM }
+		country_exists = KOM
+		NOT = { has_war_with = KOM }
+		}
+		
+		available = {
+		fighting_army_strength_ratio = {
+				tag = KOM
+				ratio > 0.10
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			declare_war_on = { target = KOM type = annex_everything } 
+		}
+	}
+
+	FUCKWLL = {
+
+		visible = { #可见
+		has_idea = WRCDQ
+		NOT = { TAG = WLL }
+		country_exists = WLL
+		NOT = { has_war_with = WLL }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+			factor = 100
+			fighting_army_strength_ratio = {
+						tag = WLL
+						ratio > 0.10
+					}
+				}
+		}
+
+		complete_effect = {
+			declare_war_on = { target = WLL type = annex_everything } 
+		}
+	}
+
+	FUCKYLA = {
+
+		visible = { #可见
+		has_idea = WRCDQ
+		NOT = { TAG = YLA }
+		country_exists = YLA
+		NOT = { has_war_with = YLA }
+		}
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+			factor = 0
+			fighting_army_strength_ratio = {
+						tag = YLA
+						ratio > 0.10
+					}
+				}
+		}
+
+		complete_effect = {
+			declare_war_on = { target = YLA type = annex_everything } 
+		}
+	}
+
+	FUCKIUR = {
+
+		visible = { #可见
+		has_idea = WRCDQ
+		NOT = { TAG = IUR }
+		country_exists = IUR
+		NOT = { has_war_with = IUR }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+			factor = 100
+			fighting_army_strength_ratio = {
+						tag = IUR
+						ratio > 0.10
+					}
+				}
+		}
+
+		complete_effect = {
+			declare_war_on = { target = IUR type = annex_everything } 
+		}
+	}
+
+	FUCKONG = {
+
+		visible = { #可见
+		has_idea = WRCDQ
+		NOT = { TAG = ONG }
+		country_exists = ONG
+		NOT = { has_war_with = ONG }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+			factor = 100
+			fighting_army_strength_ratio = {
+						tag = ONG
+						ratio > 0.10
+					}
+				}
+		}
+
+		complete_effect = {
+			declare_war_on = { target = ONG type = annex_everything } 
+		}
+	}
+
+ 	WXBLY = {
+	 cost = 0
+
+		days_remove = 0
+	   
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = { #可见
+		has_idea = WXBLYCDQ
+		}
+		
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 579
+				state = 580
+				state = 653
+				state = 573
+				state = 572
+				state = 403
+				state = 571
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 579
+			has_full_control_of_state = 580
+			has_full_control_of_state = 653
+			has_full_control_of_state = 573
+			has_full_control_of_state = 572
+			has_full_control_of_state = 403
+			has_full_control_of_state = 571
+		}#前提
+		 complete_effect = { 
+			add_ideas = TYCDQJD1
+			remove_ideas = WXBLYCDQ
+			if = {
+				set_cosmetic_tag = XXBLYLSZF
+				limit = {
+					tag = OMS
+				}
+			}
+			else = {
+				set_cosmetic_tag = TYXXBLY
+			}
+			set_global_flag = ATYWXBLYA
+			571 = { add_core_of = ROOT }
+			403 = { add_core_of = ROOT }
+			579 = { add_core_of = ROOT }
+			580 = { add_core_of = ROOT }
+			653 = { add_core_of = ROOT }
+			573 = { add_core_of = ROOT }
+			572 = { add_core_of = ROOT }
+		 }
+
+ 	}
+
+ 	FUCKOMS = {
+
+		visible = { #可见
+		has_idea = WXBLYCDQ
+		NOT = { TAG = OMS }
+		country_exists = OMS
+		NOT = { has_war_with = OMS }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+			factor = 100
+			fighting_army_strength_ratio = {
+						tag = OMS
+						ratio > 0.10
+					}
+				}
+		}
+
+		complete_effect = {
+			declare_war_on = { target = OMS type = annex_everything } 
+		}
+	}
+
+	FUCKTYM = {
+
+		visible = { #可见
+		has_idea = WXBLYCDQ
+		NOT = { TAG = TYM }
+		country_exists = TYM
+		NOT = { has_war_with = TYM }
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+			factor = 100
+			fighting_army_strength_ratio = {
+						tag = TYM
+						ratio > 0.10
+					}
+				}
+		}
+
+		complete_effect = {
+			declare_war_on = { target = TYM type = annex_everything } 
+		}
+	}
+
+	FUCKWLR = {
+
+		visible = { #可见
+		has_idea = WXBLYCDQ
+		NOT = { TAG = WLR }
+		country_exists = WLR
+		NOT = { has_war_with = WLR }
+		}
+
+		complete_effect = {
+			declare_war_on = { target = WLR type = annex_everything } 
+		}
+	}
+
+	FUCKGAY = {
+
+		visible = { #可见
+		has_idea = WXBLYCDQ
+		NOT = { TAG = GAY }
+		country_exists = GAY
+		NOT = { has_war_with = GAY }
+		}
+
+		complete_effect = {
+			declare_war_on = { target = GAY type = annex_everything } 
+		}
+	}
+
+	FUCKVOR = {
+
+		visible = { #可见
+		has_idea = WXBLYCDQ
+		NOT = { TAG = VOR }
+		country_exists = VOR
+		NOT = { has_war_with = VOR }
+		}
+
+		complete_effect = {
+			declare_war_on = { target = VOR type = annex_everything } 
+		}
+	}
+
+ 	CDQJD1 = { 
+	 cost = 0
+
+	 days_remove = 0
+   
+	 fire_only_once = no
+ 
+	 visible = { #可见
+	 has_idea = TYCDQJD1
+	 }
+
+	 highlight_states = {
+		highlight_state_targets = {
+			state = 400
+			state = 579
+			state = 580
+			state = 653
+			state = 573
+			state = 572
+			state = 403
+			state = 571
+			state = 880
+			state = 214
+			state = 825
+			state = 851
+			state = 262
+			state = 397
+			state = 398
+			state = 399
+			state = 833
+			state = 256
+			state = 250
+			state = 249
+			state = 251
+			state = 652
+			state = 651
+			state = 582
+			state = 581
+			state = 879
+			state = 401
+		}
+	 }
+
+	 icon = generic_political_actions
+
+	 available = {
+		has_full_control_of_state = 579
+		has_full_control_of_state = 580
+		has_full_control_of_state = 653
+		has_full_control_of_state = 573
+		has_full_control_of_state = 572
+		has_full_control_of_state = 403
+		has_full_control_of_state = 571
+		has_full_control_of_state = 214
+		has_full_control_of_state = 581
+		has_full_control_of_state = 880
+		has_full_control_of_state = 825
+		has_full_control_of_state = 262
+		has_full_control_of_state = 397
+		has_full_control_of_state = 400
+		has_full_control_of_state = 398
+		has_full_control_of_state = 399
+		has_full_control_of_state = 833
+		has_full_control_of_state = 256
+		has_full_control_of_state = 250
+		has_full_control_of_state = 249
+		has_full_control_of_state = 251
+		has_full_control_of_state = 652
+		has_full_control_of_state = 651
+		has_full_control_of_state = 582
+		has_full_control_of_state = 879
+		has_full_control_of_state = 401
+	 }#前提
+	 complete_effect = { 
+		add_ideas = TYRUS
+		remove_ideas = TYCDQJD1
+
+		if = {
+			set_cosmetic_tag = TYWRUS
+			limit = {
+				OR = {
+				NOT = { tag = SOV }
+				NOT = { tag = OMS }
+				NOT = { tag = KOM }
+				}
+			}
+		}
+		if = {
+			set_cosmetic_tag = TYWRUSG
+			limit = {
+				tag = sov
+			}
+		}
+
+		if = {
+			set_cosmetic_tag = TYWRUSOMS
+			limit = {
+				tag = OMS
+			}
+		}
+
+		if = {
+			set_cosmetic_tag = TYCDQELSDG
+			limit = {
+				tag = kom
+				has_government = fascism
+			}
+		}
+
+		571 = { add_core_of = ROOT }
+		403 = { add_core_of = ROOT }
+		579 = { add_core_of = ROOT }
+		580 = { add_core_of = ROOT }
+		653 = { add_core_of = ROOT }
+		573 = { add_core_of = ROOT }
+		572 = { add_core_of = ROOT }
+		581 = { add_core_of = ROOT }
+		214 = { add_core_of = ROOT }
+		880 = { add_core_of = ROOT }
+		825 = { add_core_of = ROOT }
+		262 = { add_core_of = ROOT }
+		397 = { add_core_of = ROOT }
+		400 = { add_core_of = ROOT }
+		398 = { add_core_of = ROOT }
+		399 = { add_core_of = ROOT }
+		833 = { add_core_of = ROOT }
+		256 = { add_core_of = ROOT }
+		250 = { add_core_of = ROOT }
+		249 = { add_core_of = ROOT }
+		251 = { add_core_of = ROOT }
+		652 = { add_core_of = ROOT }
+		651 = { add_core_of = ROOT }
+		582 = { add_core_of = ROOT }
+		879 = { add_core_of = ROOT }
+		401 = { add_core_of = ROOT }
+	 }
+	}
+
+	FUCKWRUS = {
+
+		visible = { #可见
+		has_idea = TYCDQJD1
+		NOT = { TAG = SOV }
+		NOT = { TAG = KOM }
+		NOT = { TAG = WLL }
+		NOT = { TAG = IUR }
+		NOT = { TAG = YLA }
+		NOT = { TAG = ONG }
+		OR = {
+		country_exists = SOV
+		country_exists = KOM
+		country_exists = WLL
+		country_exists = IUR
+		country_exists = YLA
+		country_exists = ONG
+		}
+		OR = {
+		NOT = { has_war_with = SOV }
+		NOT = { has_war_with = KOM }
+		NOT = { has_war_with = WLL }
+		NOT = { has_war_with = IUR }
+		NOT = { has_war_with = YLA }
+		NOT = { has_war_with = ONG }
+		}
+		}
+
+		available = {
+			has_global_flag = ATYWRA
+		}
+
+		complete_effect = {
+		if = {
+			declare_war_on = { target = SOV type = annex_everything } 
+			limit = {
+			SOV = {
+			has_full_control_of_state = 214
+			has_full_control_of_state = 581
+			has_full_control_of_state = 880
+			has_full_control_of_state = 825
+			has_full_control_of_state = 262
+			has_full_control_of_state = 397
+			has_full_control_of_state = 400
+			has_full_control_of_state = 398
+			has_full_control_of_state = 399
+			has_full_control_of_state = 833
+			has_full_control_of_state = 256
+			has_full_control_of_state = 250
+			has_full_control_of_state = 249
+			has_full_control_of_state = 251
+			has_full_control_of_state = 652
+			has_full_control_of_state = 651
+			has_full_control_of_state = 582
+			has_full_control_of_state = 879
+			has_full_control_of_state = 401
+			}
+			}
+		}
+
+		if = {
+			declare_war_on = { target = KOM type = annex_everything } 
+			limit = {
+			KOM = {
+			has_full_control_of_state = 214
+			has_full_control_of_state = 581
+			has_full_control_of_state = 880
+			has_full_control_of_state = 825
+			has_full_control_of_state = 262
+			has_full_control_of_state = 397
+			has_full_control_of_state = 400
+			has_full_control_of_state = 398
+			has_full_control_of_state = 399
+			has_full_control_of_state = 833
+			has_full_control_of_state = 256
+			has_full_control_of_state = 250
+			has_full_control_of_state = 249
+			has_full_control_of_state = 251
+			has_full_control_of_state = 652
+			has_full_control_of_state = 651
+			has_full_control_of_state = 582
+			has_full_control_of_state = 879
+			has_full_control_of_state = 401
+			}
+			}
+		}
+
+		if = {
+			declare_war_on = { target = WLL type = annex_everything } 
+			limit = {
+			WLL = {
+			has_full_control_of_state = 214
+			has_full_control_of_state = 581
+			has_full_control_of_state = 880
+			has_full_control_of_state = 825
+			has_full_control_of_state = 262
+			has_full_control_of_state = 397
+			has_full_control_of_state = 400
+			has_full_control_of_state = 398
+			has_full_control_of_state = 399
+			has_full_control_of_state = 833
+			has_full_control_of_state = 256
+			has_full_control_of_state = 250
+			has_full_control_of_state = 249
+			has_full_control_of_state = 251
+			has_full_control_of_state = 652
+			has_full_control_of_state = 651
+			has_full_control_of_state = 582
+			has_full_control_of_state = 879
+			has_full_control_of_state = 401
+			}
+			}
+		}
+
+		if = {
+			declare_war_on = { target = YLA type = annex_everything } 
+			limit = {
+			YLA = {
+			has_full_control_of_state = 214
+			has_full_control_of_state = 581
+			has_full_control_of_state = 880
+			has_full_control_of_state = 825
+			has_full_control_of_state = 262
+			has_full_control_of_state = 397
+			has_full_control_of_state = 400
+			has_full_control_of_state = 398
+			has_full_control_of_state = 399
+			has_full_control_of_state = 833
+			has_full_control_of_state = 256
+			has_full_control_of_state = 250
+			has_full_control_of_state = 249
+			has_full_control_of_state = 251
+			has_full_control_of_state = 652
+			has_full_control_of_state = 651
+			has_full_control_of_state = 582
+			has_full_control_of_state = 879
+			has_full_control_of_state = 401
+			}
+			}
+		}
+
+		if = {
+			declare_war_on = { target = IUR type = annex_everything } 
+			limit = {
+			IUR = {
+			has_full_control_of_state = 214
+			has_full_control_of_state = 581
+			has_full_control_of_state = 880
+			has_full_control_of_state = 825
+			has_full_control_of_state = 262
+			has_full_control_of_state = 397
+			has_full_control_of_state = 400
+			has_full_control_of_state = 398
+			has_full_control_of_state = 399
+			has_full_control_of_state = 833
+			has_full_control_of_state = 256
+			has_full_control_of_state = 250
+			has_full_control_of_state = 249
+			has_full_control_of_state = 251
+			has_full_control_of_state = 652
+			has_full_control_of_state = 651
+			has_full_control_of_state = 582
+			has_full_control_of_state = 879
+			has_full_control_of_state = 401
+			}
+			}
+		}
+
+		if = {
+			declare_war_on = { target = ONG type = annex_everything } 
+			limit = {
+			ONG = {
+			has_full_control_of_state = 214
+			has_full_control_of_state = 581
+			has_full_control_of_state = 880
+			has_full_control_of_state = 825
+			has_full_control_of_state = 262
+			has_full_control_of_state = 397
+			has_full_control_of_state = 400
+			has_full_control_of_state = 398
+			has_full_control_of_state = 399
+			has_full_control_of_state = 833
+			has_full_control_of_state = 256
+			has_full_control_of_state = 250
+			has_full_control_of_state = 249
+			has_full_control_of_state = 251
+			has_full_control_of_state = 652
+			has_full_control_of_state = 651
+			has_full_control_of_state = 582
+			has_full_control_of_state = 879
+			has_full_control_of_state = 401
+			}
+			}
+		}
+		}
+	}	
+
+	FUCKWXBLYRUS = {
+
+		visible = { #可见
+		has_idea = TYCDQJD1
+		NOT = { TAG = OMS }
+		NOT = { TAG = TYM }
+		NOT = { TAG = WLR }
+		NOT = { TAG = GAY }
+		NOT = { TAG = VOR }
+		OR = {
+		country_exists = OMS
+		country_exists = TYM
+		country_exists = WLR
+		country_exists = GAY
+		country_exists = VOR
+		}
+		OR = {
+		NOT = { has_war_with = OMS }
+		NOT = { has_war_with = TYM }
+		NOT = { has_war_with = WLR }
+		NOT = { has_war_with = GAY }
+		NOT = { has_war_with = VOR }
+		}
+		}
+
+		available = {
+			has_global_flag = ATYWXBLYA
+		}
+
+		complete_effect = {
+			if = {
+			declare_war_on = { target = OMS type = annex_everything } 
+			limit = {
+				OMS = {
+				has_full_control_of_state = 579
+				has_full_control_of_state = 580
+				has_full_control_of_state = 653
+				has_full_control_of_state = 573
+				has_full_control_of_state = 572
+				has_full_control_of_state = 403
+				has_full_control_of_state = 571
+				}
+			}
+			}
+
+			if = {
+				declare_war_on = { target = TYM type = annex_everything } 
+				limit = {
+					TYM = {
+					has_full_control_of_state = 579
+					has_full_control_of_state = 580
+					has_full_control_of_state = 653
+					has_full_control_of_state = 573
+					has_full_control_of_state = 572
+					has_full_control_of_state = 403
+					has_full_control_of_state = 571
+					}
+				}
+				}
+
+				if = {
+					declare_war_on = { target = WLR type = annex_everything } 
+					limit = {
+						WLR = {
+						has_full_control_of_state = 579
+						has_full_control_of_state = 580
+						has_full_control_of_state = 653
+						has_full_control_of_state = 573
+						has_full_control_of_state = 572
+						has_full_control_of_state = 403
+						has_full_control_of_state = 571
+						}
+					}
+					}
+
+					if = {
+						declare_war_on = { target = GAY type = annex_everything } 
+						limit = {
+							GAY = {
+							has_full_control_of_state = 579
+							has_full_control_of_state = 580
+							has_full_control_of_state = 653
+							has_full_control_of_state = 573
+							has_full_control_of_state = 572
+							has_full_control_of_state = 403
+							has_full_control_of_state = 571
+							}
+						}
+						}
+
+						if = {
+							declare_war_on = { target = VOR type = annex_everything } 
+							limit = {
+								VOR = {
+								has_full_control_of_state = 579
+								has_full_control_of_state = 580
+								has_full_control_of_state = 653
+								has_full_control_of_state = 573
+								has_full_control_of_state = 572
+								has_full_control_of_state = 403
+								has_full_control_of_state = 571
+								}
+							}
+							}
+		}
+	}
+
+ 	MXBLY = {
+	 cost = 0
+
+		days_remove = 0
+	   
+		fire_only_once = no
+
+		visible = { #可见
+		has_idea = MXBLYCDQ
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 570
+				state = 40
+				state = 569
+				state = 654
+				state = 568
+				state = 567
+				state = 576
+				state = 577
+				state = 578
+				state = 824
+				state = 516
+				state = 878
+				state = 329
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 570
+			has_full_control_of_state = 40
+			has_full_control_of_state = 569
+			has_full_control_of_state = 654
+			has_full_control_of_state = 568
+			has_full_control_of_state = 567
+			has_full_control_of_state = 576
+			has_full_control_of_state = 577
+			has_full_control_of_state = 578
+			has_full_control_of_state = 824
+			has_full_control_of_state = 516
+			has_full_control_of_state = 878
+			has_full_control_of_state = 329
+		}#前提
+		 complete_effect = { 
+			add_ideas = TYCDQJD2
+			remove_ideas = MXBLYCDQ
+			set_cosmetic_tag = TYMXBLY
+			570 = { add_core_of = ROOT }
+			40 = { add_core_of = ROOT }
+			569 = { add_core_of = ROOT }
+			654 = { add_core_of = ROOT }
+			568 = { add_core_of = ROOT }
+			567 = { add_core_of = ROOT }
+			576 = { add_core_of = ROOT }
+			577 = { add_core_of = ROOT }
+			578 = { add_core_of = ROOT }
+			824 = { add_core_of = ROOT }
+			516 = { add_core_of = ROOT }
+			878 = { add_core_of = ROOT }
+			329 = { add_core_of = ROOT }
+			set_global_flag = ATYMXBLYA
+		 }
+
+ 	}
+
+	FUCKYGR = {
+
+		visible = { #可见
+		has_idea = MXBLYCDQ
+		NOT = { TAG = YGR }
+		country_exists = YGR
+		NOT = { has_war_with = YGR }
+		}
+
+		complete_effect = {
+			declare_war_on = { target = YGR type = annex_everything } 
+		}
+	}
+
+	FUCKTOM = {
+
+		visible = { #可见
+		has_idea = MXBLYCDQ
+		NOT = { TAG = TOM }
+		country_exists = TOM
+		NOT = { has_war_with = TOM }
+		}
+
+		complete_effect = {
+			declare_war_on = { target = TOM type = annex_everything } 
+		}
+	}
+
+	FUCKNXB = {
+
+		visible = { #可见
+		has_idea = MXBLYCDQ
+		NOT = { TAG = NXB }
+		country_exists = NXB
+		NOT = { has_war_with = NXB }
+		}
+
+		complete_effect = {
+			declare_war_on = { target = NXB type = annex_everything } 
+		}
+	}
+
+	FUCKSBA = {
+
+		visible = { #可见
+		has_idea = MXBLYCDQ
+		NOT = { TAG = SBA }
+		country_exists = SBA
+		NOT = { has_war_with = SBA }
+		}
+
+		complete_effect = {
+			declare_war_on = { target = SBA type = annex_everything } 
+		}
+	}
+
+	FUCKTAN = {
+
+		visible = { #可见
+		has_idea = MXBLYCDQ
+		NOT = { TAG = TAN }
+		country_exists = TAN
+		NOT = { has_war_with = TAN }
+		}
+
+		complete_effect = {
+			declare_war_on = { target = TAN type = annex_everything } 
+		}
+	}
+
+ 	EATMXBLRAN = {
+	 cost = 0
+
+		days_remove = 0
+	   
+		fire_only_once = no
+
+		visible = { #可见
+			OR = {
+				has_idea = WRCDQ
+				has_idea = WXBLYCDQ
+				has_idea = MXBLYCDQ
+				has_idea = YDCDQ
+				has_idea = TYRUS
+			}
+			ABC = {
+				has_full_control_of_state = 516
+				has_full_control_of_state = 878
+			}
+			has_full_control_of_state = 824
+			has_full_control_of_state = 577
+			has_full_control_of_state = 576
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 516
+				state = 878
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 824
+			has_full_control_of_state = 577
+			has_full_control_of_state = 576
+		}#前提
+		 complete_effect = { 
+			516 = { add_core_of = ROOT }
+			878 = { add_core_of = ROOT }
+			transfer_state = 516
+			transfer_state = 878
+		}
+ 	}
+
+ 	YUANDONG = {
+	 cost = 0
+
+		days_remove = 0
+	   
+		fire_only_once = no
+
+		visible = { #可见
+		has_idea = YDCDQ
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 876
+				state = 877
+				state = 644
+				state = 822
+				state = 875
+				state = 874
+				state = 637
+				state = 562
+				state = 574
+				state = 575
+				state = 565
+				state = 563
+				state = 564
+				state = 566
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 876
+			has_full_control_of_state = 877
+			has_full_control_of_state = 644
+			has_full_control_of_state = 822
+			has_full_control_of_state = 875
+			has_full_control_of_state = 874
+			has_full_control_of_state = 637
+			has_full_control_of_state = 562
+			has_full_control_of_state = 574
+			has_full_control_of_state = 575
+			has_full_control_of_state = 565
+			has_full_control_of_state = 563
+			has_full_control_of_state = 564
+			has_full_control_of_state = 566
+		}#前提
+		 complete_effect = { 
+			add_ideas = TYCDQJD2
+			remove_ideas = YDCDQ
+			if = {
+				set_cosmetic_tag = Anarchyguo
+				limit = {
+					tag = ABC
+				}
+			}
+			else = {
+				set_cosmetic_tag = TYYD
+			}
+			876 = { add_core_of = ROOT }
+			877 = { add_core_of = ROOT }
+			644 = { add_core_of = ROOT }
+			822 = { add_core_of = ROOT }
+			875 = { add_core_of = ROOT }
+			874 = { add_core_of = ROOT }
+			637 = { add_core_of = ROOT }
+			562 = { add_core_of = ROOT }
+			574 = { add_core_of = ROOT }
+			575 = { add_core_of = ROOT }
+			565 = { add_core_of = ROOT }
+			563 = { add_core_of = ROOT }
+			564 = { add_core_of = ROOT }
+			566 = { add_core_of = ROOT }
+			set_global_flag = ATYDA
+		 }
+
+	}
+
+	FUCKBRY = {
+
+		visible = { #可见
+		has_idea = YDCDQ
+		NOT = { TAG = BRY }
+		country_exists = BRY
+		NOT = { has_war_with = BRY }
+		}
+
+		complete_effect = {
+			declare_war_on = { target = BRY type = annex_everything } 
+		}
+	}
+
+	FUCKWBJ = {
+
+		visible = { #可见
+		has_idea = YDCDQ
+		NOT = { TAG = WBJ }
+		country_exists = WBJ
+		NOT = { has_war_with = WBJ }
+		}
+
+		complete_effect = {
+			declare_war_on = { target = WBJ type = annex_everything } 
+		}
+	}
+
+	FUCKYKT = {
+
+		visible = { #可见
+		has_idea = YDCDQ
+		NOT = { TAG = YKT }
+		country_exists = YKT
+		NOT = { has_war_with = YKT }
+		}
+
+		complete_effect = {
+			declare_war_on = { target = YKT type = annex_everything } 
+		}
+	}
+
+	FUCKMGD = {
+
+		visible = { #可见
+		has_idea = YDCDQ
+		NOT = { TAG = MGD }
+		country_exists = MGD
+		NOT = { has_war_with = MGD }
+		}
+
+		complete_effect = {
+			declare_war_on = { target = MGD type = annex_everything } 
+		}
+	}
+
+	FUCKKMC = {
+
+		visible = { #可见
+		has_idea = YDCDQ
+		NOT = { TAG = KMC }
+		country_exists = KMC
+		NOT = { has_war_with = KMC }
+		}
+
+		complete_effect = {
+			declare_war_on = { target = KMC type = annex_everything } 
+		}
+	}
+
+	FUCKFER = {
+
+		visible = { #可见
+		NOT = { JAP = { has_completed_focus = JAP_purge_the_kodoha_faction } }
+		has_idea = YDCDQ
+		NOT = { TAG = FER }
+		country_exists = FER
+		NOT = { has_war_with = FER }
+		}
+
+		complete_effect = {
+			declare_war_on = { target = FER type = annex_everything } 
+		}
+	}
+
+ 	CDQJD2 = {
+	 cost = 0
+
+		days_remove = 0
+	   
+		fire_only_once = no
+
+		visible = { #可见
+		has_idea = TYCDQJD2
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 570
+				state = 40
+				state = 569
+				state = 654
+				state = 568
+				state = 567
+				state = 576
+				state = 577
+				state = 578
+				state = 824
+				state = 516
+				state = 878
+				state = 329
+				state = 876
+				state = 877
+				state = 644
+				state = 822
+				state = 875
+				state = 874
+				state = 637
+				state = 562
+				state = 574
+				state = 575
+				state = 565
+				state = 563
+				state = 564
+				state = 566
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 570
+			has_full_control_of_state = 40
+			has_full_control_of_state = 569
+			has_full_control_of_state = 654
+			has_full_control_of_state = 568
+			has_full_control_of_state = 567
+			has_full_control_of_state = 576
+			has_full_control_of_state = 577
+			has_full_control_of_state = 578
+			has_full_control_of_state = 824
+			has_full_control_of_state = 516
+			has_full_control_of_state = 878
+			has_full_control_of_state = 329
+			has_full_control_of_state = 876
+			has_full_control_of_state = 877
+			has_full_control_of_state = 644
+			has_full_control_of_state = 822
+			has_full_control_of_state = 875
+			has_full_control_of_state = 874
+			has_full_control_of_state = 637
+			has_full_control_of_state = 562
+			has_full_control_of_state = 574
+			has_full_control_of_state = 575
+			has_full_control_of_state = 565
+			has_full_control_of_state = 563
+			has_full_control_of_state = 564
+			has_full_control_of_state = 566
+		}#前提
+		 complete_effect = { 
+			add_ideas = TYRUS
+			remove_ideas = TYCDQJD2
+			if = {
+				set_cosmetic_tag = TYWRUS
+				limit = {
+					NOT = { tag = ABC }
+				}
+			}
+
+			if = {
+				set_cosmetic_tag = TYANRUS
+				limit = {
+					tag = ABC
+				}
+			}
+
+			570 = { add_core_of = ROOT }
+			40 = { add_core_of = ROOT }
+			569 = { add_core_of = ROOT }
+			654 = { add_core_of = ROOT }
+			568 = { add_core_of = ROOT }
+			567 = { add_core_of = ROOT }
+			576 = { add_core_of = ROOT }
+			577 = { add_core_of = ROOT }
+			578 = { add_core_of = ROOT }
+			824 = { add_core_of = ROOT }
+			516 = { add_core_of = ROOT }
+			878 = { add_core_of = ROOT }
+			329 = { add_core_of = ROOT }
+			876 = { add_core_of = ROOT }
+			877 = { add_core_of = ROOT }
+			644 = { add_core_of = ROOT }
+			822 = { add_core_of = ROOT }
+			875 = { add_core_of = ROOT }
+			874 = { add_core_of = ROOT }
+			637 = { add_core_of = ROOT }
+			562 = { add_core_of = ROOT }
+			574 = { add_core_of = ROOT }
+			575 = { add_core_of = ROOT }
+			565 = { add_core_of = ROOT }
+			563 = { add_core_of = ROOT }
+			564 = { add_core_of = ROOT }
+			566 = { add_core_of = ROOT }
+		 }
+
+ 	}
+
+ 	EATYDAN = {
+	 cost = 0
+
+		days_remove = 0
+	   
+		fire_only_once = no
+
+		visible = { #可见
+			OR = {
+				has_idea = WRCDQ
+				has_idea = WXBLYCDQ
+				has_idea = MXBLYCDQ
+				has_idea = YDCDQ
+				has_idea = TYRUS
+			}
+			ABC = {
+				has_full_control_of_state = 876
+				has_full_control_of_state = 877
+				has_full_control_of_state = 644
+				has_full_control_of_state = 822
+				has_full_control_of_state = 874
+				has_full_control_of_state = 875
+			}
+			has_full_control_of_state = 562
+			has_full_control_of_state = 575
+			has_full_control_of_state = 574
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 876
+				state = 877
+				state = 644
+				state = 822
+				state = 874
+				state = 875
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 575
+			has_full_control_of_state = 574
+			has_full_control_of_state = 562
+		}#前提
+		 complete_effect = { 
+			876 = { add_core_of = ROOT }
+			877 = { add_core_of = ROOT }
+			644 = { add_core_of = ROOT }
+			822 = { add_core_of = ROOT }
+			874 = { add_core_of = ROOT }
+			875 = { add_core_of = ROOT }
+			transfer_state = 876
+			transfer_state = 877
+			transfer_state = 644
+			transfer_state = 822
+			transfer_state = 874
+			transfer_state = 875
+		 }
+ 	}
+
+	FUCKMXBLY = {
+
+		visible = { #可见
+		has_idea = TYCDQJD2
+		NOT = { TAG = SBA }
+		NOT = { TAG = TAN }
+		NOT = { TAG = TOM }
+		NOT = { TAG = NXB }
+		NOT = { TAG = YGR }
+		OR = {
+		country_exists = SBA
+		country_exists = TAN
+		country_exists = TOM
+		country_exists = NXB
+		country_exists = YGR
+		}
+		OR = {
+		NOT = { has_war_with = SBA }
+		NOT = { has_war_with = TAN }
+		NOT = { has_war_with = TOM }
+		NOT = { has_war_with = NXB }
+		NOT = { has_war_with = YGR }
+		}
+		}
+
+		available = {
+			has_global_flag = ATYMXBLYA
+		}
+
+		complete_effect = {
+			if = {
+			declare_war_on = { target = TOM type = annex_everything } 
+			limit = {
+				TOM = {
+				has_full_control_of_state = 570
+				has_full_control_of_state = 40
+				has_full_control_of_state = 569
+				has_full_control_of_state = 654
+				has_full_control_of_state = 568
+				has_full_control_of_state = 567
+				has_full_control_of_state = 576
+				has_full_control_of_state = 577
+				has_full_control_of_state = 578
+				has_full_control_of_state = 824
+				has_full_control_of_state = 516
+				has_full_control_of_state = 878
+				has_full_control_of_state = 329
+				}
+			}
+			}
+
+			if = {
+				declare_war_on = { target = SBA type = annex_everything } 
+				limit = {
+					SBA = {
+					has_full_control_of_state = 570
+					has_full_control_of_state = 40
+					has_full_control_of_state = 569
+					has_full_control_of_state = 654
+					has_full_control_of_state = 568
+					has_full_control_of_state = 567
+					has_full_control_of_state = 576
+					has_full_control_of_state = 577
+					has_full_control_of_state = 578
+					has_full_control_of_state = 824
+					has_full_control_of_state = 516
+					has_full_control_of_state = 878
+					has_full_control_of_state = 329
+					}
+				}
+				}
+
+				if = {
+					declare_war_on = { target = NXB type = annex_everything } 
+					limit = {
+						NXB = {
+						has_full_control_of_state = 570
+						has_full_control_of_state = 40
+						has_full_control_of_state = 569
+						has_full_control_of_state = 654
+						has_full_control_of_state = 568
+						has_full_control_of_state = 567
+						has_full_control_of_state = 576
+						has_full_control_of_state = 577
+						has_full_control_of_state = 578
+						has_full_control_of_state = 824
+						has_full_control_of_state = 516
+						has_full_control_of_state = 878
+						has_full_control_of_state = 329
+						}
+					}
+					}
+
+					if = {
+						declare_war_on = { target = TAN type = annex_everything } 
+						limit = {
+							TAN = {
+							has_full_control_of_state = 570
+							has_full_control_of_state = 40
+							has_full_control_of_state = 569
+							has_full_control_of_state = 654
+							has_full_control_of_state = 568
+							has_full_control_of_state = 567
+							has_full_control_of_state = 576
+							has_full_control_of_state = 577
+							has_full_control_of_state = 578
+							has_full_control_of_state = 824
+							has_full_control_of_state = 516
+							has_full_control_of_state = 878
+							has_full_control_of_state = 329
+							}
+						}
+						}
+
+						if = {
+							declare_war_on = { target = YGR type = annex_everything } 
+							limit = {
+								YGR = {
+								has_full_control_of_state = 570
+								has_full_control_of_state = 40
+								has_full_control_of_state = 569
+								has_full_control_of_state = 654
+								has_full_control_of_state = 568
+								has_full_control_of_state = 567
+								has_full_control_of_state = 576
+								has_full_control_of_state = 577
+								has_full_control_of_state = 578
+								has_full_control_of_state = 824
+								has_full_control_of_state = 516
+								has_full_control_of_state = 878
+								has_full_control_of_state = 329
+								}
+							}
+							}
+
+
+		}
+	}
+
+	FUCKYD = {
+
+		visible = { #可见
+		has_idea = TYCDQJD2
+		NOT = { TAG = BRY }
+		NOT = { TAG = WBJ }
+		NOT = { TAG = YKT }
+		NOT = { TAG = MGD }
+		NOT = { TAG = KMC }
+		NOT = { TAG = FER }
+		OR = {
+		country_exists = BRY
+		country_exists = WBJ
+		country_exists = YKT
+		country_exists = MGD
+		country_exists = KMC
+		country_exists = FER
+		}
+		OR = {
+		NOT = { has_war_with = BRY }
+		NOT = { has_war_with = WBJ }
+		NOT = { has_war_with = YKT }
+		NOT = { has_war_with = MGD }
+		NOT = { has_war_with = KMC }
+		NOT = { has_war_with = FER }
+		}
+		}
+
+		available = {
+			has_global_flag = ATYDA
+		}
+
+		complete_effect = {
+			if = {
+				declare_war_on = { target = BRY type = annex_everything } 
+				limit = {
+					BRY = {
+					has_full_control_of_state = 876
+					has_full_control_of_state = 877
+					has_full_control_of_state = 644
+					has_full_control_of_state = 822
+					has_full_control_of_state = 875
+					has_full_control_of_state = 874
+					has_full_control_of_state = 637
+					has_full_control_of_state = 562
+					has_full_control_of_state = 574
+					has_full_control_of_state = 575
+					has_full_control_of_state = 565
+					has_full_control_of_state = 563
+					has_full_control_of_state = 564
+					has_full_control_of_state = 566
+					}
+				}
+			}
+
+			if = {
+				declare_war_on = { target = WBJ type = annex_everything } 
+				limit = {
+					WBJ = {
+					has_full_control_of_state = 876
+					has_full_control_of_state = 877
+					has_full_control_of_state = 644
+					has_full_control_of_state = 822
+					has_full_control_of_state = 875
+					has_full_control_of_state = 874
+					has_full_control_of_state = 637
+					has_full_control_of_state = 562
+					has_full_control_of_state = 574
+					has_full_control_of_state = 575
+					has_full_control_of_state = 565
+					has_full_control_of_state = 563
+					has_full_control_of_state = 564
+					has_full_control_of_state = 566
+					}
+				}
+			}
+
+			if = {
+				declare_war_on = { target = YKT type = annex_everything } 
+				limit = {
+					YKT = {
+					has_full_control_of_state = 876
+					has_full_control_of_state = 877
+					has_full_control_of_state = 644
+					has_full_control_of_state = 822
+					has_full_control_of_state = 875
+					has_full_control_of_state = 874
+					has_full_control_of_state = 637
+					has_full_control_of_state = 562
+					has_full_control_of_state = 574
+					has_full_control_of_state = 575
+					has_full_control_of_state = 565
+					has_full_control_of_state = 563
+					has_full_control_of_state = 564
+					has_full_control_of_state = 566
+					}
+				}
+			}
+
+			if = {
+				declare_war_on = { target = MGD type = annex_everything } 
+				limit = {
+					MGD = {
+					has_full_control_of_state = 876
+					has_full_control_of_state = 877
+					has_full_control_of_state = 644
+					has_full_control_of_state = 822
+					has_full_control_of_state = 875
+					has_full_control_of_state = 874
+					has_full_control_of_state = 637
+					has_full_control_of_state = 562
+					has_full_control_of_state = 574
+					has_full_control_of_state = 575
+					has_full_control_of_state = 565
+					has_full_control_of_state = 563
+					has_full_control_of_state = 564
+					has_full_control_of_state = 566
+					}
+				}
+			}
+
+			if = {
+				declare_war_on = { target = KMC type = annex_everything } 
+				limit = {
+					KMC = {
+					has_full_control_of_state = 876
+					has_full_control_of_state = 877
+					has_full_control_of_state = 644
+					has_full_control_of_state = 822
+					has_full_control_of_state = 875
+					has_full_control_of_state = 874
+					has_full_control_of_state = 637
+					has_full_control_of_state = 562
+					has_full_control_of_state = 574
+					has_full_control_of_state = 575
+					has_full_control_of_state = 565
+					has_full_control_of_state = 563
+					has_full_control_of_state = 564
+					has_full_control_of_state = 566
+					}
+				}
+			}
+
+			if = {
+				declare_war_on = { target = FER type = annex_everything } 
+				limit = {
+					FER = {
+					has_full_control_of_state = 876
+					has_full_control_of_state = 877
+					has_full_control_of_state = 644
+					has_full_control_of_state = 822
+					has_full_control_of_state = 875
+					has_full_control_of_state = 874
+					has_full_control_of_state = 637
+					has_full_control_of_state = 562
+					has_full_control_of_state = 574
+					has_full_control_of_state = 575
+					has_full_control_of_state = 565
+					has_full_control_of_state = 563
+					has_full_control_of_state = 564
+					has_full_control_of_state = 566
+					}
+				}
+			}
+
+		}
+	}
+
+ 	TY_RUS = {
+	 cost = 0
+
+		days_remove = 0
+	   
+		fire_only_once = no
+
+		visible = { #可见
+			has_idea = TYRUS
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 400
+				state = 880
+				state = 214
+				state = 825
+				state = 851
+				state = 262
+				state = 397
+				state = 398
+				state = 399
+				state = 833
+				state = 256
+				state = 250
+				state = 249
+				state = 251
+				state = 652
+				state = 651
+				state = 582
+				state = 581
+				state = 879
+				state = 579
+				state = 580
+				state = 653
+				state = 573
+				state = 572
+				state = 403
+				state = 571
+				state = 570
+				state = 40
+				state = 569
+				state = 654
+				state = 568
+				state = 567
+				state = 576
+				state = 577
+				state = 578
+				state = 824
+				state = 516
+				state = 878
+				state = 329
+				state = 876
+				state = 877
+				state = 644
+				state = 822
+				state = 875
+				state = 874
+				state = 637
+				state = 562
+				state = 574
+				state = 575
+				state = 565
+				state = 563
+				state = 564
+				state = 566
+				state = 401
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 400
+			has_full_control_of_state = 398
+			has_full_control_of_state = 399
+			has_full_control_of_state = 833
+			has_full_control_of_state = 256
+			has_full_control_of_state = 250
+			has_full_control_of_state = 249
+			has_full_control_of_state = 251
+			has_full_control_of_state = 652
+			has_full_control_of_state = 651
+			has_full_control_of_state = 582
+			has_full_control_of_state = 879
+			has_full_control_of_state = 579
+			has_full_control_of_state = 580
+			has_full_control_of_state = 653
+			has_full_control_of_state = 573
+			has_full_control_of_state = 572
+			has_full_control_of_state = 403
+			has_full_control_of_state = 571
+			has_full_control_of_state = 570
+			has_full_control_of_state = 40
+			has_full_control_of_state = 569
+			has_full_control_of_state = 654
+			has_full_control_of_state = 568
+			has_full_control_of_state = 567
+			has_full_control_of_state = 576
+			has_full_control_of_state = 577
+			has_full_control_of_state = 578
+			has_full_control_of_state = 824
+			has_full_control_of_state = 516
+			has_full_control_of_state = 878
+			has_full_control_of_state = 329
+			has_full_control_of_state = 876
+			has_full_control_of_state = 877
+			has_full_control_of_state = 644
+			has_full_control_of_state = 822
+			has_full_control_of_state = 875
+			has_full_control_of_state = 874
+			has_full_control_of_state = 637
+			has_full_control_of_state = 562
+			has_full_control_of_state = 574
+			has_full_control_of_state = 575
+			has_full_control_of_state = 565
+			has_full_control_of_state = 563
+			has_full_control_of_state = 564
+			has_full_control_of_state = 566
+			has_full_control_of_state = 401
+		}#前提
+		 complete_effect = { 
+			if = {
+				set_cosmetic_tag = AnarchyRUSguo
+				country_event = {  id = WR_SOV.114514 }
+				400 = { add_core_of = ROOT }
+				398 = { add_core_of = ROOT }
+				399 = { add_core_of = ROOT }
+				833 = { add_core_of = ROOT }
+				256 = { add_core_of = ROOT }
+				250 = { add_core_of = ROOT }
+				249 = { add_core_of = ROOT }
+				251 = { add_core_of = ROOT }
+				652 = { add_core_of = ROOT }
+				651 = { add_core_of = ROOT }
+				582 = { add_core_of = ROOT }
+				879 = { add_core_of = ROOT }
+				571 = { add_core_of = ROOT }
+				403 = { add_core_of = ROOT }
+				579 = { add_core_of = ROOT }
+				580 = { add_core_of = ROOT }
+				653 = { add_core_of = ROOT }
+				573 = { add_core_of = ROOT }
+				572 = { add_core_of = ROOT }
+				570 = { add_core_of = ROOT }
+				40 = { add_core_of = ROOT }
+				569 = { add_core_of = ROOT }
+				654 = { add_core_of = ROOT }
+				568 = { add_core_of = ROOT }
+				567 = { add_core_of = ROOT }
+				576 = { add_core_of = ROOT }
+				577 = { add_core_of = ROOT }
+				578 = { add_core_of = ROOT }
+				824 = { add_core_of = ROOT }
+				516 = { add_core_of = ROOT }
+				878 = { add_core_of = ROOT }
+				329 = { add_core_of = ROOT }
+				876 = { add_core_of = ROOT }
+				877 = { add_core_of = ROOT }
+				644 = { add_core_of = ROOT }
+				822 = { add_core_of = ROOT }
+				875 = { add_core_of = ROOT }
+				874 = { add_core_of = ROOT }
+				637 = { add_core_of = ROOT }
+				562 = { add_core_of = ROOT }
+				574 = { add_core_of = ROOT }
+				575 = { add_core_of = ROOT }
+				565 = { add_core_of = ROOT }
+				563 = { add_core_of = ROOT }
+				564 = { add_core_of = ROOT }
+				566 = { add_core_of = ROOT }
+				401 = { add_core_of = ROOT }
+				remove_ideas = WRCDQ
+				remove_ideas = WXBLYCDQ
+				remove_ideas = MXBLYCDQ
+				remove_ideas = YDCDQ
+				remove_ideas = TYRUS
+				limit = {
+					tag = ABC
+				}
+			}
+ 
+			if = {
+				set_cosmetic_tag = FullRusRevivalGovernment
+				400 = { add_core_of = ROOT }
+				398 = { add_core_of = ROOT }
+				399 = { add_core_of = ROOT }
+				833 = { add_core_of = ROOT }
+				256 = { add_core_of = ROOT }
+				250 = { add_core_of = ROOT }
+				249 = { add_core_of = ROOT }
+				251 = { add_core_of = ROOT }
+				652 = { add_core_of = ROOT }
+				651 = { add_core_of = ROOT }
+				582 = { add_core_of = ROOT }
+				879 = { add_core_of = ROOT }
+				571 = { add_core_of = ROOT }
+				403 = { add_core_of = ROOT }
+				579 = { add_core_of = ROOT }
+				580 = { add_core_of = ROOT }
+				653 = { add_core_of = ROOT }
+				573 = { add_core_of = ROOT }
+				572 = { add_core_of = ROOT }
+				570 = { add_core_of = ROOT }
+				40 = { add_core_of = ROOT }
+				569 = { add_core_of = ROOT }
+				654 = { add_core_of = ROOT }
+				568 = { add_core_of = ROOT }
+				567 = { add_core_of = ROOT }
+				576 = { add_core_of = ROOT }
+				577 = { add_core_of = ROOT }
+				578 = { add_core_of = ROOT }
+				824 = { add_core_of = ROOT }
+				516 = { add_core_of = ROOT }
+				878 = { add_core_of = ROOT }
+				329 = { add_core_of = ROOT }
+				876 = { add_core_of = ROOT }
+				877 = { add_core_of = ROOT }
+				644 = { add_core_of = ROOT }
+				822 = { add_core_of = ROOT }
+				875 = { add_core_of = ROOT }
+				874 = { add_core_of = ROOT }
+				637 = { add_core_of = ROOT }
+				562 = { add_core_of = ROOT }
+				574 = { add_core_of = ROOT }
+				575 = { add_core_of = ROOT }
+				565 = { add_core_of = ROOT }
+				563 = { add_core_of = ROOT }
+				564 = { add_core_of = ROOT }
+				401 = { add_core_of = ROOT }
+				566 = { add_core_of = ROOT }
+				remove_ideas = WRCDQ
+				remove_ideas = WXBLYCDQ
+				remove_ideas = TYCDQJD1
+				remove_ideas = MXBLYCDQ
+				remove_ideas = YDCDQ
+				remove_ideas = TYCDQJD2
+				remove_ideas = TYRUS
+				limit = {
+					tag = OMS
+				}
+
+			}	
+			
+			if = {
+				set_cosmetic_tag = SSRUSDG
+				400 = { add_core_of = ROOT }
+				398 = { add_core_of = ROOT }
+				399 = { add_core_of = ROOT }
+				833 = { add_core_of = ROOT }
+				256 = { add_core_of = ROOT }
+				250 = { add_core_of = ROOT }
+				249 = { add_core_of = ROOT }
+				251 = { add_core_of = ROOT }
+				652 = { add_core_of = ROOT }
+				651 = { add_core_of = ROOT }
+				582 = { add_core_of = ROOT }
+				879 = { add_core_of = ROOT }
+				571 = { add_core_of = ROOT }
+				403 = { add_core_of = ROOT }
+				579 = { add_core_of = ROOT }
+				580 = { add_core_of = ROOT }
+				653 = { add_core_of = ROOT }
+				573 = { add_core_of = ROOT }
+				401 = { add_core_of = ROOT }
+				572 = { add_core_of = ROOT }
+				570 = { add_core_of = ROOT }
+				40 = { add_core_of = ROOT }
+				569 = { add_core_of = ROOT }
+				654 = { add_core_of = ROOT }
+				568 = { add_core_of = ROOT }
+				567 = { add_core_of = ROOT }
+				576 = { add_core_of = ROOT }
+				577 = { add_core_of = ROOT }
+				578 = { add_core_of = ROOT }
+				824 = { add_core_of = ROOT }
+				516 = { add_core_of = ROOT }
+				878 = { add_core_of = ROOT }
+				329 = { add_core_of = ROOT }
+				876 = { add_core_of = ROOT }
+				877 = { add_core_of = ROOT }
+				644 = { add_core_of = ROOT }
+				822 = { add_core_of = ROOT }
+				875 = { add_core_of = ROOT }
+				874 = { add_core_of = ROOT }
+				637 = { add_core_of = ROOT }
+				562 = { add_core_of = ROOT }
+				574 = { add_core_of = ROOT }
+				575 = { add_core_of = ROOT }
+				565 = { add_core_of = ROOT }
+				563 = { add_core_of = ROOT }
+				564 = { add_core_of = ROOT }
+				566 = { add_core_of = ROOT }
+				remove_ideas = WRCDQ
+				remove_ideas = WXBLYCDQ
+				remove_ideas = TYCDQJD1
+				remove_ideas = MXBLYCDQ
+				remove_ideas = YDCDQ
+				remove_ideas = TYCDQJD2
+				remove_ideas = TYRUS
+				limit = {
+					tag = kom
+					has_government = fascism
+				}
+			}
+
+			if = {
+				set_cosmetic_tag = SOVRUS
+				400 = { add_core_of = ROOT }
+				398 = { add_core_of = ROOT }
+				399 = { add_core_of = ROOT }
+				833 = { add_core_of = ROOT }
+				256 = { add_core_of = ROOT }
+				250 = { add_core_of = ROOT }
+				401 = { add_core_of = ROOT }
+				249 = { add_core_of = ROOT }
+				251 = { add_core_of = ROOT }
+				652 = { add_core_of = ROOT }
+				651 = { add_core_of = ROOT }
+				582 = { add_core_of = ROOT }
+				879 = { add_core_of = ROOT }
+				571 = { add_core_of = ROOT }
+				403 = { add_core_of = ROOT }
+				579 = { add_core_of = ROOT }
+				580 = { add_core_of = ROOT }
+				653 = { add_core_of = ROOT }
+				573 = { add_core_of = ROOT }
+				572 = { add_core_of = ROOT }
+				570 = { add_core_of = ROOT }
+				40 = { add_core_of = ROOT }
+				569 = { add_core_of = ROOT }
+				654 = { add_core_of = ROOT }
+				568 = { add_core_of = ROOT }
+				567 = { add_core_of = ROOT }
+				576 = { add_core_of = ROOT }
+				577 = { add_core_of = ROOT }
+				578 = { add_core_of = ROOT }
+				824 = { add_core_of = ROOT }
+				516 = { add_core_of = ROOT }
+				878 = { add_core_of = ROOT }
+				329 = { add_core_of = ROOT }
+				876 = { add_core_of = ROOT }
+				877 = { add_core_of = ROOT }
+				644 = { add_core_of = ROOT }
+				822 = { add_core_of = ROOT }
+				875 = { add_core_of = ROOT }
+				874 = { add_core_of = ROOT }
+				637 = { add_core_of = ROOT }
+				562 = { add_core_of = ROOT }
+				574 = { add_core_of = ROOT }
+				575 = { add_core_of = ROOT }
+				565 = { add_core_of = ROOT }
+				563 = { add_core_of = ROOT }
+				564 = { add_core_of = ROOT }
+				566 = { add_core_of = ROOT }
+				remove_ideas = WRCDQ
+				remove_ideas = WXBLYCDQ
+				remove_ideas = TYCDQJD1
+				remove_ideas = MXBLYCDQ
+				remove_ideas = YDCDQ
+				remove_ideas = TYCDQJD2
+				remove_ideas = TYRUS
+				limit = {
+					NOT = { TAG = ABC }
+					has_government = communism
+				}
+
+			}
+
+			if = {
+			set_cosmetic_tag = RUSG
+			400 = { add_core_of = ROOT }
+			401 = { add_core_of = ROOT }
+			398 = { add_core_of = ROOT }
+			399 = { add_core_of = ROOT }
+			833 = { add_core_of = ROOT }
+			256 = { add_core_of = ROOT }
+			250 = { add_core_of = ROOT }
+			249 = { add_core_of = ROOT }
+			251 = { add_core_of = ROOT }
+			652 = { add_core_of = ROOT }
+			651 = { add_core_of = ROOT }
+			582 = { add_core_of = ROOT }
+			879 = { add_core_of = ROOT }
+			571 = { add_core_of = ROOT }
+			403 = { add_core_of = ROOT }
+			579 = { add_core_of = ROOT }
+			580 = { add_core_of = ROOT }
+			653 = { add_core_of = ROOT }
+			573 = { add_core_of = ROOT }
+			572 = { add_core_of = ROOT }
+			570 = { add_core_of = ROOT }
+			40 = { add_core_of = ROOT }
+			569 = { add_core_of = ROOT }
+			654 = { add_core_of = ROOT }
+			568 = { add_core_of = ROOT }
+			567 = { add_core_of = ROOT }
+			576 = { add_core_of = ROOT }
+			577 = { add_core_of = ROOT }
+			578 = { add_core_of = ROOT }
+			824 = { add_core_of = ROOT }
+			516 = { add_core_of = ROOT }
+			878 = { add_core_of = ROOT }
+			329 = { add_core_of = ROOT }
+			876 = { add_core_of = ROOT }
+			877 = { add_core_of = ROOT }
+			644 = { add_core_of = ROOT }
+			822 = { add_core_of = ROOT }
+			875 = { add_core_of = ROOT }
+			874 = { add_core_of = ROOT }
+			637 = { add_core_of = ROOT }
+			562 = { add_core_of = ROOT }
+			574 = { add_core_of = ROOT }
+			575 = { add_core_of = ROOT }
+			565 = { add_core_of = ROOT }
+			563 = { add_core_of = ROOT }
+			564 = { add_core_of = ROOT }
+			566 = { add_core_of = ROOT }
+			remove_ideas = WRCDQ
+			remove_ideas = WXBLYCDQ
+			remove_ideas = TYCDQJD1
+			remove_ideas = MXBLYCDQ
+			remove_ideas = YDCDQ
+			remove_ideas = TYCDQJD2
+			remove_ideas = TYRUS
+			limit = {
+				NOT = { TAG = OMS }
+				NOT = { TAG = ABC }
+				NOT = { TAG = KOM }
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}
+				}
+			}
+		}
+ 	}
+
+	add_people = {
+
+		visible = {
+			or = {
+			has_idea = WRCDQ
+			has_idea = WXBLYCDQ
+			has_idea = CDQJD1
+			has_idea = MXBLYCDQ
+			has_idea = YDCDQ
+			has_idea = CDQJD2
+			has_idea = TYRUS
+			}
+		}
+		cost = 20
+		days_remove = 15
+		complete_effect = { 
+		add_stability = -0.05
+		add_manpower = 1000
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

@@ -1,0 +1,51 @@
+add_namespace = USABOOM_news
+
+news_event  = { #与苏和解
+	id = USABOOM_news.1 #事件
+	title = USABOOM_news.1 #名字
+	desc = USABOOM_news.1_desc #简介
+	picture = GFX_news_event_nuke #封面
+
+	major = yes
+	
+	fire_only_once = nope #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	
+	option = {
+		name = USAOMGGGGG
+		trigger = {
+			TAG = USA
+		}
+	}
+
+	option = {
+		name = GEROMGGGGG
+		trigger = {
+			TAG = GER
+		}
+	}
+
+	option = {
+		name = JAPOMGGGGG
+		trigger = {
+			TAG = JAP
+		}
+	}
+
+	option = {
+		name = otherOMGGGGG
+		trigger = {
+
+			NOT = {
+				OR = {
+					TAG = JAP
+					TAG = GER
+					TAG = USA
+				}
+			}
+
+		}
+	} 
+
+}

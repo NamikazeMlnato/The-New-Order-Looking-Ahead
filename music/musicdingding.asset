@@ -1,0 +1,65 @@
+music = {
+  name = "神圣的战争"
+  file = "sswar.ogg"
+  volume = 0.44
+}
+
+music = {
+  name = "神圣的战争-大审判"
+  file = "sswar1.ogg"
+  volume = 0.44
+}
+
+music = {
+  name = "义勇军进行曲1m"
+  file = "yyjjxq.ogg"
+  volume = 0.44
+}
+
+music = {
+  name = "恭喜恭喜"
+  file = "gongxigongxi.ogg"
+  volume = 0.44
+}
+
+music = {
+  name = "黑暗森林"
+  file = "blackwood.ogg"
+  volume = 0.44
+}
+
+music = {
+  name = "美国兵是废物"
+  file = "MGBSFW.ogg"
+  volume = 0.44
+}
+
+music = {
+  name = "日升之屋"
+  file = "RLZW.ogg"
+  volume = 0.44
+}
+
+music = {
+  name = "请校准时钟"
+  file = "QJZSJ.ogg"
+  volume = 0.44
+}
+
+music = {
+  name = "你看到的我"
+  file = "YouSeeTheMe.ogg"
+  volume = 0.44
+}
+
+music = {
+  name = "错位时空TNO X OTL"
+  file = "CWSKTNO.ogg"
+  volume = 0.44
+}
+
+music = {
+  name = "草东没有派对 但"
+  file = "Dan.ogg"
+  volume = 0.44
+}

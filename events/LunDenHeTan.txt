@@ -1,0 +1,1213 @@
+add_namespace = LunDenHeTan
+
+country_event = { 
+	id = LunDenHeTan.0 #事件
+	title = LunDenHeTan0 #名字
+	desc = LunDenHeTan0_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+    } #弹出条件
+
+	fire_only_once = nope #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	option = {
+		GER = { 
+			white_peace = ENG
+			white_peace = FRA
+			}
+
+		if = {
+		ITA = {
+			white_peace = ENG
+			white_peace = FRA
+			}
+			limit = {
+				ITA = {
+				has_war_with = ENG
+				has_war_with =FRA
+				}
+			}
+		}
+
+		if = {
+		JAP = { 
+			white_peace = ENG
+			white_peace = FRA
+			}
+			limit = {
+				JAP = {
+				has_war_with = ENG
+				has_war_with =FRA
+				}
+			}
+		}
+
+		name = adfasdasdasdasdasdasd
+		set_global_flag = GER_win_the_WW2
+			custom_effect_tooltip = OpenHeTanEvent
+			set_global_flag = FRA_TOU_XIANG
+			set_global_flag = ENG_TOU_XIANG
+			FRA = {
+			custom_effect_tooltip = FRARUNAFR
+			hidden_effect = {
+					set_cosmetic_tag = FRA_FREE
+					transfer_state = 786
+					transfer_state = 782
+					transfer_state = 515
+					transfer_state = 775
+					transfer_state = 577
+					transfer_state = 272
+					transfer_state = 899
+					transfer_state = 898
+					transfer_state = 781
+					transfer_state = 776
+					transfer_state = 777
+				    transfer_state = 778
+					transfer_state = 779
+					transfer_state = 780 
+					transfer_state = 556
+					transfer_state = 557
+					transfer_state = 660
+					transfer_state = 773 
+					transfer_state = 774
+					transfer_state = 708
+					transfer_state = 543
+					transfer_state = 706
+					transfer_state = 713
+					transfer_state = 671
+					transfer_state = 670
+					transfer_state = 286
+					transfer_state = 741
+					17 = { set_demilitarized_zone = yes }
+					18 = { set_demilitarized_zone = yes }
+					785 = { set_demilitarized_zone = yes }
+					16 = { set_demilitarized_zone = yes }
+					27 = { set_demilitarized_zone = yes }
+					20 = { set_demilitarized_zone = yes }
+					32 = { set_demilitarized_zone = yes }
+					851 = { set_demilitarized_zone = yes }
+					21 = { set_demilitarized_zone = yes }
+					22 = { set_demilitarized_zone = yes }
+					26 = { set_demilitarized_zone = yes }
+					24 = { set_demilitarized_zone = yes }
+					15 = { set_demilitarized_zone = yes }
+					30 = { set_demilitarized_zone = yes }
+					33 = { set_demilitarized_zone = yes }
+					25 = { set_demilitarized_zone = yes }
+					31 = { set_demilitarized_zone = yes }
+					19 = { set_demilitarized_zone = yes }
+					806 = { set_demilitarized_zone = yes }
+					23 = { set_demilitarized_zone = yes }
+					14 = { set_demilitarized_zone = yes }
+					29 = { set_demilitarized_zone = yes }
+					28 = { set_demilitarized_zone = yes }
+				}
+				}
+
+				ENG = {
+					custom_effect_tooltip = ENGRUNCAN
+					hidden_effect = {
+					set_cosmetic_tag = CAN_UK
+					annex_country = { target = CAN transfer_troops = yes }
+					set_autonomy = {
+						target = CAN
+						autonomy_state = autonomy_free
+					}
+					864 = { add_core_of = eng }
+					472 = { add_core_of = eng }
+					683 = { add_core_of = eng }
+					471 = { add_core_of = eng }
+					470 = { add_core_of = eng }
+					865 = { add_core_of = eng }
+					867 = { add_core_of = eng }
+					866 = { add_core_of = eng }
+					682 = { add_core_of = eng }
+					467 = { add_core_of = eng }
+					469 = { add_core_of = eng }
+					473 = { add_core_of = eng }
+					740 = { add_core_of = eng }
+					739 = { add_core_of = eng }
+					276 = { add_core_of = eng }
+					862 = { add_core_of = eng }
+					466 = { add_core_of = eng }
+					468 = { add_core_of = eng }
+					863 = { add_core_of = eng }
+					861 = { add_core_of = eng }
+					332 = { add_core_of = eng }
+					860 = { add_core_of = eng }
+					465 = { add_core_of = eng }
+					464 = { add_core_of = eng }
+					331 = { add_core_of = eng }
+					119 = { remove_core_of = eng }
+					933 = { remove_core_of = eng }
+					120 = { remove_core_of = eng }
+					136 = { remove_core_of = eng }
+					121 = { remove_core_of = eng }
+					133 = { remove_core_of = eng }
+					931 = { remove_core_of = eng }
+					131 = { remove_core_of = eng }
+					130 = { remove_core_of = eng }
+					132 = { remove_core_of = eng }
+					122 = { remove_core_of = eng }
+					128 = { remove_core_of = eng }
+					129 = { remove_core_of = eng }
+					125 = { remove_core_of = eng }
+					126 = { remove_core_of = eng }
+					338 = { remove_core_of = eng }
+					127 = { remove_core_of = eng }
+					123 = { remove_core_of = eng }
+					932 = { set_demilitarized_zone = yes }
+					933 = { set_demilitarized_zone = yes }
+					120 = { set_demilitarized_zone = yes }
+					136 = { set_demilitarized_zone = yes }
+					121 = { set_demilitarized_zone = yes }
+					133 = { set_demilitarized_zone = yes }
+					931 = { set_demilitarized_zone = yes }
+					131 = { set_demilitarized_zone = yes }
+					130 = { set_demilitarized_zone = yes }
+					132 = { set_demilitarized_zone = yes }
+					122 = { set_demilitarized_zone = yes }
+					128 = { set_demilitarized_zone = yes }
+					129 = { set_demilitarized_zone = yes }
+					125 = { set_demilitarized_zone = yes }
+					126 = { set_demilitarized_zone = yes }
+					338 = { set_demilitarized_zone = yes }
+					127 = { set_demilitarized_zone = yes }
+					123 = { set_demilitarized_zone = yes }
+					119 = { set_demilitarized_zone = yes }
+					}
+				}
+
+				if = {
+					GER = {
+						transfer_state = 85
+						transfer_state = 807
+						transfer_state = 86
+						transfer_state = 87
+						transfer_state = 98
+						transfer_state = 97
+						transfer_state = 10
+						transfer_state = 92
+						transfer_state = 90
+						transfer_state = 762
+						transfer_state = 72
+						transfer_state = 88
+					}
+					limit = {
+						GER = {
+							has_war_with = POL
+							GEN = { is_subject = no }
+						}
+					}
+				}
+
+				else_if = {
+					GER = {
+						transfer_state = 85
+						transfer_state = 807
+						transfer_state = 86
+						transfer_state = 87
+						transfer_state = 98
+						transfer_state = 97				
+						transfer_state = 762
+						transfer_state = 72
+					}
+					GEN = {
+					transfer_state = 88
+					transfer_state = 10
+					transfer_state = 90
+					transfer_state = 92
+					}
+
+					limit = {
+						GER = {
+							has_war_with = POL
+							GEN = { is_subject = yes }
+						}
+					}
+				}
+
+				if = {
+					GER = {
+					transfer_state = 36
+					transfer_state = 35
+					transfer_state = 7
+					}
+
+					limit = {
+						GER = {
+							has_war_with = HOL
+							RKN = { is_subject = no }
+						}
+					}
+				}
+
+				else_if = {
+					RKN = {
+					transfer_state = 36
+					transfer_state = 35
+					transfer_state = 7
+					}
+
+					limit = {
+						GER = {
+							has_war_with = HOL
+							RKN = { is_subject = yes }
+						}
+					}
+				}
+
+				if = {
+					GER = {
+					transfer_state = 980
+					transfer_state = 977
+					transfer_state = 34
+					transfer_state = 6
+					}
+					limit = {
+						GER = {
+							has_war_with = BEL
+							RKB = { is_subject = no }
+						}
+					}
+				}
+
+				else_if = {
+					RKB = {
+					transfer_state = 980
+					transfer_state = 977
+					transfer_state = 34
+					transfer_state = 6
+					}
+					limit = {
+						GER = {
+							has_war_with = BEL
+							RKB = { is_subject = yes }
+						}
+					}
+				}
+
+				if = {
+					GER = {
+					transfer_state = 110 
+					transfer_state = 921 
+					transfer_state = 922 
+					transfer_state = 142 
+					transfer_state = 920 
+					transfer_state = 143 
+					transfer_state = 923 
+					transfer_state = 144
+					transfer_state = 924 
+					transfer_state = 925
+					}
+					limit = {
+						GER = {
+							has_war_with = NOR
+							RKG = { is_subject = no }
+						}
+					}
+				}
+
+				else_if = {
+					RKG = {
+					transfer_state = 110 
+					transfer_state = 921 
+					transfer_state = 922 
+					transfer_state = 142 
+					transfer_state = 920 
+					transfer_state = 143 
+					transfer_state = 923 
+					transfer_state = 144
+					transfer_state = 924 
+					transfer_state = 925
+					}
+					limit = {
+						GER = {
+							has_war_with = NOR
+							RKG = { is_subject = yes }
+						}
+					}
+				}
+
+	}
+}
+
+country_event = { 
+	id = LunDenHeTan.1 #事件
+	title = LunDenHeTan1#名字
+	desc = LunDenHeTan1_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+    } #弹出条件
+
+	fire_only_once = nope #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	
+	option = {
+		name = ENGKL
+		set_global_flag = LunDenHeTanOpen1
+		LON = {
+			set_cosmetic_tag = ENG
+			933 = { add_core_of = LON }
+			120 = { add_core_of = LON }
+			136 = { add_core_of = LON }
+			121 = { add_core_of = LON }
+			133 = { add_core_of = LON }
+			931 = { add_core_of = LON }
+			131 = { add_core_of = LON }
+			130 = { add_core_of = LON }
+			132 = { add_core_of = LON }
+			122 = { add_core_of = LON }
+			128 = { add_core_of = LON }
+			129 = { add_core_of = LON }
+			125 = { add_core_of = LON }
+			126 = { add_core_of = LON }
+			338 = { add_core_of = LON }
+			127 = { add_core_of = LON }
+			123 = { add_core_of = LON }
+			932 = { add_core_of = LON }
+			transfer_state = 932
+			transfer_state = 933
+			transfer_state = 120
+			transfer_state = 136
+			transfer_state = 121
+			transfer_state = 133
+			transfer_state = 931
+			transfer_state = 131
+			transfer_state = 130
+			transfer_state = 132
+			transfer_state = 122
+			transfer_state = 128
+			transfer_state = 129
+			transfer_state = 125
+			transfer_state = 126
+			transfer_state = 338
+			transfer_state = 127
+			transfer_state = 123
+		}
+
+		IRE = { transfer_state = 119 }
+		hidden_effect = {
+		932 = { set_demilitarized_zone = no }
+		933 = { set_demilitarized_zone = no }
+		120 = { set_demilitarized_zone = no }
+		136 = { set_demilitarized_zone = no }
+		121 = { set_demilitarized_zone = no }
+		133 = { set_demilitarized_zone = no }
+		931 = { set_demilitarized_zone = no }
+		131 = { set_demilitarized_zone = no }
+		130 = { set_demilitarized_zone = no }
+		132 = { set_demilitarized_zone = no }
+		122 = { set_demilitarized_zone = no }
+		128 = { set_demilitarized_zone = no }
+		129 = { set_demilitarized_zone = no }
+		125 = { set_demilitarized_zone = no }
+		126 = { set_demilitarized_zone = no }
+		338 = { set_demilitarized_zone = no }
+		127 = { set_demilitarized_zone = no }
+		123 = { set_demilitarized_zone = no }
+		119 = { set_demilitarized_zone = no }
+		}
+	}
+
+	option = {
+		name = BOOMENG
+		set_global_flag = LunDenHeTanOpen1
+		LON = {
+			set_cosmetic_tag = ENG_england
+			123 = { add_core_of = LON }
+			127 = { add_core_of = LON }
+			338 = { add_core_of = LON }
+			126 = { add_core_of = LON }
+			125 = { add_core_of = LON }
+			129 = { add_core_of = LON }
+			128 = { add_core_of = LON }
+			132 = { add_core_of = LON }
+			130 = { add_core_of = LON }
+			931 = { add_core_of = LON }
+			131 = { add_core_of = LON }
+			transfer_state = 123 
+			transfer_state = 127 
+			transfer_state = 338 
+			transfer_state = 126 
+			transfer_state = 125 
+			transfer_state = 129 
+			transfer_state = 128 
+			transfer_state = 132 
+			transfer_state = 130 
+			transfer_state = 931 
+			transfer_state = 131
+		}
+
+		WLS = {
+			transfer_state = 122
+		}
+
+		SCO = {
+			transfer_state = 933 
+			transfer_state = 120 
+			transfer_state = 136 
+			transfer_state = 121 
+			transfer_state = 133
+		}
+
+		IRE = { transfer_state = 119 }
+
+	}
+}
+
+country_event = { 
+	id = LunDenHeTan.2 #事件
+	title = LunDenHeTan2 #名字
+	desc = LunDenHeTan2_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+    } #弹出条件
+
+	fire_only_once = nope #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	
+	option = { 
+		name = FRAKL
+		set_global_flag = LunDenHeTanOpen4
+		PAS = {
+			set_cosmetic_tag = FRA
+			add_popularity = { ideology = fascism popularity = 1 }
+			set_politics = { ruling_party = fascism }
+			ITA = {
+			transfer_state = 1
+			transfer_state = 735
+			}
+			17 = { add_core_of = PAS }
+			18 = { add_core_of = PAS }
+			785 = { add_core_of = PAS }
+			16 = { add_core_of = PAS }
+			27 = { add_core_of = PAS }
+			20 = { add_core_of = PAS }
+			32 = { add_core_of = PAS }
+			851  = { add_core_of = PAS }
+			21 = { add_core_of = PAS }
+			22 = { add_core_of = PAS }
+			26 = { add_core_of = PAS }
+			24 = { add_core_of = PAS }
+			15 = { add_core_of = PAS }
+			30 = { add_core_of = PAS }
+			33 = { add_core_of = PAS }
+			25 = { add_core_of = PAS }
+			31 = { add_core_of = PAS }
+			19 = { add_core_of = PAS }
+			806  = { add_core_of = PAS }
+			23 = { add_core_of = PAS }
+			14 = { add_core_of = PAS }
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 785
+			transfer_state = 16
+			transfer_state = 27
+			transfer_state = 20
+			transfer_state = 32
+			transfer_state = 851
+			transfer_state = 21
+			transfer_state = 22
+			transfer_state = 26
+			transfer_state = 24
+			transfer_state = 15
+			transfer_state = 30
+			transfer_state = 33
+			transfer_state = 25
+			transfer_state = 31
+			transfer_state = 19
+			transfer_state = 806 
+			transfer_state = 23
+			transfer_state = 14
+			17 = { set_demilitarized_zone = no }
+			18 = { set_demilitarized_zone = no }
+			785 = { set_demilitarized_zone = no }
+			16 = { set_demilitarized_zone = no }
+			27 = { set_demilitarized_zone = no }
+			20 = { set_demilitarized_zone = no }
+			32 = { set_demilitarized_zone = no }
+			851 = { set_demilitarized_zone = no }
+			21 = { set_demilitarized_zone = no }
+			22 = { set_demilitarized_zone = no }
+			26 = { set_demilitarized_zone = no }
+			24 = { set_demilitarized_zone = no }
+			15 = { set_demilitarized_zone = no }
+			30 = { set_demilitarized_zone = no }
+			33 = { set_demilitarized_zone = no }
+			25 = { set_demilitarized_zone = no }
+			31 = { set_demilitarized_zone = no }
+			19 = { set_demilitarized_zone = no }
+			806 = { set_demilitarized_zone = no }
+			23 = { set_demilitarized_zone = no }
+			14 = { set_demilitarized_zone = no }
+			29 = { set_demilitarized_zone = no }
+			28 = { set_demilitarized_zone = no }
+		}
+		
+		GER = { transfer_state = 28 }
+		GER = { transfer_state = 8 }
+		GER = { transfer_state = 1018 } #此乃自制的新地块
+
+		if = {
+			GER = { transfer_state = 29 }
+			limit = { 
+				RKB = { is_subject = no }
+			}
+		 }
+
+ 		else_if = {
+			RKB = { transfer_state = 29 }
+			limit = { 
+				RKB = { is_subject = yes }
+				}
+ 		}
+
+	}
+}
+
+country_event = { 
+	id = LunDenHeTan.3 #事件
+	title = LunDenHeTan3 #名字
+	desc = LunDenHeTan3_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+    } #弹出条件
+
+	fire_only_once = nope #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	
+	option = {
+		name = AEJLYGIVEFRA
+		set_global_flag = LunDenHeTanOpen3
+		PAS = {
+			transfer_state = 460
+			transfer_state = 513
+			transfer_state = 459
+		}
+		ITA = {
+			transfer_state = 458
+			transfer_state = 665
+		}
+
+		if = {
+			SPA = {
+				transfer_state = 462
+				transfer_state = 461
+				transfer_state = 290
+				transfer_state = 118
+			}
+			limit = {
+					SPA = {
+					is_in_faction_with = GER
+					}
+			}
+		}
+
+		if = {
+			PAS = {
+				transfer_state = 462
+				transfer_state = 461
+				transfer_state = 118
+				transfer_state = 514
+			}
+			limit = {
+					NOT = { SPA = {
+					is_in_faction_with = GER
+					}
+				}
+			}
+		}
+		
+		EGY = {
+		ITA = {
+			puppet = PREV
+			set_autonomy = { target = PREV autonomy_state = autonomy_dominion }
+		}
+		set_cosmetic_tag = EGY_ITA
+			transfer_state = 452
+			transfer_state = 447
+			transfer_state = 907
+			transfer_state = 457
+			transfer_state = 456
+			transfer_state = 552
+			transfer_state = 883
+			transfer_state = 551
+			transfer_state = 886
+			transfer_state = 549
+			transfer_state = 884
+			transfer_state = 885
+			transfer_state = 887
+			transfer_state = 767
+		}
+	}
+
+	option = {
+		name = AEJLYGIVEITA
+		set_global_flag = LunDenHeTanOpen3
+		ITA = {
+			transfer_state = 460
+			transfer_state = 513
+			transfer_state = 514
+			transfer_state = 459
+		}
+		ITA = {
+			transfer_state = 458
+			transfer_state = 665
+		}
+		SPA = {
+			transfer_state = 462
+			transfer_state = 461
+			transfer_state = 290
+			transfer_state = 118
+		}
+
+		if = {
+			SPA = {
+				transfer_state = 462
+				transfer_state = 461
+				transfer_state = 290
+				transfer_state = 118
+			}
+			limit = {
+					SPA = {
+					is_in_faction_with = GER
+					}
+
+			}
+		}
+
+		if = {
+			PAS = {
+				transfer_state = 462
+				transfer_state = 461
+				transfer_state = 118
+				transfer_state = 514
+			}
+			limit = {
+					NOT = { SPA = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+		}
+
+		EGY = {
+		ITA = {
+			puppet = PREV
+			set_autonomy = { target = PREV autonomy_state = autonomy_dominion }
+		}
+		set_cosmetic_tag = EGY_ITA
+			transfer_state = 452
+			transfer_state = 447
+			transfer_state = 907
+			transfer_state = 457
+			transfer_state = 456
+			transfer_state = 552
+			transfer_state = 883
+			transfer_state = 551
+			transfer_state = 886
+			transfer_state = 549
+			transfer_state = 884
+			transfer_state = 885
+			transfer_state = 887
+			transfer_state = 767
+		}
+		
+	}
+}
+
+country_event = { 
+	id = LunDenHeTan.4 #事件
+	title = LunDenHeTan4 #名字
+	desc = LunDenHeTan4_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+    } #弹出条件
+
+	fire_only_once = nope #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	
+	option = {
+		name = GERMANZHIMINGDI
+		set_global_flag = LunDenHeTanOpen7
+		GER = {
+
+			if = {
+				limit = {
+					country_exists = CAR
+					NOT = { CAR = { has_government = fascism } }
+				}
+				hidden_effect = {
+					CAR = {
+						transfer_state = 297
+						transfer_state = 539
+						transfer_state = 772
+						transfer_state = 538
+						transfer_state = 718
+						transfer_state = 295
+						transfer_state = 888
+						transfer_state = 890
+						transfer_state = 796
+						transfer_state = 540
+						transfer_state = 889
+					}
+				}
+				CAR = {
+					start_civil_war = {
+						ideology = fascism
+						size = 1
+						transfer_state = 297
+						transfer_state = 539
+						transfer_state = 772
+						transfer_state = 538
+						transfer_state = 718
+						transfer_state = 295
+						transfer_state = 888
+						transfer_state = 890
+						transfer_state = 796
+						transfer_state = 540
+						transfer_state = 889
+
+						GER = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						set_cosmetic_tag = COG_reichskommissariat_fascism
+					}
+				}
+			}
+			else = {
+				CAR = {
+						transfer_state = 297
+						transfer_state = 539
+						transfer_state = 772
+						transfer_state = 538
+						transfer_state = 718
+						transfer_state = 295
+						transfer_state = 888
+						transfer_state = 890
+						transfer_state = 796
+						transfer_state = 540
+						transfer_state = 889
+					set_cosmetic_tag = 	COG_reichskommissariat_fascism
+				}
+				set_autonomy = { target = CAR autonomy_state = autonomy_integrated_puppet }
+			}
+
+			if = {
+				limit = {
+					country_exists = NMB
+					NOT = { NMB = { has_government = fascism } }
+				}
+				hidden_effect = {
+					NMB = {
+						transfer_state = 891
+						transfer_state = 892
+						transfer_state = 895
+						transfer_state = 894
+						transfer_state = 541
+						transfer_state = 893
+						891 = { add_Core_of = NMB }
+						892 = { add_Core_of = NMB }
+						895 = { add_Core_of = NMB }
+						894 = { add_Core_of = NMB }
+						541 = { add_Core_of = NMB }
+						893 = { add_Core_of = NMB }
+					}
+				}
+				NMB = {
+					start_civil_war = {
+						ideology = fascism
+						size = 1
+						transfer_state = 891
+						transfer_state = 892
+						transfer_state = 895
+						transfer_state = 894
+						transfer_state = 541
+						transfer_state = 893
+						891 = { add_Core_of = NMB }
+						892 = { add_Core_of = NMB }
+						895 = { add_Core_of = NMB }
+						894 = { add_Core_of = NMB }
+						541 = { add_Core_of = NMB }
+						893 = { add_Core_of = NMB }
+
+						GER = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						set_cosmetic_tag = ANG_reichskommissariat_fascism
+					}
+				}
+			}
+			else = {
+				NMB = {
+					transfer_state = 891
+					transfer_state = 892
+					transfer_state = 895
+					transfer_state = 894
+					transfer_state = 541
+					transfer_state = 893
+					891 = { add_Core_of = NMB }
+					892 = { add_Core_of = NMB }
+					895 = { add_Core_of = NMB }
+					894 = { add_Core_of = NMB }
+					541 = { add_Core_of = NMB }
+					893 = { add_Core_of = NMB }
+					set_cosmetic_tag = 	ANG_reichskommissariat_fascism
+				}
+				set_autonomy = { target = NMB autonomy_state = autonomy_integrated_puppet }
+
+			}
+
+			if = {
+				limit = {
+					country_exists = ZIM
+					NOT = { ZIM = { has_government = fascism } }
+				}
+				hidden_effect = {
+					ZIM = {
+						transfer_state = 905
+						transfer_state = 547
+						transfer_state = 904
+						transfer_state = 548
+						transfer_state = 768
+						transfer_state = 769
+						transfer_state = 546
+						transfer_state = 771
+						transfer_state = 770
+						transfer_state = 897
+						transfer_state = 896
+						transfer_state = 545
+						transfer_state = 544
+						transfer_state = 981
+						905 = { add_core_of = ZIM }
+						547 = { add_core_of = ZIM }
+						904 = { add_core_of = ZIM }
+						548 = { add_core_of = ZIM }
+						768 = { add_core_of = ZIM }
+						769 = { add_core_of = ZIM }
+						546 = { add_core_of = ZIM }
+						771 = { add_core_of = ZIM }
+						770 = { add_core_of = ZIM }
+						897 = { add_core_of = ZIM }
+						896 = { add_core_of = ZIM }
+						545 = { add_core_of = ZIM }
+						544 = { add_core_of = ZIM }
+						981 = { add_core_of = ZIM }
+					}
+				}
+				ZIM = {
+					start_civil_war = {
+						ideology = fascism
+						size = 1
+						transfer_state = 905
+						transfer_state = 547
+						transfer_state = 904
+						transfer_state = 548
+						transfer_state = 768
+						transfer_state = 769
+						transfer_state = 546
+						transfer_state = 771
+						transfer_state = 770
+						transfer_state = 897
+						transfer_state = 896
+						transfer_state = 545
+						transfer_state = 544
+						transfer_state = 981
+						905 = { add_core_of = ZIM }
+						547 = { add_core_of = ZIM }
+						904 = { add_core_of = ZIM }
+						548 = { add_core_of = ZIM }
+						768 = { add_core_of = ZIM }
+						769 = { add_core_of = ZIM }
+						546 = { add_core_of = ZIM }
+						771 = { add_core_of = ZIM }
+						770 = { add_core_of = ZIM }
+						897 = { add_core_of = ZIM }
+						896 = { add_core_of = ZIM }
+						545 = { add_core_of = ZIM }
+						544 = { add_core_of = ZIM }
+						981 = { add_core_of = ZIM }
+						GER = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						set_cosmetic_tag = GRO_reichskommissariat_fascism
+					}
+				}
+			}
+			else = {
+				ZIM = {
+					transfer_state = 905
+					transfer_state = 547
+					transfer_state = 904
+					transfer_state = 548
+					transfer_state = 768
+					transfer_state = 769
+					transfer_state = 546
+					transfer_state = 771
+					transfer_state = 770
+					transfer_state = 897
+					transfer_state = 896
+					transfer_state = 545
+					transfer_state = 544
+					transfer_state = 981
+					905 = { add_core_of = ZIM }
+					547 = { add_core_of = ZIM }
+					904 = { add_core_of = ZIM }
+					548 = { add_core_of = ZIM }
+					768 = { add_core_of = ZIM }
+					769 = { add_core_of = ZIM }
+					546 = { add_core_of = ZIM }
+					771 = { add_core_of = ZIM }
+					770 = { add_core_of = ZIM }
+					897 = { add_core_of = ZIM }
+					896 = { add_core_of = ZIM }
+					545 = { add_core_of = ZIM }
+					544 = { add_core_of = ZIM }
+					981 = { add_core_of = ZIM }
+					set_cosmetic_tag = 	GRO_reichskommissariat_fascism
+				}
+				set_autonomy = { target = ZIM autonomy_state = autonomy_integrated_puppet }
+
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = LunDenHeTan.5 #事件
+	title = LunDenHeTan5 #名字
+	desc = LunDenHeTan5_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+    } #弹出条件
+
+	fire_only_once = nope #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	
+	option = {
+		name = YUGisITA
+		ITA = { country_event = { id = LunDenHeTan.6 } }
+		set_global_flag = LunDenHeTanOpen6
+	}
+}
+
+country_event = { 
+	id = LunDenHeTan.6 #事件
+	title = LunDenHeTan6 #名字
+	desc = LunDenHeTan6_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+    } #弹出条件
+
+	fire_only_once = nope #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	
+	option = {
+		name = OK
+		ITA = {
+		set_autonomy = {
+			target = CRO
+			autonomy_state = autonomy_puppet
+			}
+
+		set_autonomy = {
+			target = SER
+			autonomy_state = autonomy_puppet
+			}
+
+		set_autonomy = {
+			target = MNT
+			autonomy_state = autonomy_puppet
+			}
+
+		CRO = {
+			transfer_state = 109
+			transfer_state = 104
+			transfer_state = 804
+			transfer_state = 103
+			transfer_state = 163
+			804 = { add_core_of = CRO }
+			104 = { add_core_of = CRO }
+			}
+
+		SER = {
+			transfer_state = 764
+			transfer_state = 107
+			transfer_state = 108
+			transfer_state = 802
+			}
+
+		MNT ={
+			transfer_state = 105
+			}
+		}
+		set_global_flag = LunDenHeTanOpen6
+	}
+
+}
+
+country_event = { 
+	id = LunDenHeTan.7 #事件
+	title = LunDenHeTan7 #名字
+	desc = LunDenHeTan7_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+    } #弹出条件
+
+	fire_only_once = nope #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	
+	option = {
+		name = YOUSLEFTAN
+		HUN = {
+			transfer_state = 45
+		}
+		BUL = {
+			transfer_state = 106
+			transfer_state = 970
+			transfer_state = 803
+		}
+		set_global_flag = LunDenHeTanOpen8
+	}
+}
+
+country_event = { 
+	id = LunDenHeTan.8 #事件
+	title = LunDenHeTan8 #名字
+	desc = LunDenHeTan8_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+    } #弹出条件
+
+	fire_only_once = nope #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	
+	option = {
+		name = GIVEME
+		GER = {
+		transfer_state =  543
+		transfer_state =  708
+		}
+		set_global_flag = LunDenHeTanOpen8
+	}
+
+	option = {
+		name = GIVEDONGNANFEI
+		ZIM = {
+		transfer_state =  543
+		transfer_state =  708
+		}
+		543 = { add_core_of = ZIM }
+		708 = { add_core_of = ZIM }
+		set_global_flag = LunDenHeTanOpen8
+	}
+
+}
+
+country_event = { 
+	id = LunDenHeTan.9 #事件
+	title = LunDenHeTan9 #名字
+	desc = LunDenHeTan9_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+    } #弹出条件
+
+	fire_only_once = nope #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	
+	option = {
+		name = GIVEJAP
+		
+		VIN = {
+			transfer_state =  671
+			transfer_state =  286
+		}
+
+		LAO = {
+			transfer_state =  670
+		}
+
+		CAM = {
+			transfer_state =  741
+		}
+
+		JAP = {
+			set_autonomy = {
+			target = VIN
+			autonomy_state = autonomy_puppet
+			}
+
+			set_autonomy = {
+			target = LAO
+			autonomy_state = autonomy_puppet
+			}
+
+			set_autonomy = {
+			target = CAM
+			autonomy_state = autonomy_puppet
+			}
+
+			set_autonomy = {
+			target = BRM
+			autonomy_state = autonomy_puppet
+			}
+		}
+
+		GER = { country_event = { id = LunDenHeTan.10 } }
+
+	}
+}
+
+country_event = { 
+	id = LunDenHeTan.10 #事件
+	title = LunDenHeTan10 #名字
+	desc = LunDenHeTan10_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+    } #弹出条件
+
+	fire_only_once = nope #是不是只有一次
+
+	is_triggered_only = yes #这个事件是否会自己弹
+	
+	option = {
+		name = ENDDDDDDDD
+		add_ideas = FRA_victors_of_wwi
+	}
+}

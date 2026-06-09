@@ -1,0 +1,22 @@
+﻿focus_tree = {
+	id = BRGGUOCE
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BRG
+		}	 
+	}
+	default = no
+
+	focus = {
+		id = BRG_InTheBleackSun
+		icon = no
+		cost = 0
+		x = 0
+		y = 0
+		completion_reward = { }
+	}
+}

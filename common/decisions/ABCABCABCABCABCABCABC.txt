@@ -1,0 +1,240 @@
+ABCABCABCABCABCABC = {
+	ABCABCABCABCABCABCA = {
+		icon = no
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+			any_other_country = {
+			has_war_with = ABC
+			}
+		}
+
+		complete_effect = {
+			every_country = {
+				white_peace = ABC
+			}
+		}
+
+	}			
+
+	LunDenHeTan0 = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+			GER = { has_war_with = ENG}
+			or = {
+			GER = { 
+			controls_state = 123
+			controls_state = 338
+			controls_state = 127
+			controls_state = 126
+			controls_state = 125
+			controls_state = 129
+			controls_state = 128
+			controls_state = 122
+			controls_state = 132
+	 		controls_state = 130 
+			}
+		any_other_country = {
+			is_in_faction_with = GER
+			controls_state = 123
+			controls_state = 338
+			controls_state = 127
+			controls_state = 126
+			controls_state = 125
+			controls_state = 129
+			controls_state = 128
+			controls_state = 122
+			controls_state = 132
+	 		controls_state = 130
+		}
+		ENG = { surrender_progress > 0.5 }
+		}
+
+		#			⠀⠀⠀⢀⠴⣲⣯⣉⣽⣿⡛⠻⣶⠖⢒⢶⣦⣄⠀⠀⠀⠀⠀
+		#	⠀⠀⢀⡴⢁⡜⠉⠋⠉⠹⠉⠱⡄⠙⢦⣼⣾⣿⣿⣧⠀⠀⠀⠀
+		#	⠀⢀⡞⢀⡞⢀⡄⠀⠀⢀⢸⠀⠹⡀⠈⣟⠿⣿⣿⣟⣉⡇⠀⠀
+		#	⣴⣫⠀⢸⢠⣾⡇⢠⠀⢸⢰⢆⠀⡇⠀⢹⣿⣿⣿⣿⣌⡇⠀⠀
+		#	⠀⠀⢀⡼⢻⠛⢿⡾⠦⣿⣿⣿⣷⡇⠀⢸⠁⣯⣿⠛⡹⠛⣦⠀
+		#	⠀⢰⢨⠀⠈⢓⢺⢁⣀⠀⢿⢀⣼⠃⠀⣸⣠⠃⣇⡴⠁⠀⢸⡇
+		#	⠀⠘⣎⢓⢤⣄⣀⣉⡉⣁⣀⣠⣿⡆⢠⠟⠁⠀⠘⠁⠀⠀⢸⡇
+		#	⠀⠀⠈⢺⡿⠇⡀⠉⠉⠉⠉⢉⣼⡡⠋⠀⠀⢀⣴⠀⠀⣠⠟⠀
+		#	⠀⠀⠀⠀⢷⡀⢻⡶⣤⣤⠀⠀⠀⠀⣀⣤⡴⠛⡇⠀⠀⡏⠀⠀
+		#	⠀⠀⠀⠀⠈⠳⠼⠃⠀⠈⢧⡀⠀⠀⡇⠀⠀⠀⠻⣄⣀⡟⠀⠀
+		#	⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠶⠾⠁⠀⠀⠀⠀⠈⠉⠀
+
+	}
+
+		complete_effect = { 
+			GER = { country_event = { id = LunDenHeTan.0 } }
+		 }
+
+	}
+
+
+	LunDenHeTan = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+			has_global_flag = FRA_TOU_XIANG
+			has_global_flag = ENG_TOU_XIANG
+			NOT = { has_global_flag = LunDenHeTanOpen }
+		}
+
+		complete_effect = { 
+			set_global_flag = GER_win_the_WW2
+			set_global_flag = LunDenHeTanOpen
+		 }
+
+	}	
+
+	LunDenHeTan1 = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+			has_global_flag = LunDenHeTanOpen
+		}
+		days_remove = 15
+		remove_effect = { 
+			GER = { country_event = { id = LunDenHeTan.1 }}
+		}
+
+	}	
+
+	LunDenHeTan2 = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+			has_global_flag = LunDenHeTanOpen1
+		}
+
+		days_remove = 15
+		remove_effect = { 
+			GER = { country_event = { id = LunDenHeTan.2 }}
+		}
+
+	}
+
+	LunDenHeTan3 = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+			has_global_flag = LunDenHeTanOpen2
+		}
+
+		days_remove = 15
+		remove_effect = { 
+			GER = { country_event = { id = LunDenHeTan.3 }}
+		}
+
+	}
+
+	LunDenHeTan4 = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+			has_global_flag = LunDenHeTanOpen3
+		}
+
+		days_remove = 15
+		remove_effect = { 
+			GER = { country_event = { id = LunDenHeTan.4 }}
+		}
+
+	}
+
+	LunDenHeTan5 = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+			has_global_flag = LunDenHeTanOpen4
+		}
+
+		days_remove = 15
+		remove_effect = { 
+			GER = { country_event = { id = LunDenHeTan.5 }}
+		}
+
+	}
+	
+	LunDenHeTan7 = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+			has_global_flag = LunDenHeTanOpen6
+		}
+
+		days_remove = 15
+		remove_effect = { 
+			GER = { country_event = { id = LunDenHeTan.7 }}
+		}
+
+	}
+
+	LunDenHeTan8 = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+			has_global_flag = LunDenHeTanOpen7
+		}
+
+		days_remove = 15
+		remove_effect = { 
+			GER = { country_event = { id = LunDenHeTan.8 }}
+		}
+
+	}
+
+	LunDenHeTan9 = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+			has_global_flag = LunDenHeTanOpen8
+		}
+
+		days_remove = 15
+		remove_effect = { 
+			GER = { country_event = { id = LunDenHeTan.9 }}
+		}
+
+	}
+
+	LunDenHeTan10 = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+			has_global_flag = LunDenHeTanOpen9
+		}
+
+		days_remove = 15
+		remove_effect = { 
+			GER = { country_event = { id = LunDenHeTan.10 } }
+		}
+
+	}
+
+}

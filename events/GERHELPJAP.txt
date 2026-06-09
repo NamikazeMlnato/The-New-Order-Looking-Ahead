@@ -1,0 +1,127 @@
+add_namespace = HELPJAP
+add_namespace = NOIBOOM
+add_namespace = CHICHENG
+
+country_event = { #苏维埃联盟的崩溃
+	id = HELPJAP.1 #事件
+	title = HELPJAP.1 #名字
+	desc = HELPJAP.1_desc #简介
+	picture = NOPE #封面
+
+	fire_only_once = no #是不是只有一次
+
+	is_triggered_only = no #这个事件是否会自己弹
+
+	trigger = { 
+		tag = ger 
+		has_global_flag = boomzhenzhugang 
+	}
+
+	option = {
+        name = yuanzidan
+        hidden_effect = {
+			
+		}
+		create_entity = {
+			entity = nuke_entity
+			id = 0401447
+			province = 4180
+			scale = .4
+			min_zoom = -1
+		}
+		set_entity_animation = {
+			id = 0401447
+			animation = "attack"
+		}
+		clr_global_flag = boomzhenzhugang
+    }
+
+    }
+
+	country_event = { #苏维埃联盟的崩溃
+	id = NOIBOOM.1 #事件
+	title = NOIBOOM.1 #名字
+	desc = NOIBOOM.1_desc #简介
+	picture = NOPE #封面
+
+	fire_only_once = no #是不是只有一次
+
+	is_triggered_only = no #这个事件是否会自己弹
+
+	trigger = { 
+		tag = usa 
+		has_global_flag = boomzhenzhuganga
+	}
+
+	option = {
+		name = frafrafrafra
+		custom_effect_tooltip = TNOshishi
+		white_peace = GER
+		white_peace = ITA
+		white_peace = JAP
+		custom_effect_tooltip = qianshuchichengxieyi
+		set_global_flag = CHICHENG
+	}
+
+	}
+
+	country_event = { #苏维埃联盟的崩溃
+	id = CHICHENG.1 #事件
+	title = CHICHENG.1 #名字
+	desc = CHICHENG.1_desc #简介
+	picture = NOPE #封面
+
+	fire_only_once = yes #是不是只有一次
+
+	is_triggered_only = no #这个事件是否会自己弹
+
+	trigger = { 
+		tag = usa 
+		has_global_flag = CHICHENG
+	}
+
+	option = {
+		name = frafrafrafraFRAFRA
+		add_ideas = ChiChengXieYi
+	}
+
+	}
+
+	country_event = { #苏维埃联盟的崩溃
+	id = CHICHENG.2 #事件
+	title = CHICHENG.2 #名字
+	desc = CHICHENG.2_desc #简介
+	picture = NOPE #封面
+
+	fire_only_once = yes #是不是只有一次
+
+	is_triggered_only = no #这个事件是否会自己弹
+
+	trigger = { 
+		tag = jap 
+		has_global_flag = CHICHENG
+	}
+
+	option = {
+		name = frafrafrafraFRAFRA
+		add_ideas = ChiChengXieYiMONEY
+		JAP = {
+		transfer_state = 638
+		transfer_state = 632
+		transfer_state = 631
+		transfer_state = 629
+		transfer_state = 727
+		transfer_state = 642
+		transfer_state = 650
+		transfer_state = 630
+		transfer_state = 975
+		transfer_state = 976
+		set_autonomy = {
+		target = PHI
+		autonomy_state = autonomy_colony
+	}
+		}
+	clr_global_flag = CHICHENG
+	}
+
+	}

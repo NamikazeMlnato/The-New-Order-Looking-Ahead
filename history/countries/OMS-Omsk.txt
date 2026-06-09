@@ -1,0 +1,36 @@
+﻿capital = 571
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1		
+	interwar_antiair = 1
+	tech_support = 1	
+	tech_recon = 1
+	tech_engineers =1
+}
+
+
+set_popularities = {
+	fascism = 0
+	National_Revengeism = 100
+	communism = 0
+	neutrality = 0
+	democratic = 0
+}
+
+set_politics = {
+	ruling_party = National_Revengeism
+	last_election = "1962.1.1"
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "德米特里·亚佐夫"
+	desc = "I like Omsk"
+	picture = "gfx/leaders/OMS/Portrait_Omsk_Dmitry_Yazov.dds"
+	expire = "1963.4.4"
+	ideology = Ultramilitarism
+	traits = { 
+	 }
+}

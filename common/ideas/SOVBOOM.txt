@@ -1,0 +1,31 @@
+ideas = {
+
+	country = {
+		SOVBOOM = {
+			
+			picture = nope
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = -0.005
+				war_support_factor = -0.3
+				army_morale_factor = -0.15
+				communism_drift = -0.01
+	 		}
+			
+			rule = {
+				
+			}
+		}
+	}
+
+}

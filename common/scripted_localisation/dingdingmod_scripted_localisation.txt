@@ -1,0 +1,97 @@
+
+defined_text = {
+	name = InTheBleackSun1
+	text = {
+		trigger = {
+			is_ai = no
+		}
+		localization_key = InTheBleackSun2
+	}
+	text = {
+		localization_key = JueMi
+	}
+}
+
+defined_text = {
+	name = KaiFaYouKuang
+	text = {
+		trigger = {
+			tag = GER
+		}
+		localization_key = KaiFaBoXiMiYaYouKuang
+	}
+	text = {
+		localization_key = KaiFaYouKuangOther
+	}
+}
+
+defined_text = {
+	name = NongSuoYouYongLiang1
+	text = {
+		trigger = {
+			tag = GER
+		}
+		localization_key = NongSuoYouYongLiang2
+	}
+	text = {
+		localization_key = JiSuanNongSuoYouYongLiang
+	}
+}
+
+defined_text = {
+	name = Country_tittle1
+	text = {
+		trigger = {
+			has_country_flag = GER_tittle_button
+		}
+		localization_key = Country_tittle_GER
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = JAP_tittle_button
+		}
+		localization_key = Country_tittle_JAP
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = USA_tittle_button
+		}
+		localization_key = Country_tittle_USA
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = SOV_tittle_button
+		}
+		localization_key = Country_tittle_SOV
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = CHI_tittle_button
+		}
+		localization_key = Country_tittle_CHI
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PRC_tittle_button
+		}
+		localization_key = Country_tittle_PRC
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = OMS_tittle_button
+		}
+		localization_key = Country_tittle_OMS
+	}
+	text = {
+		trigger = {
+			has_country_flag = Country_tittle_button
+		}
+		localization_key = Country_tittle2
+	}
+}

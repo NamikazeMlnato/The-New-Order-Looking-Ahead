@@ -1,0 +1,129 @@
+ideas = {
+
+	hidden_ideas = {
+		WRCDQ = {
+			
+			picture = nope
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+		}
+	}
+
+	hidden_ideas = {
+		WXBLYCDQ = {
+			
+			picture = nope
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+		}
+	}
+
+	hidden_ideas = {
+		TYCDQJD1 = {
+			
+			picture = nope
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+		}
+	}
+
+	hidden_ideas = {
+		MXBLYCDQ = {
+			
+			picture = nope
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+		}
+	}
+
+	hidden_ideas = {
+		YDCDQ = {
+			
+			picture = nope
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+		}
+	}
+
+	hidden_ideas = {
+		TYCDQJD2 = {
+			
+			picture = nope
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+		}
+	}
+
+	hidden_ideas = {
+		TYRUS = {
+			
+			picture = nope
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+		}
+	}
+
+}

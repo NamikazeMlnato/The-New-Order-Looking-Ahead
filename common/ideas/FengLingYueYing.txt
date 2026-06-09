@@ -1,0 +1,157 @@
+ideas = {
+
+	country = {
+		FengLingYueYing = {
+			picture = FengLingYueYing
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.1 #陆军核心防御
+				army_speed_factor = 0.1 #陆军师速度
+				supply_consumption_factor = -0.01 #补给消耗
+			}
+
+		}
+		
+		FengLingYueYing2 = {
+			picture = FengLingYueYing
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.2 #陆军核心防御
+				army_speed_factor = 0.5 #陆军师速度
+				breakthrough_factor = 0.4 #突破
+				mobilization_speed = 0.5 #动员速度
+				surrender_limit = 0.1 #投降界限
+				send_volunteer_divisions_required = -0.3 #可以派遣志愿军的师数下限
+				justify_war_goal_time = -0.5 #正当化战争目标所需时间
+				generate_wargoal_tension = -0.2 #制造战争目标的紧张度限制
+				planning_speed = 0.4 #计划速度
+			}
+
+		}
+
+		FengLingYueYing3 = {
+			picture = FengLingYueYing
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 0.8 #陆军核心攻击
+				army_core_defence_factor = 0.8 #陆军核心防御
+				army_attack_factor = 0.8 #陆军攻击
+				army_defence_factor = 0.8 #陆军防御
+				army_speed_factor = 2 #陆军师速度
+				breakthrough_factor = 0.8 #突破
+				mobilization_speed = 0.8 #动员速度
+				surrender_limit = 0.8 #投降界限
+				send_volunteer_divisions_required = -0.8 #可以派遣志愿军的师数下限
+				justify_war_goal_time = -0.8 #正当化战争目标所需时间
+				generate_wargoal_tension = -0.8 #制造战争目标的紧张度限制
+				autonomy_gain = 0.8 #自治度每日增加(加多少打多少)
+				drift_defence_factor = 0.8 #意识形态抵制力度
+				planning_speed = 0.8 #计划速度
+			}
+
+		}
+
+		FengLingYueYing4 = {
+			picture = FengLingYueYing
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 1 #陆军核心攻击
+				army_core_defence_factor = 1 #陆军核心防御
+				army_attack_factor = 1 #陆军攻击
+				army_defence_factor = 1 #陆军防御
+				army_speed_factor = 1 #陆军师速度
+				breakthrough_factor = 1 #突破
+				army_org_factor = 1 #陆军组织度
+				mobilization_speed = 1 #动员速度
+				surrender_limit = 1 #投降界限
+				send_volunteer_divisions_required = -1 #可以派遣志愿军的师数下限
+				justify_war_goal_time = -1 #正当化战争目标所需时间
+				generate_wargoal_tension = -1 #制造战争目标的紧张度限制
+				autonomy_gain = 1 #自治度每日增加(加多少打多少)
+				drift_defence_factor = 1 #意识形态抵制力度
+				planning_speed = 1 #计划速度
+			}
+
+		}
+
+		FengLingYueYing5 = {
+			picture = FengLingYueYing
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 100 #陆军核心攻击
+				army_core_defence_factor = 100 #陆军核心防御
+				army_attack_factor = 100 #陆军攻击
+				army_defence_factor = 100 #陆军防御
+				army_speed_factor = 100 #陆军师速度
+				breakthrough_factor = 100 #突破
+				army_org_factor = 100 #陆军组织度
+				army_morale_factor = 100 #组织度恢复
+				supply_consumption_factor = -100 #补给消耗
+				mobilization_speed = 100 #动员速度
+				surrender_limit = 100 #投降界限
+				send_volunteer_divisions_required = -100 #可以派遣志愿军的师数下限
+				justify_war_goal_time = -100 #正当化战争目标所需时间
+				generate_wargoal_tension = -100 #制造战争目标的紧张度限制
+				research_speed_factor = 100 #研究速度
+				autonomy_gain = 100 #自治度每日增加(加多少打多少)
+				production_speed_buildings_factor = 100 #建造速度
+				drift_defence_factor = 100 #意识形态抵制力度
+				political_power_factor = 100 #政治点(以百分比形式增加 例0.25 = 25% )
+				planning_speed = 100 #计划速度
+			}
+
+		}
+
+	}
+
+}

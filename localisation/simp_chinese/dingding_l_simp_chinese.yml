@@ -1,0 +1,97 @@
+﻿l_simp_chinese:
+ GER_hejie:"前线危机"
+ ger:"停止对苏联的进攻"
+
+ SOVBOOM:0 "苏维埃联盟的崩溃"
+ SOV_BOOM_RUN:0 "§R苏维埃联盟已经崩溃,二战的结局已无法逆转,但广袤的俄罗斯大地上还留有一丝曙光!§!"
+ WR_SOV.1991:0 "苏维埃联盟的崩溃"
+ BOOM:0 "请你宽恕我们吧，母亲"
+
+ WR_SOV.1:0 "补给不足!"
+ WR_SOV.1_desc:0 "苏维埃联盟已经被我们推进至了AA线以东，现在德军面临着严重的补给问题，德军总参谋部认为我们在东欧的征服已经成功，理论上苏军对此结局无力回天，所以建议我们就此停战"
+ hejiewithsov:0 "我们无力与苏联消耗"
+ nohejiewithsov:0 "我们要将苏联从世界地图中抹去"
+ WR_SOV.1.a:0 "就这样吧，消化一下胜利果实"
+
+ NoHasBuJi:0 "东线补给不足"
+ VictoryOfGermania:0 "胜利属于日耳曼尼亚!"
+
+ ZZDD:0 "后方动乱"
+ KAZNOKZ:0 "中亚失去控制"
+ SOV_WR1:0 "西俄战争"
+ WRZZDJS:0 "获得胜利"
+
+ dingdingradio_TITLE:"叮叮の奇妙小歌单"
+
+ form_greater_german_reich:0"宣告大日耳曼国成立"
+ GER_greater_german_reich11111:"§Y德意志第三帝国§!将被称为§Y大日耳曼国§!"
+ Germania_state:"大日耳曼国的领土"
+
+ GER_greater_german_reich111112:"§Y德意志第三帝国§!将被称为§Y大德意志国§!"
+
+ YUN_huguo:"护国战争国策树"
+ YUN_huguozz:"伟大的救国战争"
+
+ fuck_yuandong:"进攻远东共和国"
+ give_china_waidongbei:"移交外东北" 
+
+ VICTORY_POINTS_7135:"雷州"
+ VICTORY_POINTS_7039:"茂名"
+ VICTORY_POINTS_11981:"湛江"
+
+ YDNOKZ:"远东失去控制"
+ MXBLYNOKZ:"中西伯利亚失去控制"
+ FUCKWENDINGDU:"叛乱"
+ National_Revengeism:"极端主义"
+ National_Revengeism_noun:"极端主义"
+ National_Revengeism_type:"极端主义"
+
+ Ultramilitarism:"极端军国主义"
+ Ultramilitarism_desc:"极端军国主义是极端主义的分支，军政府掌管国家权力，思想绝对极端"
+ socialist_ultravisionary:"远视主义"
+
+ Burgundian:"斯巴达主义"
+ sibada_type:"斯巴达主义"
+ Burgundian_type:"勃艮第体制"
+
+ GER_win_ww2:"德国赢得了第二次世界大战"
+ HelpMeGER:"要求德国解决日美战争"
+ HELPJAP.1:"结束战争"
+ yuanzidan:"把实验室里的那个大家伙拉出来试试水"
+ boomzhenzhuganga:"珍珠港被核爆"
+ qianshuchichengxieyi:"§R我们将会签署"和平"协议...§!"
+ TNOshishi:"§O此选项为TNO路线§!"
+ NOIBOOM.1:"奇迹武器"
+ CHICHENG.1:"《赤城协议》"
+ CHICHENG.2:"《赤城协议》"
+ ChiChengXieYi:"《赤城协议》"
+ ChiChengXieYiMONEY:"《赤城协议》赔款"
+
+ WeiGuoZhanZhengCanBai:"卫国战争的惨败"
+ SOV_example_balance:"党中央权威"
+ left_range:"牢不可破的联盟"
+ left_min_min_range:"团结一心"
+ left_min_range:"团结"
+ mid_range:"分崩离析"
+ right_min_range:"濒临崩溃"
+ right_min_min_range:"初步崩溃"
+ right_range:"§R完全崩溃§!"
+ DangNeiFenLie:"党内分裂加剧"
+
+ RUSZTY:0"俄罗斯再统一"
+
+ ENGRUNCAN:"英国王室将流亡加拿大"
+ FRARUNAFR:"自由法国将逃亡非洲"
+ OpenHeTanEvent:"将开启伦敦会议事件"
+ FRA_TOU_XIANG:"法国投降"
+ ENG_TOU_XIANG:"英国投降"
+ LunDenHeTanOpen:"伦敦会议已开始"
+ ABCABCABCABCABCABC:"一些判定决议"
+ ABCABCABCABCABCABCA:"防止被宣战"
+
+ WestRussianWar_NAME:"西俄战争"
+ WestRussianWar_DESC:"我不知道写些什么"
+
+ add_people:"强制征兵"
+
+ 

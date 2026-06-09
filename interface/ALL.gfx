@@ -1,0 +1,225 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_AA"
+		texturefile = "gfx/interface/decisions/AA.png"
+	}
+
+	SpriteType = {
+		name = "GFX_decision_cat_picture_TYWR"
+		texturefile = "gfx/interface/decisions/GFX_decision_cat_picture_TYWR.dds"
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ADGAY"
+		texturefile = "gfx/interface/decisions/ADGAY.png"
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_frontend_game_logos"
+		texturefile = "gfx/interface/logo_games.dds"
+		legacy_lazy_load = yes
+	}
+
+	SpriteType = {
+		name = "GFX_idea_FengLingYueYing"
+		texturefile = "gfx/interface/ideas/idea_FengLingYueYing.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_dingdingradio_album_art"
+		texturefile = "gfx/interface/music/dingdingradio_album_art.png"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_idea_VictoryOfGermania"
+		texturefile = "gfx/interface/ideas/VictoryOfGermania.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_decision_GER_germania"
+		texturefile = "gfx/interface/decisions/decision_GER_germania.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_OMS_focus_dashenpan"
+		texturefile = "gfx/interface/ideas/DaShePan.png"
+	}
+
+	SpriteType = {
+		name = "GFX_ideology_National_Revengeism_group"
+		texturefile = "gfx/interface/ideology/ultranationalism_group.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ideology_Ultramilitarism"
+		texturefile = "gfx/interface/ideology/ultranationalism_ultramilitarism_subtype.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ideology_socialist_ultravisionary"
+		texturefile = "gfx/interface/ideology/socialist_ultravisionary_socialism_subtype.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ideology_Burgundian_group"
+		texturefile = "gfx/interface/ideology/national_socialism_burgundian_system_subtype.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_decision_Nuclear"
+		texturefile = "gfx/interface/decisions/decision_Nuclear.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOI4_icon"
+		texturefile = "gfx/interface/button/HOI4_icon.bmp"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_button"
+		texturefile = "gfx/interface/button/GER_button.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_button"
+		texturefile = "gfx/interface/button/JAP_button.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_button"
+		texturefile = "gfx/interface/button/USA_button.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_button"
+		texturefile = "gfx/interface/button/SOV_button.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_button"
+		texturefile = "gfx/interface/button/CHI_button.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRC_button"
+		texturefile = "gfx/interface/button/PRC_button.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_OMS_button"
+		texturefile = "gfx/interface/button/OMS_button.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ddmodgamejiem"
+		textureFile = "gfx/interface/ddmodgamejiem.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_production_line_arrow_left1"
+		textureFile = "gfx/interface/button/GFX_production_line_arrow_left1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_crt_closebutton"
+		textureFile = "gfx/interface/button/crt_closebutton_large.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_select_date_1962"
+		textureFile = "gfx/interface/select_date_1962.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_select_date_1952"
+		textureFile = "gfx/interface/select_date_1952.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_portrait_GER_adolf_hitler"
+		textureFile = "gfx/leaders/GER/portrait_GER_adolf_hitler.dds"
+	}
+	
+
+	SpriteType = {
+		name = "GFX_WeiGuoZhanZhengCanBai"
+		textureFile = "gfx/interface/goals/WeiGuoZhanZhengCanBai.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_SOV_transpolar_flights"
+		textureFile = "gfx/interface/goals/focus_SOV_transpolar_flights.dds"
+	}
+	 
+	SpriteType = {
+		name = "GFX_SOV_strengthen_the_mobilization_plan"
+		textureFile = "gfx/interface/goals/focus_SOV_strengthen_the_mobilization_plan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_strengthen_the_mobilization_plan_shine"
+		texturefile = "gfx/interface/goals/focus_SOV_strengthen_the_mobilization_plan.dds"
+				effectFile = gfx/FX/buttonstate.lua
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_SOV_strengthen_the_mobilization_plan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_SOV_strengthen_the_mobilization_plan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_SOV_transpolar_flights_shine"
+		texturefile = "gfx/interface/goals/focus_SOV_transpolar_flights.dds"
+				effectFile = gfx/FX/buttonstate.lua
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_SOV_transpolar_flights.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_SOV_transpolar_flights.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+}
