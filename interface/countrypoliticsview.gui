@@ -127,7 +127,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "faction"
-				position = { x = 93 y = -48 }
+				position = { x = -70 y = 82 }
 				size = { width = 175 height = 20 }
 				clipping = no
 
@@ -244,7 +244,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "power_balance_button"
-				position = { x = 320 y = -62 }
+				position = { x = 115 y = 68 }
 				clipping = no
 
 				buttonType = {

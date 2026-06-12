@@ -98,7 +98,7 @@
 					transfer_state = 972
 					transfer_state = 976
 					transfer_state = 975
-					transfer_state = 1018
+					transfer_state = 1082
 		 }
 	 }
 	}
@@ -184,6 +184,22 @@
 			target = TAI
 			autonomy_state = autonomy_puppet
 			}
+			set_autonomy = {
+			target = GDC
+			autonomy_state = autonomy_puppet
+			}
+			set_autonomy = {
+			target = MEN
+			autonomy_state = autonomy_puppet
+			}
+			set_autonomy = {
+			target = GXC
+			autonomy_state = autonomy_puppet
+			}
+			set_autonomy = {
+			target = SHX
+			autonomy_state = autonomy_puppet
+			}
 			transfer_state = 655
 			655  = { add_core_of = JAP }
 		}
@@ -203,6 +219,16 @@
 				transfer_state = 620
 				transfer_state = 750
 				transfer_state = 602
+				transfer_state = 1036
+				transfer_state = 1035
+				transfer_state = 1034
+				transfer_state = 1038
+				transfer_state = 1039
+				1036 = { add_core_of = TAI }
+				1035 = { add_core_of = TAI }
+				1034 = { add_core_of = TAI }
+				1038 = { add_core_of = TAI }
+				1039 = { add_core_of = TAI }
 				608 = { add_core_of = TAI }
 				600 = { add_core_of = TAI }
 				595 = { add_core_of = TAI }
@@ -236,6 +262,12 @@
 
 			CHI = {
 				set_cosmetic_tag = CHI_ChongQing_KMT
+				transfer_state = 753
+				transfer_state = 752
+				transfer_state = 751
+				transfer_state = 1037
+				transfer_state = 1041
+				transfer_state = 605
 			}
 
 			PRC = {
@@ -247,6 +279,10 @@
 				transfer_state = 754
 				transfer_state = 755
 				transfer_state = 756
+				transfer_state = 1045
+				transfer_state = 1032
+				transfer_state = 1044
+				transfer_state = 1040
 			}
 
 			MAN = {
@@ -282,11 +318,11 @@
 					set_cosmetic_tag = YUNSheng
 				}
 
-				YUE = {
+				GDC = {
 					add_popularity = { ideology = fascism popularity = 1 }
 					set_politics = { ruling_party = fascism }
-					729 = {add_core_of = YUE }
-					326 = {add_core_of = YUE }
+					729 = {add_core_of = GDC }
+					326 = {add_core_of = GDC }
 					transfer_state = 593
 					transfer_state = 592
 					transfer_state = 326
@@ -301,6 +337,10 @@
 					add_popularity = { ideology = fascism popularity = 1 }
 					set_politics = { ruling_party = fascism }
 					set_cosmetic_tag = GXCSheng
+					transfer_state = 1033
+					transfer_state = 591
+					591 = {add_core_of = GDC }
+					1033 = {add_core_of = GXC }
 				}
 
 				JAN = {
