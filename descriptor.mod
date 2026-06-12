@@ -1,5 +1,5 @@
 version="1.0"
-supported_version="1.18.*"
+supported_version="1.19.*"
 name="钢铁雄心IV:新秩序前瞻"
 
 tags={
