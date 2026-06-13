@@ -1,0 +1,19 @@
+state={
+	id=1083
+	name="STATE_1083"
+	provinces={
+		5042 
+	}
+	history={
+	owner = KHM
+	add_core_of = CHI
+	add_core_of = PRC
+	add_core_of = KHM
+	add_core_of = SIK
+	add_claim_by = RAJ
+	}
+	manpower=12864
+	state_category=wasteland
+	buildings_max_level_factor=1
+	local_supplies=0
+}
