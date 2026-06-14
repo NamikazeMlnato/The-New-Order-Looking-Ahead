@@ -57,9 +57,3 @@ music = {
   file = "CWSKTNO.ogg"
   volume = 0.44
 }
-
-music = {
-  name = "草东没有派对 但"
-  file = "Dan.ogg"
-  volume = 0.44
-}

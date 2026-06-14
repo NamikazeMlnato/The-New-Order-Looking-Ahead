@@ -7,4 +7,5 @@ tags={
 }
 
 replace_path="gfx/loadingscreens"
+replace_path="common/bookmarks"
 remote_file_id="3518022884"

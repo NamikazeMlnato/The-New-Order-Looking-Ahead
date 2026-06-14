@@ -40,7 +40,3 @@ music = {
 music = {
 	song = "错位时空TNO X OTL"
 }
-
-music = {
-	song = "草东没有派对 但"
-}
