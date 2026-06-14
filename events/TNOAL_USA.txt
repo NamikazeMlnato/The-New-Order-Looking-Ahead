@@ -1,0 +1,30 @@
+add_namespace = USA_GOP
+
+country_event = { 
+	id = USA_GOP.1 #事件
+	title = USA_GOP1 #名字
+	desc = USA_GOP1_desc #简介
+	picture = nope #封面
+	
+	
+	trigger = { 
+    } #弹出条件
+
+	fire_only_once = nope #是不是只有一次
+
+	is_triggered_only = nope #这个事件是否会自己弹
+
+	option = {
+		name = USA_GOP_1
+		set_politics = { ruling_party = democratic  long_name = "共和党" name = "共和党" }
+		create_country_leader = {
+		name = "托马斯·杜威"
+		picture = "gfx/leaders/USA/tmsdw.dds"
+		expire = "1940.8.1"
+		ideology = conservatism
+		traits = { DEN_venstre }
+		load_focus_tree = USA_GOP_focus_tree
+		}
+	}
+
+}

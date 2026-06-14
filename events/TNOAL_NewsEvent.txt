@@ -1,6 +1,6 @@
 add_namespace = USABOOM_news
 
-news_event  = { #与苏和解
+news_event  = { 
 	id = USABOOM_news.1 #事件
 	title = USABOOM_news.1 #名字
 	desc = USABOOM_news.1_desc #简介
